@@ -272,7 +272,8 @@ def run_experiment(environment , agent , environment_parameters , agent_paramete
             environment.pass_count(environment, message=f"Ep : {ep_count}")
             rl_glue.rl_episode(experiment_parameters["timeout"])
             episode_reward = rl_glue.rl_agent_message("get_sum_reward")
-            agnet_sum_reward[run - 1 , episode - 1] = episode_reward
+            min_dist_reached = rl_glue.environment.get_min_dist()
+            agnet_sum_reward[run - 1 , episode - 1] = min_dist_reached #episode_reward
 
     save_path = input("Save path name : ")
     save_weights(path= save_path, data=rl_glue.agent.network.weights)
@@ -284,32 +285,7 @@ def run_experiment(environment , agent , environment_parameters , agent_paramete
     shutil.make_archive("results" , "zip" , "results")
     
 
-"""
-def wandb_connect():
-    wandb_api_key_label = "wandb_api_key"
-    wandb_api_key = "" # here use your API key from WandB interface
 
-    wandb_conx = wandb.login(key = wandb_api_key)
-    print(f"Connected to Wandb online interface : {wandb_conx}")
-"""
-
-"""
-import pickle
-
-# Sample dictionary
-my_dict = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
-
-# Save dictionary to a file
-with open('my_dict.pickle', 'wb') as file:
-    pickle.dump(my_dict, file)
-
-# Load dictionary from the file
-with open('my_dict.pickle', 'rb') as file:
-    loaded_dict = pickle.load(file)
-
-# Print the loaded dictionary
-print(loaded_dict)
-"""
 
 
 def save_weights(data , path):
@@ -338,12 +314,12 @@ if __name__ == "__main__":
 
     experiment_parameters = {"num_runs":1,
                              "num_episodes":300,
-                             "timeout":1000}
+                             "timeout":2000}
     environment_parameters = {}
     current_env = SatelliteEnvironment
-    agent_parameters = {"network_config":{"state_dim":3,
+    agent_parameters = {"network_config":{"state_dim":4,
                                           "num_hidden_units":256,
-                                          "num_actions":3,
+                                          "num_actions":2,
                                           "weights_file":weight_file},
                         "optimizer_config":{"step_size":1e-3,
                                             "beta_m":0.9,
