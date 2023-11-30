@@ -9,25 +9,31 @@ WIDTH, HEIGHT = 1000, 800
 EARTH_RADIUS = 100
 SATELLITE_RADIUS = 7
 WHITE = (255, 255, 255)
-TIME_STEP = 4
+TIME_STEP = 30
 
 ep_count = "None Found"
 
-VISUALISE = True # add a visualise toggle bool
+VISUALISE = False # add a visualise toggle bool
+# maybe only visualise for ep = 1 , 500 , 3000 ?
 REACHED_DIST = 10
 
 ACTION_1_is_on = False
-ACTION_2_is_on = False
+
+
+
 
 
 
 class SatelliteEnvironment(BaseEnvironment):
     def __init__(self):
         self.name = "Satellite Simulator"
+        self.min_DIST_reached = 10000 # For logging the "loss" instead of the sum of rewards
         
         
 
     def env_init(self , env_info={}):
+        self.min_DIST_reached = 10000 
+
         if VISUALISE:
             # --- Pygame initialisation --- #
             pygame.init()
@@ -71,17 +77,23 @@ class SatelliteEnvironment(BaseEnvironment):
     
 
     def values_update(self):
+        
+
         self.satellite_1.update_velocity(self.pl_array , dt=TIME_STEP)
         self.satellite_1.update_pos(dt=TIME_STEP)
         self.satellite_2.update_velocity(self.pl_array , dt=TIME_STEP)
         self.satellite_2.update_pos(dt=TIME_STEP)
+
+        inst_dist = np.linalg.norm(self.satellite_1.position - self.satellite_2.position)
+        if inst_dist < self.min_DIST_reached:
+            self.min_DIST_reached = inst_dist
 
     def visual_update(self):
         if VISUALISE == False:
             return
         
         global ACTION_1_is_on
-        global ACTION_2_is_on
+        
 
         screen = self.screen
         earth = self.earth
@@ -115,10 +127,7 @@ class SatelliteEnvironment(BaseEnvironment):
         if ACTION_1_is_on:
             #print("action 1")
             line(satellite_1.position , satellite_1.position - satellite_1.get_tangent_vec(self.earth)*40 , screen , (196, 116, 10) , w=4)
-        if ACTION_2_is_on:
-            #print("action 2")
-            line(satellite_1.position , satellite_1.position + satellite_1.get_tangent_vec(self.earth)*40 , screen , (196, 116, 10) , w=4)
-            
+        
 
 
         pygame.draw.circle(screen, WHITE, (int(satellite_2.position[0]),
@@ -156,14 +165,14 @@ class SatelliteEnvironment(BaseEnvironment):
         #altitude_diff = sat_1_alt - np.linalg.norm(self.satellite_2.position - self.earth.position) - EARTH_RADIUS
         #radial_diff = self.satellite_1.get_angle_in_orbit(self.earth) - self.satellite_2.get_angle_in_orbit(self.earth)
         #print("OBSERVING :" , (sat_1_alt , dist , fuel))
-        return (sat_1_alt , dist , fuel)
+        return (sat_1_alt , dist , fuel , self.min_DIST_reached)
 
 
     def perform_action(self , a):
         #print("ACTION :" , a)
 
         global ACTION_1_is_on
-        global ACTION_2_is_on
+        
         # Observe current state
         current_state = self.env_observe_state()
 
@@ -172,16 +181,12 @@ class SatelliteEnvironment(BaseEnvironment):
             self.sat_1_fuel -= 1
             self.satellite_1.change_tangent_velocity(self.earth , 0.01)
             ACTION_1_is_on = True
-        elif a == 1:
-            self.sat_1_fuel -= 1
-            self.satellite_1.change_tangent_velocity(self.earth , -0.01)
-            ACTION_2_is_on = True
         elif a == 4:
             # 4: set velocity to stay in orbit
             self.satellite_1.set_circular_orbit_velocity(self.earth , self.satellite_1.calculate_distance(self.satellite_1.position , self.earth.position))
         else:
             ACTION_1_is_on = False
-            ACTION_2_is_on = False
+            
 
         # Observe new state
         next_state = self.env_observe_state()
@@ -194,12 +199,11 @@ class SatelliteEnvironment(BaseEnvironment):
         
         
     def define_possible_actions(self):
-        print("ACTIONS ARE DEFINED")
-        # Actions: 0: accelerate, 1: decelerate, 2: wait
-        return [0,1,2]
+        # Actions: 0: accelerate, 1: wait
+        return [0,1]
 
     def is_terminal(self , state):
-        sat_1_alt , dist , fuel = state
+        sat_1_alt , dist , fuel , _ = state
 
         if sat_1_alt < 0: # Satellite has crashed on Earth
             return True
@@ -207,18 +211,18 @@ class SatelliteEnvironment(BaseEnvironment):
             return True
         elif fuel <= 0: # Satellite has no more fuel
             return True
-        elif dist > 300: # Satellite goes too far
+        elif dist > 600: # Satellite goes too far
             return True
         
         return False 
     
 
     def calculate_reward(self , state , action , next_state):
-        sat_1_alt , dist , fuel = state
-        next_sat_1_alt , next_dist , next_fuel = next_state
+        sat_1_alt , dist , fuel , _ = state
+        next_sat_1_alt , next_dist , _ , _ = next_state
         reward = 0
 
-        if action == 0 or action == 1: # Using fuel
+        if action == 0: # Using fuel
             reward -= 1
 
         if dist > REACHED_DIST and next_dist <= REACHED_DIST: # Reaching objective
@@ -282,6 +286,11 @@ class SatelliteEnvironment(BaseEnvironment):
     def env_cleanup(self):
         # Clean up the environment
         self.env_init()
+
+    def get_min_dist(self):
+        #print("min_dist in ep :" , self.min_DIST_reached)
+        return self.min_DIST_reached
+        
 
     def pass_count(self , message):
         global ep_count
