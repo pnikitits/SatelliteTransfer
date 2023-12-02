@@ -271,8 +271,9 @@ def run_experiment(environment , agent , environment_parameters , agent_paramete
             ep_count += 1
             environment.pass_count(environment, message=f"Ep : {ep_count}")
             rl_glue.rl_episode(experiment_parameters["timeout"])
-            episode_reward = rl_glue.rl_agent_message("get_sum_reward")
+            #episode_reward = rl_glue.rl_agent_message("get_sum_reward")
             min_dist_reached = rl_glue.environment.get_min_dist()
+            #print(f"log ep {episode} : {min_dist_reached}")
             agnet_sum_reward[run - 1 , episode - 1] = min_dist_reached #episode_reward
 
     save_path = input("Save path name : ")
@@ -284,8 +285,6 @@ def run_experiment(environment , agent , environment_parameters , agent_paramete
     np.save("results/sum_reward_{}".format(save_name) , agnet_sum_reward)
     shutil.make_archive("results" , "zip" , "results")
     
-
-
 
 
 def save_weights(data , path):
@@ -303,7 +302,6 @@ def load_weights(path):
 
 
 
-
 if __name__ == "__main__":
     prompt1 = input("Start from scratch ? [y/n] :")
 
@@ -313,8 +311,8 @@ if __name__ == "__main__":
     
 
     experiment_parameters = {"num_runs":1,
-                             "num_episodes":300,
-                             "timeout":2000}
+                             "num_episodes":3000,
+                             "timeout":800}
     environment_parameters = {}
     current_env = SatelliteEnvironment
     agent_parameters = {"network_config":{"state_dim":4,
