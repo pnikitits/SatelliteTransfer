@@ -273,7 +273,10 @@ def run_experiment(environment , agent , environment_parameters , agent_paramete
             rl_glue.rl_episode(experiment_parameters["timeout"])
             #episode_reward = rl_glue.rl_agent_message("get_sum_reward")
             min_dist_reached = rl_glue.environment.get_min_dist()
-            #print(f"log ep {episode} : {min_dist_reached}")
+
+            #if min_dist_reached < 0.001:
+            #    rl_glue.environment.plot_alts(ep_count)
+            
             agnet_sum_reward[run - 1 , episode - 1] = min_dist_reached #episode_reward
 
     save_path = input("Save path name : ")
@@ -311,7 +314,7 @@ if __name__ == "__main__":
     
 
     experiment_parameters = {"num_runs":1,
-                             "num_episodes":3000,
+                             "num_episodes":300,
                              "timeout":800}
     environment_parameters = {}
     current_env = SatelliteEnvironment

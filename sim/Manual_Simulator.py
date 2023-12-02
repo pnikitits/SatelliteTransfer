@@ -16,9 +16,7 @@ if __name__ == "__main__":
             # Key actions to play with the simulator
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_UP:
-                    sim.perform_action(1)
-                elif event.key == pygame.K_DOWN:
-                    sim.perform_action(2)
+                    sim.perform_action(0)
                 elif event.key == pygame.K_LEFT:
                     sim.perform_action(4)
                 elif event.key == pygame.K_RIGHT:

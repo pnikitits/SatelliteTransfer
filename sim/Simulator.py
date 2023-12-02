@@ -2,68 +2,77 @@ import pygame
 from pygame import gfxdraw
 from Planet import planet
 import numpy as np
+import matplotlib.pyplot as plt
 from Extra import *
 from environment import BaseEnvironment
 
-WIDTH, HEIGHT = 1000, 800
-EARTH_RADIUS = 100
-SATELLITE_RADIUS = 7
-WHITE = (255, 255, 255)
-TIME_STEP = 70
 
 ep_count = "None Found"
-
-VISUALISE = False # add a visualise toggle bool
-# maybe only visualise for ep = 1 , 500 , 3000 ?
-REACHED_DIST = 10
-
-ACTION_1_is_on = False
-
+action_1_is_on = False
 
 
 class SatelliteEnvironment(BaseEnvironment):
     def __init__(self):
         self.name = "Satellite Simulator"
-        self.min_DIST_reached = 10000 # For logging the "loss" instead of the sum of rewards
+
+        self.time_step = 30
+        self.reached_dist = 0.02
+        self.boost_strength = 0.01
+
+        self.visualise = False
+        self.width , self.height = 1000 , 800
+        self.satellite_radius = 7
+        self.earth_radius = 100
+
+        self.orbit_1 = self.earth_radius + 60
+        self.orbit_2 = self.earth_radius + 140
+
         
-
     def env_init(self , env_info={}):
-        self.min_DIST_reached = 10000 
+         
+        self.min_dist_reached = 10000 # Minimum distance reached during an episode (for logging the "loss" instead of the sum of rewards)
+        
+        self.log_sat_1_alt = []
+        self.log_sat_2_alt = []
+        self.log_time_step = []
+        self.current_time_step = 0
 
-        if VISUALISE:
+        self.sat_1_fuel = 100
+
+
+        # --- Objects creation --- #
+
+        # Earth
+        self.earth = planet(mass=1000 ,
+                            name="Earth" ,
+                            position=np.array([self.width // 2, self.height // 2]))
+        
+        # Satellite 1 (OTV)
+        self.satellite_1 = planet(mass=1,
+                                  name="Satellite_1",
+                                  position=np.array([self.earth.position[0] + self.orbit_1, self.earth.position[1]]))
+        self.satellite_1.set_circular_orbit_velocity(central_obj=self.earth, orbit_radius=self.orbit_1)
+
+        # Satellite 2
+        sat_2_init_pos = np.array(polar_to_cartesian(-90 , self.orbit_2))
+        sat_2_init_pos += self.earth.position
+        self.satellite_2 = planet(mass=1,
+                                  name="Satellite_2",
+                                  position=sat_2_init_pos)
+        self.satellite_2.set_circular_orbit_velocity(central_obj=self.earth, orbit_radius=self.orbit_2)
+        
+        self.pl_array = [self.earth] # Objects that generate gravity
+
+        # --- Objects creation --- #
+
+
+        if self.visualise:
             # --- Pygame initialisation --- #
             pygame.init()
-            self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
-            pygame.display.set_caption("Satellite Simulator")
+            self.screen = pygame.display.set_mode((self.width, self.height))
+            pygame.display.set_caption(self.name)
             self.clock = pygame.time.Clock()
             # --- Pygame initialisation --- #
-
-
-        # --- Objects creation --- #
-        self.earth = planet(mass=1000 ,
-                    name="Earth" ,
-                    position=np.array([WIDTH // 2, HEIGHT // 2]))
-        self.satellite_1 = planet(mass=1,
-                            name="Satellite_1",
-                            position=np.array([self.earth.position[0] + EARTH_RADIUS + 60, self.earth.position[1]]))
-        self.satellite_1.set_circular_orbit_velocity(central_obj=self.earth, orbit_radius=EARTH_RADIUS + 60)
-
-
-        sat_2_init_pos = np.array(polar_to_cartesian(-90 , EARTH_RADIUS+140))
-        sat_2_init_pos += self.earth.position
-
-        self.satellite_2 = planet(mass=1,
-                            name="Satellite_2",
-                            position=sat_2_init_pos)
-        self.satellite_2.set_circular_orbit_velocity(central_obj=self.earth, orbit_radius=EARTH_RADIUS + 140)
-        
-        self.pl_array = [self.earth]
-        # --- Objects creation --- #
-
-        # --- Other values --- #
-        self.sat_1_fuel = 100
-        self.initial_distance = np.linalg.norm(self.satellite_1.position - self.satellite_2.position)
-        
 
         observation = self.env_observe_state()
         self.last_observation = observation
@@ -73,79 +82,34 @@ class SatelliteEnvironment(BaseEnvironment):
     
 
     def values_update(self):
-        
+        self.update_for_plots()
 
-        self.satellite_1.update_velocity(self.pl_array , dt=TIME_STEP)
-        self.satellite_1.update_pos(dt=TIME_STEP)
-        self.satellite_2.update_velocity(self.pl_array , dt=TIME_STEP)
-        self.satellite_2.update_pos(dt=TIME_STEP)
+        # Update velocities and positions
+        self.satellite_1.update_velocity(self.pl_array , dt=self.time_step)
+        self.satellite_1.update_pos(dt=self.time_step)
+        self.satellite_2.update_velocity(self.pl_array , dt=self.time_step)
+        self.satellite_2.update_pos(dt=self.time_step)
 
-        inst_dist = np.linalg.norm(self.satellite_1.position - self.satellite_2.position)
-        if inst_dist < self.min_DIST_reached:
-            self.min_DIST_reached = inst_dist
+        # Define the dist as the Euclidean distance
+        #inst_dist = np.linalg.norm(self.satellite_1.position - self.satellite_2.position)
+        #if inst_dist < self.min_dist_reached:
+        #    self.min_dist_reached = inst_dist
 
-    def visual_update(self):
-        if VISUALISE == False:
-            return
-        
-        global ACTION_1_is_on
-        
+        # Define the dist as the difference in tangent velocities
+        goal_t_velocity = find_circular_orbit_v(self.earth , self.orbit_2)
+        current_t_velocity = np.linalg.norm(self.satellite_1.find_velocity_components(self.earth)[1])
+        velocity_diff = abs(goal_t_velocity - current_t_velocity)
+        dist = velocity_diff*1000
 
-        screen = self.screen
-        earth = self.earth
-        satellite_1 = self.satellite_1
-        satellite_2 = self.satellite_2
-        screen.fill((3, 9, 41))
+        # log the min distance reached during the episode
+        if dist < self.min_dist_reached:
+            self.min_dist_reached = dist
 
-        bg = pygame.image.load("img2.jpg")
-        bg = pygame.transform.scale(bg, (1000, 800))
-        screen.blit(bg, (0, 0))
+        # Update the reached_dist to smaller values as the learning goes on
+        if dist < self.reached_dist:
+            self.reached_dist = (self.reached_dist + dist)*0.5
+            print(f"update REACHED_DIST {self.reached_dist} -> {dist}")
 
-        # orbits
-        gfxdraw.aacircle(screen , earth.position[0] , earth.position[1] , EARTH_RADIUS + 60 , (135, 135, 135))
-        gfxdraw.aacircle(screen , earth.position[0] , earth.position[1] , EARTH_RADIUS + 140 , (135, 135, 135))
-
-        # earth
-        pygame.draw.circle(screen, (4, 113, 135), earth.position, EARTH_RADIUS)  # Fill
-        gfxdraw.aacircle(screen , earth.position[0] , earth.position[1] , EARTH_RADIUS , WHITE) # Border
-
-        # satellite
-        line(satellite_1.position , satellite_2.position , screen , (51, 77, 47))
-        pygame.draw.circle(screen, WHITE, (int(satellite_1.position[0]),
-                                           int(satellite_1.position[1])),
-                                           SATELLITE_RADIUS)
-        line(satellite_1.position , satellite_1.position + satellite_1.normalise_vector(satellite_1.velocity)*60 , screen , WHITE)
-        
-        # Show boost direction
-        if ACTION_1_is_on:
-            line(satellite_1.position , satellite_1.position - satellite_1.get_tangent_vec(self.earth)*40 , screen , (196, 116, 10) , w=4)
-        
-
-        pygame.draw.circle(screen, WHITE, (int(satellite_2.position[0]),
-                                           int(satellite_2.position[1])),
-                                           SATELLITE_RADIUS)
-        line(satellite_2.position , satellite_2.position + satellite_2.normalise_vector(satellite_2.velocity)*60 , screen , WHITE)
-        
-
-        # Display satellite velocity and altitude
-        label(f"Satellite 1" , (WIDTH - 300, 20) , screen)
-        label(f"Velocity: {round(np.linalg.norm(satellite_1.velocity), 2)}" , (WIDTH - 300, 60) , screen)
-        label(f"Altitude: {round(np.linalg.norm(satellite_1.position - earth.position) - EARTH_RADIUS, 2)}" , (WIDTH - 300, 100) , screen )
-        label(f"Satellite 2" , (WIDTH - 170, 20) , screen)
-        label(f"Velocity: {round(np.linalg.norm(satellite_2.velocity), 2)}" , (WIDTH - 170, 60) , screen)
-        label(f"Altitude: {round(np.linalg.norm(satellite_2.position - earth.position) - EARTH_RADIUS, 2)}" , (WIDTH - 170, 100) , screen )
-        label(f"Distance: {round(np.linalg.norm(satellite_1.position - satellite_2.position) , 2)}" , (WIDTH - 170, 180) , screen )
-        label("Orbit 1" , (WIDTH - 365, HEIGHT//2 + 80) , screen)
-        label("Orbit 2" , (WIDTH - 290, HEIGHT//2 + 110) , screen)
-        
-        label(ep_count , (20, 20) , screen)
-        label(f"Fuel: {self.sat_1_fuel}" , (WIDTH - 300 , 180) , screen)
-
-        label(f"Angle: {round(self.satellite_1.get_angle_in_orbit(self.earth , deg=True),2)}" , (WIDTH - 300, 140) , screen)
-        label(f"Angle: {round(self.satellite_2.get_angle_in_orbit(self.earth , deg=True),2)}" , (WIDTH - 170, 140) , screen)
-            
-        pygame.display.flip()
-        self.clock.tick(60)
 
 
     def env_observe_state(self):
@@ -153,68 +117,61 @@ class SatelliteEnvironment(BaseEnvironment):
         fuel = self.sat_1_fuel
 
         # Altitudes
-        sat_1_alt = np.linalg.norm(self.satellite_1.position - self.earth.position) - EARTH_RADIUS
-        sat_2_alt = np.linalg.norm(self.satellite_2.position - self.earth.position) - EARTH_RADIUS
-        altitude_diff = abs(sat_1_alt - sat_2_alt) / 80
+        sat_1_alt = np.linalg.norm(self.satellite_1.position - self.earth.position) - self.earth_radius
+        #sat_2_alt = np.linalg.norm(self.satellite_2.position - self.earth.position) - self.earth_radius
+        #altitude_diff = abs(sat_1_alt - sat_2_alt) / 80
 
         # Eucledian distance
-        dist = np.linalg.norm(self.satellite_1.position - self.satellite_2.position)
+        #dist = np.linalg.norm(self.satellite_1.position - self.satellite_2.position)
 
         # Angles
-        sat_1_ang = self.satellite_1.get_angle_in_orbit(self.earth)
-        sat_2_ang = self.satellite_2.get_angle_in_orbit(self.earth)
-        angle_diff = abs(sat_1_ang - sat_2_ang) / (np.pi/2)
+        #sat_1_ang = self.satellite_1.get_angle_in_orbit(self.earth)
+        #sat_2_ang = self.satellite_2.get_angle_in_orbit(self.earth)
+        #angle_diff = abs(sat_1_ang - sat_2_ang) / (np.pi/2)
+
 
         # Velocity difference
-        #velocity_diff = self.satellite_1.velocity - self.satellite_2.velocity
-
-        #print(f"alt: {altitude_diff} --- ang: {angle_diff}")
-        #dist = altitude_diff * angle_diff
-
+        goal_t_velocity = find_circular_orbit_v(self.earth , self.orbit_2)
+        current_t_velocity = np.linalg.norm(self.satellite_1.find_velocity_components(self.earth)[1])
+        velocity_diff = abs(goal_t_velocity - current_t_velocity)
+        dist = velocity_diff*1000
         
-        return (sat_1_alt , dist , fuel , self.min_DIST_reached)
+
+        return (sat_1_alt , dist , fuel , self.min_dist_reached)
 
 
-    def perform_action(self , a):
-        #print("ACTION :" , a)
+    
+    def calculate_reward(self , state , action , next_state):
+        sat_1_alt , dist , fuel , _ = state
+        next_sat_1_alt , next_dist , _ , _ = next_state
+        reward = 0
 
-        global ACTION_1_is_on
-        
-        # Observe current state
-        current_state = self.env_observe_state()
+        # Using fuel
+        if action == 0: 
+            reward -= 1
 
-        # Perform action
-        if a == 0:
-            self.sat_1_fuel -= 1
-            self.satellite_1.change_tangent_velocity(self.earth , 0.01)
-            ACTION_1_is_on = True
-        elif a == 4:
-            # 4: set velocity to stay in orbit
-            self.satellite_1.set_circular_orbit_velocity(self.earth , self.satellite_1.calculate_distance(self.satellite_1.position , self.earth.position))
-        else:
-            ACTION_1_is_on = False
-            
+        # Reaching objective
+        if next_dist < self.reached_dist: 
+            print(f"reward given ep {ep_count} dist {next_dist}")
+            reward += 3000
 
-        # Observe new state
-        next_state = self.env_observe_state()
+        # Crashing on Earth
+        if sat_1_alt > 0 and next_sat_1_alt <= 0: 
+            reward -= 100
 
-        # Calculate reward
-        reward = self.calculate_reward(current_state, a, next_state)
+        # Run out of fuel
+        if fuel <= 0: 
+            reward -= 100
 
-        is_terminal = self.is_terminal(next_state)
-        return (reward, next_state, is_terminal)
-        
-        
-    def define_possible_actions(self):
-        # Actions: 0: accelerate, 1: wait
-        return [0,1]
+        return reward
+    
 
     def is_terminal(self , state):
         sat_1_alt , dist , fuel , _ = state
 
         if sat_1_alt < 0: # Satellite has crashed on Earth
             return True
-        elif dist < REACHED_DIST: # Satellite has reached objective
+        elif dist < self.reached_dist: # Satellite has reached objective
             #print(f"is terminal REACHED ep {ep_count}")
             return True
         elif fuel <= 0: # Satellite has no more fuel
@@ -225,44 +182,46 @@ class SatelliteEnvironment(BaseEnvironment):
             return True
         
         return False 
-    
 
-    def calculate_reward(self , state , action , next_state):
-        sat_1_alt , dist , fuel , _ = state
-        next_sat_1_alt , next_dist , _ , _ = next_state
-        reward = 0
 
-        if action == 0: # Using fuel
-            reward -= 1
+    def perform_action(self , a):
+        global action_1_is_on
+        
+        # Observe current state
+        current_state = self.env_observe_state()
 
-        if next_dist < REACHED_DIST: # Reaching objective
-            #print(f"reward given ep {ep_count}")
-            reward += 3000
+        # Perform action
+        if a == 0:
+            self.sat_1_fuel -= 1
+            self.satellite_1.change_tangent_velocity(self.earth , self.boost_strength)
+            action_1_is_on = True
+        elif a == 4:
+            # 4: set velocity to stay in orbit 
+            self.satellite_1.set_circular_orbit_velocity(self.earth , calculate_distance(self.satellite_1.position , self.earth.position))
+        else:
+            action_1_is_on = False
+            
+        # Observe new state
+        next_state = self.env_observe_state()
 
-        if sat_1_alt > 0 and next_sat_1_alt <= 0: # Crashing on Earth
-            reward -= 100
+        # Calculate reward
+        reward = self.calculate_reward(current_state, a, next_state)
 
-        if fuel <= 0 and dist > REACHED_DIST: # Fail to reach objective
-            reward -= 100
+        is_terminal = self.is_terminal(next_state)
+        return (reward, next_state, is_terminal)
 
-        return reward
-
-    
 
     def env_start(self):
         reward = 0.0
-        
         is_terminal = False
 
         self.values_update()
         self.visual_update()
 
         observation = self.env_init()
-                
-        self.reward_obs_term = (reward, observation, is_terminal)
-        
+             
         # return first state observation from the environment
-        return self.reward_obs_term
+        return (reward, observation, is_terminal)
 
 
     def env_step(self, action):
@@ -287,6 +246,44 @@ class SatelliteEnvironment(BaseEnvironment):
         # Return the tuple (reward, next_state, is_terminal)
         return (reward, next_state, is_terminal)
 
+
+    
+
+    
+
+    def update_for_plots(self):
+        # Call this once per time step
+        self.log_time_step.append(self.current_time_step)
+
+        #sat_1_alt = np.linalg.norm(self.satellite_1.position - self.earth.position) - EARTH_RADIUS
+        #sat_2_alt = np.linalg.norm(self.satellite_2.position - self.earth.position) - EARTH_RADIUS
+        sat_1_alt = np.linalg.norm(self.satellite_1.find_velocity_components(self.earth)[1])
+        sat_2_alt = np.linalg.norm(self.satellite_2.find_velocity_components(self.earth)[1])
+
+        self.log_sat_1_alt.append(sat_1_alt)
+        self.log_sat_2_alt.append(sat_2_alt)
+
+        self.current_time_step += 1
+
+    def plot_alts(self , ep):
+        x = self.log_time_step
+        y1 = self.log_sat_1_alt
+        y2 = self.log_sat_2_alt
+
+        plt.plot(x, y1, label='sat_1 (OTV)')
+        plt.plot(x, y2, label='sat_2')
+
+        plt.xlabel('Time Step')
+        plt.ylabel('Altitude')
+        plt.title(f'Episode {ep}')
+        plt.legend()
+        plt.show()
+
+
+
+
+
+
     def env_end(self):
         # End the current episode
         pass
@@ -295,13 +292,78 @@ class SatelliteEnvironment(BaseEnvironment):
         # Clean up the environment
         self.env_init()
 
+    def define_possible_actions(self):
+        # Actions: 0: accelerate, 1: wait
+        return [0,1]
+    
     def get_min_dist(self):
-        #if self.min_DIST_reached <= 20:
-        #    print("min_dist in ep :" , self.min_DIST_reached)
-        return self.min_DIST_reached
-        
-
+        #if self.min_dist_reached <= 20:
+        #    print("min_dist in ep :" , self.min_dist_reached)
+        return self.min_dist_reached
+    
     def pass_count(self , message):
         global ep_count
         ep_count = message
+
+
+
+    def visual_update(self):
+        if self.visualise == False:
+            return
         
+        global action_1_is_on
+        white = (255, 255, 255)
+        
+
+        screen = self.screen
+        earth = self.earth
+        satellite_1 = self.satellite_1
+        satellite_2 = self.satellite_2
+        screen.fill((3, 9, 41))
+
+        bg = pygame.image.load("img2.jpg")
+        bg = pygame.transform.scale(bg, (1000, 800))
+        screen.blit(bg, (0, 0))
+
+        # orbits
+        gfxdraw.aacircle(screen , earth.position[0] , earth.position[1] , self.orbit_1 , (135, 135, 135))
+        gfxdraw.aacircle(screen , earth.position[0] , earth.position[1] , self.orbit_2 , (135, 135, 135))
+
+        # earth
+        pygame.draw.circle(screen, (4, 113, 135), earth.position, self.earth_radius)  # Fill
+        gfxdraw.aacircle(screen , earth.position[0] , earth.position[1] , self.earth_radius , white) # Border
+
+        # satellite
+        line(satellite_1.position , satellite_2.position , screen , (51, 77, 47))
+        pygame.draw.circle(screen, white, (int(satellite_1.position[0]),
+                                                int(satellite_1.position[1])),
+                                                self.satellite_radius)
+        line(satellite_1.position , satellite_1.position + normalise_vector(satellite_1.velocity)*60 , screen , white)
+        
+        # Show boost direction
+        if action_1_is_on:
+            line(satellite_1.position , satellite_1.position - satellite_1.get_tangent_vec(self.earth)*40 , screen , (196, 116, 10) , w=4)
+        
+        pygame.draw.circle(screen, white, (int(satellite_2.position[0]),
+                                                int(satellite_2.position[1])),
+                                                self.satellite_radius)
+        line(satellite_2.position , satellite_2.position + normalise_vector(satellite_2.velocity)*60 , screen , white)
+        
+
+        # Display satellite velocity, altitude, ...
+        label(f"Satellite 1" , (self.width - 300, 20) , screen)
+        label(f"Velocity: {round(np.linalg.norm(satellite_1.velocity), 2)}" , (self.width - 300, 60) , screen)
+        label(f"Altitude: {round(np.linalg.norm(satellite_1.position - earth.position) - self.earth_radius, 2)}" , (self.width - 300, 100) , screen )
+        label(f"Satellite 2" , (self.width - 170, 20) , screen)
+        label(f"Velocity: {round(np.linalg.norm(satellite_2.velocity), 2)}" , (self.width - 170, 60) , screen)
+        label(f"Altitude: {round(np.linalg.norm(satellite_2.position - earth.position) - self.earth_radius, 2)}" , (self.width - 170, 100) , screen )
+        label(f"Distance: {round(np.linalg.norm(satellite_1.position - satellite_2.position) , 2)}" , (self.width - 170, 180) , screen )
+        label("Orbit 1" , (self.width - 365, self.height//2 + 80) , screen)
+        label("Orbit 2" , (self.width - 290, self.height//2 + 110) , screen)
+        label(ep_count , (20, 20) , screen)
+        label(f"Fuel: {self.sat_1_fuel}" , (self.width - 300 , 180) , screen)
+        label(f"Angle: {round(self.satellite_1.get_angle_in_orbit(self.earth , deg=True),2)}" , (self.width - 300, 140) , screen)
+        label(f"Angle: {round(self.satellite_2.get_angle_in_orbit(self.earth , deg=True),2)}" , (self.width - 170, 140) , screen)
+            
+        pygame.display.flip()
+        self.clock.tick(60)
