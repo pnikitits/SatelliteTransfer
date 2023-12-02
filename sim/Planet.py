@@ -52,8 +52,13 @@ class planet:
         magnitude = np.linalg.norm(v)
         return np.array(v) / magnitude
     
-    def get_angle_in_orbit(self , centre_obj):
+    def get_angle_in_orbit(self , centre_obj , deg=False):
         angle = np.arctan( (self.position[1] - centre_obj.position[1]) / (self.position[0] - centre_obj.position[0]))
+        if deg:
+            return np.degrees(angle)
+        return angle
+
+
     
     def get_tangent_vec(self , centre_obj):
         vector_to_earth = centre_obj.position - self.position
