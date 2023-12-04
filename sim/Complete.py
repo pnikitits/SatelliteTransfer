@@ -277,7 +277,7 @@ def run_experiment(environment , agent , environment_parameters , agent_paramete
 
             min_dist_reached = rl_glue.environment.get_min_dist()
 
-            if min_dist_reached < 10 and episode_reward >= -5:
+            if min_dist_reached < 10 and episode_reward >= 10:
                 rl_glue.environment.plot_alts(ep_count)
             
             agnet_sum_reward[run - 1 , episode - 1] = min_dist_reached #episode_reward
@@ -317,7 +317,7 @@ if __name__ == "__main__":
     
 
     experiment_parameters = {"num_runs":1,
-                             "num_episodes":3000,
+                             "num_episodes":1500,
                              "timeout":800}
     environment_parameters = {}
     current_env = SatelliteEnvironment

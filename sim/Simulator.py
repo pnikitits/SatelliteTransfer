@@ -165,22 +165,27 @@ class SatelliteEnvironment(BaseEnvironment):
 
         # Using fuel
         if action == 0: 
-            reward -= 0.5
+            reward -= 0.4
 
         # Reaching objective
         if dist < self.reached_dist and next_dist < self.reached_dist: 
-            
-            reward += 100 + 10*self.steps_in_reward**1.5
+            if self.steps_in_reward > 10:
+                reward += 100 + 10*self.steps_in_reward**2
+            else:
+                reward += 40
             self.steps_in_reward += 1
             print(f"reward given ep {ep_count} for {self.steps_in_reward}")
 
         elif dist < self.reached_dist and next_dist >= self.reached_dist:
-            reward -= 100 + 5*self.steps_in_reward**1.5
-            self.steps_in_reward = 0
+        #    reward -= 60 + 5*self.steps_in_reward**1.5
+            self.steps_in_reward = -4
 
         else:
             self.steps_in_reward = 0
 
+        # Constraining the orbit
+        if next_sat_1_alt < 59 or next_sat_1_alt > 141:
+            reward -= 2
 
         # Crashing on Earth
         if sat_1_alt > 0 and next_sat_1_alt <= 0: 
