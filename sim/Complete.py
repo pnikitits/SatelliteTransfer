@@ -277,7 +277,7 @@ def run_experiment(environment , agent , environment_parameters , agent_paramete
 
             min_dist_reached = rl_glue.environment.get_min_dist()
 
-            if min_dist_reached < 10 and episode_reward >= 10:
+            if min_dist_reached < 5 and episode_reward >= 15:
                 rl_glue.environment.plot_alts(ep_count)
             
             agnet_sum_reward[run - 1 , episode - 1] = min_dist_reached #episode_reward

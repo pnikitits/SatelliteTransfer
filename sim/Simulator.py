@@ -16,7 +16,7 @@ class SatelliteEnvironment(BaseEnvironment):
         self.name = "Satellite Simulator"
 
         self.time_step = 70
-        self.reached_dist = 10
+        self.reached_dist = 5
         self.boost_strength = 0.01
 
         self.steps_in_reward = 0
@@ -170,15 +170,15 @@ class SatelliteEnvironment(BaseEnvironment):
         # Reaching objective
         if dist < self.reached_dist and next_dist < self.reached_dist: 
             if self.steps_in_reward > 10:
-                reward += 100 + 10*self.steps_in_reward**2
+                reward += 100 + 10*(self.steps_in_reward-9)**1.1
             else:
-                reward += 40
+                reward += 30
             self.steps_in_reward += 1
             print(f"reward given ep {ep_count} for {self.steps_in_reward}")
 
         elif dist < self.reached_dist and next_dist >= self.reached_dist:
-        #    reward -= 60 + 5*self.steps_in_reward**1.5
-            self.steps_in_reward = -4
+            reward -= 15#60 + 5*self.steps_in_reward**1.5
+            self.steps_in_reward = 0
 
         else:
             self.steps_in_reward = 0
