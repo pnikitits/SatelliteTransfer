@@ -82,4 +82,5 @@ class planet:
         radial_velocity = np.dot(self.velocity, radial_unit_vector)
         tangent_velocity = self.velocity - radial_velocity * radial_unit_vector
 
+        # altitude velocity, tangent velocity
         return radial_velocity, tangent_velocity
