@@ -15,13 +15,13 @@ class SatelliteEnvironment(BaseEnvironment):
         self.name = "Satellite Simulator"
 
         self.time_step = 30
-        self.reached_dist = 50 #tighten this
-        self.boost_strength = 0.01
+        self.reached_dist = 10 #tighten this
+        self.boost_strength = 0.001
 
         self.steps_in_reward = 0
         self.max_steps_in_reward = 40
 
-        self.visualise = False
+        self.visualise = True
         self.width , self.height = 1000 , 800
         self.satellite_radius = 7
         self.earth_radius = 100
@@ -68,7 +68,7 @@ class SatelliteEnvironment(BaseEnvironment):
         self.satellite_1.position_where_thrust = []
         
         # Satellite 2
-        sat_2_init_pos = np.array(polar_to_cartesian(-90 , self.orbit_2))
+        sat_2_init_pos = np.array(polar_to_cartesian(-60 , self.orbit_2))
         sat_2_init_pos += self.earth.position
         self.satellite_2 = planet(mass=1,
                                   name="Satellite_2",
@@ -134,7 +134,7 @@ class SatelliteEnvironment(BaseEnvironment):
         # Altitudes
         sat_1_alt = np.linalg.norm(self.satellite_1.position - self.earth.position) - self.earth_radius
         sat_2_alt = self.orbit_2 - self.earth_radius#np.linalg.norm(self.satellite_2.position - self.earth.position) - self.earth_radius
-        alt_diff = abs(sat_1_alt - sat_2_alt)
+        alt_diff = sat_1_alt - sat_2_alt
 
         # Eucledian distance
         # dist = np.linalg.norm(self.satellite_1.position - self.satellite_2.position)
@@ -152,7 +152,7 @@ class SatelliteEnvironment(BaseEnvironment):
         #dist = velocity_diff*1000
         
 
-        return (alt_diff , angle_diff , velocity_diff)
+        return (alt_diff , velocity_diff)
 
 
     
@@ -161,18 +161,13 @@ class SatelliteEnvironment(BaseEnvironment):
         # Calculate metrics needed for reward
         dist = np.linalg.norm(self.satellite_1.position - self.satellite_2.position)
         sat_1_alt = np.linalg.norm(self.satellite_1.position - self.earth.position) - self.earth_radius
+        sat_2_alt = self.orbit_2 - self.earth_radius#np.linalg.norm(self.satellite_2.position - self.earth.position) - self.earth_radius
+        alt_diff = abs(sat_1_alt - sat_2_alt)
 
-        # Init reward
         reward = 0
+        if alt_diff < 5:
+            reward = 0.1
 
-        # Using fuel
-        if action == 0: 
-            reward -= 1
-
-        # Reaching objective
-        if dist < self.reached_dist:
-            print('reach')
-            reward += 1000
 
         # Crashing on Earth
         if sat_1_alt < 0: 

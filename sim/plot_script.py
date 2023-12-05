@@ -50,7 +50,7 @@ def plot_result(data_name_array):
     ax.set_title("Learning Curve", fontsize = 15)
     ax.set_xlabel('Episodes', fontsize = 14)
     ax.set_ylabel(plt_label_dict[data_name_array[0]], rotation=0, labelpad=40, fontsize = 14)
-    ax.set_ylim([-300, 300])
+    # ax.set_ylim([-300, 300])
 
     plt.tight_layout()
     plt.show()     
