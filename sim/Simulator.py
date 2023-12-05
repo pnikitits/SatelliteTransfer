@@ -8,7 +8,7 @@ from environment import BaseEnvironment
 
 ep_count = "None Found"
 action_1_is_on = False
-
+action_1_is_on = False
 
 class SatelliteEnvironment(BaseEnvironment):
     def __init__(self):
@@ -66,6 +66,7 @@ class SatelliteEnvironment(BaseEnvironment):
                                   position=np.array([self.earth.position[0] + self.orbit_1, self.earth.position[1]]))
         self.satellite_1.set_circular_orbit_velocity(central_obj=self.earth, orbit_radius=self.orbit_1)
         self.satellite_1.position_where_thrust = []
+        self.satellite_1.position_where_thrust2 = []
         
         # Satellite 2
         sat_2_init_pos = np.array(polar_to_cartesian(-60 , self.orbit_2))
@@ -194,18 +195,28 @@ class SatelliteEnvironment(BaseEnvironment):
 
     def perform_action(self , a):
         global action_1_is_on
+        global action_2_is_on
+
+        action_1_is_on = False
+        action_2_is_on = False
 
         # Perform action
         if a == 0:
             self.sat_1_fuel -= 1
             self.satellite_1.change_tangent_velocity(self.earth , self.boost_strength)
             action_1_is_on = True
+            action_2_is_on = False
             self.satellite_1.position_where_thrust.append(self.satellite_1.position)
-        elif a == 4:
+        if a == 1:
+            action_2_is_on = True
+            action_1_is_on = False
+            self.sat_1_fuel -= 1
+            self.satellite_1.change_tangent_velocity(self.earth , -self.boost_strength)
+            self.satellite_1.position_where_thrust2.append(self.satellite_1.position)
+        if a == 4:
             # 4: set velocity to stay in orbit 
             self.satellite_1.set_circular_orbit_velocity(self.earth , calculate_distance(self.satellite_1.position , self.earth.position))
-        else:
-            action_1_is_on = False
+        
 
 
     def env_start(self):
@@ -343,8 +354,8 @@ class SatelliteEnvironment(BaseEnvironment):
         self.env_init()
 
     def define_possible_actions(self):
-        # Actions: 0: accelerate, 1: wait
-        return [0,1]
+        # Actions: 0: accelerate, 1: deccelerate, 2: wait
+        return [0,1,2]
     
     def get_min_dist(self):
         #if self.min_dist_reached <= 20:
@@ -393,6 +404,8 @@ class SatelliteEnvironment(BaseEnvironment):
         # Show boost location
         for x in self.satellite_1.position_where_thrust:
             pygame.draw.circle(screen, (255, 0, 0), x, 2)
+        for x in self.satellite_1.position_where_thrust2:
+            pygame.draw.circle(screen, (0, 255, 0), x, 2)
 
         # Show boost direction
         if action_1_is_on:
