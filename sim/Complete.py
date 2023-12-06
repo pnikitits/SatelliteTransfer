@@ -277,7 +277,7 @@ def run_experiment(environment , agent , environment_parameters , agent_paramete
 
             min_dist_reached = rl_glue.environment.get_min_dist()
 
-            if min_dist_reached < 5 and episode_reward >= 15:
+            if episode_reward >= 15:
                 rl_glue.environment.plot_alts(ep_count)
             
             agnet_sum_reward[run - 1 , episode - 1] = min_dist_reached #episode_reward
@@ -309,21 +309,21 @@ def load_weights(path):
 
 
 if __name__ == "__main__":
-    prompt1 = input("Start from scratch ? [y/n] :")
+    #prompt1 = input("Start from scratch ? [y/n] :")
 
     weight_file = None
-    if prompt1 == "n":
-        weight_file = input("input file path: ")
+    #if prompt1 == "n":
+    #    weight_file = input("input file path: ")
     
 
     experiment_parameters = {"num_runs":1,
-                             "num_episodes":1500,
-                             "timeout":800}
+                             "num_episodes":500,
+                             "timeout":3000}
     environment_parameters = {}
     current_env = SatelliteEnvironment
     agent_parameters = {"network_config":{"state_dim":4,
                                           "num_hidden_units":256,
-                                          "num_actions":2,
+                                          "num_actions":3,
                                           "weights_file":weight_file},
                         "optimizer_config":{"step_size":1e-3,
                                             "beta_m":0.9,
