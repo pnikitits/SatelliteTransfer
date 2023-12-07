@@ -1,0 +1,2103 @@
+
+  0%|                        | 16/10000 [00:01<11:26, 14.53it/s]
+No input weights, start from scratch
+too far reward
+reward -112.5 for 1
+crashed reward
+crashed terminal
+reward -179.5 for 2
+too far reward
+reward -98.0 for 3
+too far reward
+reward -102.0 for 4
+crashed reward
+crashed terminal
+reward -116.5 for 5
+too far reward
+reward -120.0 for 6
+too far reward
+reward -99.5 for 7
+too far reward
+reward -99 for 8
+too far reward
+reward -99 for 9
+too far reward
+reward -104.0 for 10
+too far reward
+reward -107.0 for 11
+too far reward
+reward -98 for 12
+too far reward
+reward -98 for 13
+too far reward
+reward -98 for 14
+too far reward
+reward -98 for 15
+too far reward
+reward -101.5 for 16
+too far reward
+
+  0%|                        | 34/10000 [00:03<26:28,  6.28it/s]
+too far reward
+reward -99 for 18
+too far reward
+reward -99 for 19
+too far reward
+reward -99 for 20
+too far reward
+reward -99 for 21
+too far reward
+reward -98 for 22
+too far reward
+reward -98 for 23
+too far reward
+reward -98 for 24
+too far reward
+reward -109.5 for 25
+too far reward
+reward -103.5 for 26
+too far reward
+reward -107.5 for 27
+too far reward
+reward -110.5 for 28
+too far reward
+reward -107.0 for 29
+too far reward
+reward -131.5 for 30
+too far reward
+reward -132.5 for 31
+too far reward
+reward -109.5 for 32
+crashed reward
+crashed terminal
+reward -125.0 for 33
+too far reward
+reward -103.5 for 34
+crashed reward
+crashed terminal
+reward -100 for 35
+crashed reward
+crashed terminal
+
+  0%|                        | 47/10000 [00:05<31:31,  5.26it/s]
+crashed reward
+crashed terminal
+reward -85.0 for 37
+crashed reward
+crashed terminal
+reward -92.0 for 38
+too far reward
+reward -113.5 for 39
+crashed reward
+crashed terminal
+reward -100 for 40
+crashed reward
+crashed terminal
+reward -100 for 41
+crashed reward
+crashed terminal
+reward -100 for 42
+crashed reward
+crashed terminal
+reward -100 for 43
+crashed reward
+crashed terminal
+reward -100 for 44
+crashed reward
+crashed terminal
+reward -100 for 45
+crashed reward
+crashed terminal
+reward -84.0 for 46
+crashed reward
+crashed terminal
+reward -109.0 for 47
+crashed reward
+crashed terminal
+reward -124.0 for 48
+too far reward
+reward -110.5 for 49
+crashed reward
+crashed terminal
+reward -92 for 50
+too far reward
+reward -93.0 for 51
+crashed reward
+crashed terminal
+
+  1%|                        | 52/10000 [00:07<56:54,  2.91it/s]
+too far reward
+reward -101.0 for 53
+too far reward
+reward -125.0 for 54
+too far reward
+reward -110.0 for 55
+too far reward
+reward -105.0 for 56
+too far reward
+reward -120.5 for 57
+too far reward
+reward -116.5 for 58
+too far reward
+reward -118.5 for 59
+too far reward
+reward -115.5 for 60
+too far reward
+reward -117.5 for 61
+too far reward
+reward -118.0 for 62
+too far reward
+reward -119.5 for 63
+too far reward
+reward -113.5 for 64
+too far reward
+
+  1%|▏                       | 65/10000 [00:09<20:09,  8.21it/s]
+too far reward
+reward -118.0 for 66
+too far reward
+reward -113.5 for 67
+too far reward
+reward -107.5 for 68
+too far reward
+reward -106.0 for 69
+too far reward
+reward -102.0 for 70
+too far reward
+reward -99 for 71
+crashed reward
+crashed terminal
+reward -100 for 72
+too far reward
+reward -99 for 73
+too far reward
+reward -98 for 74
+crashed reward
+crashed terminal
+reward -100 for 75
+crashed reward
+crashed terminal
+reward -100 for 76
+too far reward
+reward -163.5 for 77
+too far reward
+reward -100.0 for 78
+too far reward
+
+  1%|▏                       | 79/10000 [00:11<29:15,  5.65it/s]
+too far reward
+reward -99 for 80
+too far reward
+reward -98 for 81
+too far reward
+reward -116.0 for 82
+too far reward
+reward -138.0 for 83
+too far reward
+reward -102.0 for 84
+too far reward
+reward -104.0 for 85
+too far reward
+reward -105.5 for 86
+too far reward
+reward -99 for 87
+too far reward
+reward -99 for 88
+too far reward
+reward -115.0 for 89
+too far reward
+reward -99.5 for 90
+too far reward
+reward -105.5 for 91
+too far reward
+reward -99 for 92
+too far reward
+reward -108.0 for 93
+too far reward
+reward -99 for 94
+too far reward
+reward -103.5 for 95
+too far reward
+reward -99 for 96
+too far reward
+reward -98 for 97
+too far reward
+reward -110.5 for 98
+too far reward
+
+
+  1%|▎                      | 118/10000 [00:15<17:37,  9.35it/s]
+too far reward
+reward -110.5 for 100
+too far reward
+reward -102.5 for 101
+too far reward
+reward -104.5 for 102
+too far reward
+reward -143.0 for 103
+too far reward
+reward -98 for 104
+too far reward
+reward -100.0 for 105
+too far reward
+reward -99 for 106
+too far reward
+reward -103.5 for 107
+too far reward
+reward -120.5 for 108
+too far reward
+reward -101.0 for 109
+too far reward
+reward -100.5 for 110
+too far reward
+reward -107.5 for 111
+too far reward
+reward -98 for 112
+too far reward
+reward -98 for 113
+too far reward
+reward -100.0 for 114
+too far reward
+reward -113.0 for 115
+too far reward
+reward -107.0 for 116
+too far reward
+reward -117.0 for 117
+too far reward
+reward -115.0 for 118
+too far reward
+
+  1%|▎                      | 135/10000 [00:17<24:21,  6.75it/s]
+too far reward
+reward -106.5 for 120
+too far reward
+reward -111.0 for 121
+too far reward
+reward -109.0 for 122
+too far reward
+reward -116.5 for 123
+too far reward
+reward -109.0 for 124
+too far reward
+reward -118.0 for 125
+too far reward
+reward -118.0 for 126
+too far reward
+reward -110.5 for 127
+too far reward
+reward -101.5 for 128
+too far reward
+reward -111.5 for 129
+too far reward
+reward -108.0 for 130
+too far reward
+reward -103.5 for 131
+too far reward
+reward -99 for 132
+too far reward
+reward -115.0 for 133
+too far reward
+reward -99.0 for 134
+too far reward
+
+  2%|▎                      | 152/10000 [00:19<19:28,  8.43it/s]
+too far reward
+reward -119.0 for 136
+too far reward
+reward -118.0 for 137
+too far reward
+reward -106.5 for 138
+too far reward
+reward -101.0 for 139
+too far reward
+reward -100.0 for 140
+too far reward
+reward -103.0 for 141
+too far reward
+reward -115.5 for 142
+too far reward
+reward -127.0 for 143
+too far reward
+reward -110.0 for 144
+too far reward
+reward -115.0 for 145
+too far reward
+reward -100.5 for 146
+too far reward
+reward -129.0 for 147
+too far reward
+reward -117.5 for 148
+too far reward
+reward -113.0 for 149
+too far reward
+reward -114.0 for 150
+too far reward
+reward -115.0 for 151
+too far reward
+reward -104.5 for 152
+too far reward
+reward -120.0 for 153
+too far reward
+reward -117.5 for 154
+too far reward
+reward -96.5 for 155
+too far reward
+reward -107.5 for 156
+too far reward
+reward -99 for 157
+too far reward
+reward -106.0 for 158
+too far reward
+reward -115.5 for 159
+too far reward
+reward -119.0 for 160
+too far reward
+reward -110.0 for 161
+too far reward
+reward -103.5 for 162
+too far reward
+reward -124.0 for 163
+too far reward
+reward -118.5 for 164
+too far reward
+reward -108.5 for 165
+too far reward
+reward -110.5 for 166
+too far reward
+reward -117.0 for 167
+too far reward
+
+
+  2%|▍                      | 186/10000 [00:23<18:01,  9.08it/s]
+too far reward
+reward -104.5 for 169
+too far reward
+reward -104.5 for 170
+too far reward
+reward -121.0 for 171
+too far reward
+reward -114.5 for 172
+too far reward
+reward -119.5 for 173
+crashed reward
+crashed terminal
+reward -112.5 for 174
+too far reward
+reward -103.0 for 175
+too far reward
+reward -111.5 for 176
+too far reward
+reward -108.5 for 177
+too far reward
+reward -109.0 for 178
+too far reward
+reward -106.0 for 179
+too far reward
+reward -122.0 for 180
+too far reward
+reward -120.5 for 181
+too far reward
+reward -100.5 for 182
+too far reward
+reward -98 for 183
+too far reward
+reward -120.0 for 184
+too far reward
+reward -130.5 for 185
+too far reward
+reward -132.5 for 186
+too far reward
+
+  2%|▍                      | 200/10000 [00:25<29:46,  5.49it/s]
+too far reward
+reward -121.5 for 188
+too far reward
+reward -112.5 for 189
+too far reward
+reward -99 for 190
+too far reward
+reward -109.0 for 191
+too far reward
+reward -119.0 for 192
+crashed reward
+crashed terminal
+reward -136.0 for 193
+too far reward
+reward -135.5 for 194
+too far reward
+reward -121.0 for 195
+too far reward
+reward -122.5 for 196
+too far reward
+reward -130.5 for 197
+too far reward
+reward -129.5 for 198
+crashed reward
+crashed terminal
+reward -127.0 for 199
+too far reward
+
+  2%|▍                      | 214/10000 [00:27<23:48,  6.85it/s]
+too far reward
+reward -119.0 for 201
+too far reward
+reward -121.5 for 202
+too far reward
+reward -100.0 for 203
+too far reward
+reward -124.0 for 204
+too far reward
+reward -126.5 for 205
+crashed reward
+crashed terminal
+reward -90.5 for 206
+too far reward
+reward -110.5 for 207
+too far reward
+reward -112.0 for 208
+too far reward
+reward -148.0 for 209
+too far reward
+reward -137.0 for 210
+too far reward
+reward -132.5 for 211
+too far reward
+reward -164.0 for 212
+too far reward
+reward -135.0 for 213
+too far reward
+reward -113.0 for 214
+too far reward
+
+  2%|▌                      | 225/10000 [00:29<29:04,  5.60it/s]
+too far reward
+reward -111.0 for 216
+too far reward
+reward -164.5 for 217
+too far reward
+reward -112.0 for 218
+too far reward
+reward -166.5 for 219
+too far reward
+reward -149.5 for 220
+too far reward
+reward -127.5 for 221
+too far reward
+reward -100.5 for 222
+too far reward
+reward -170.5 for 223
+too far reward
+reward -140.5 for 224
+crashed reward
+crashed terminal
+
+  2%|▌                      | 239/10000 [00:31<27:21,  5.95it/s]
+crashed reward
+crashed terminal
+reward -96.0 for 226
+too far reward
+reward -123.5 for 227
+too far reward
+reward -118.5 for 228
+too far reward
+reward -138.5 for 229
+too far reward
+reward -103.5 for 230
+too far reward
+reward -112.0 for 231
+too far reward
+reward -98 for 232
+too far reward
+reward -99 for 233
+too far reward
+reward -112.0 for 234
+too far reward
+reward -110.5 for 235
+too far reward
+reward -125.5 for 236
+too far reward
+reward -123.5 for 237
+too far reward
+reward -131.0 for 238
+too far reward
+reward -108.0 for 239
+too far reward
+reward -110.5 for 240
+too far reward
+reward -122.0 for 241
+too far reward
+reward -113.5 for 242
+too far reward
+reward -106.5 for 243
+too far reward
+reward -122.0 for 244
+too far reward
+reward -108.5 for 245
+too far reward
+reward -137.0 for 246
+too far reward
+reward -126.5 for 247
+too far reward
+reward -114.0 for 248
+too far reward
+reward -125.0 for 249
+too far reward
+
+
+  3%|▌                      | 265/10000 [00:35<16:53,  9.60it/s]
+too far reward
+reward -105.0 for 251
+too far reward
+reward -149.0 for 252
+too far reward
+reward -111.5 for 253
+too far reward
+reward -123.0 for 254
+too far reward
+reward -117.0 for 255
+too far reward
+reward -99.0 for 256
+too far reward
+reward -114.0 for 257
+too far reward
+reward -106.5 for 258
+too far reward
+reward -120.0 for 259
+too far reward
+reward -107.5 for 260
+too far reward
+reward -116.5 for 261
+too far reward
+reward -106.0 for 262
+too far reward
+reward -98 for 263
+too far reward
+reward -105.5 for 264
+crashed reward
+crashed terminal
+
+  3%|▋                      | 282/10000 [00:37<21:09,  7.66it/s]
+too far reward
+reward -101.5 for 266
+too far reward
+reward -100.5 for 267
+too far reward
+reward -114.0 for 268
+too far reward
+reward -104.0 for 269
+too far reward
+reward -98.5 for 270
+too far reward
+reward -98.0 for 271
+too far reward
+reward -118.0 for 272
+too far reward
+reward -102.5 for 273
+too far reward
+reward -101.5 for 274
+too far reward
+reward -99 for 275
+too far reward
+reward -123.0 for 276
+too far reward
+reward -110.5 for 277
+too far reward
+reward -97 for 278
+too far reward
+reward -108.5 for 279
+too far reward
+reward -121.0 for 280
+too far reward
+reward -114.5 for 281
+too far reward
+
+  3%|▋                      | 299/10000 [00:39<23:30,  6.88it/s]
+too far reward
+reward -104.5 for 283
+too far reward
+reward -111.5 for 284
+too far reward
+reward -116.0 for 285
+too far reward
+reward -98 for 286
+too far reward
+reward -107.5 for 287
+too far reward
+reward -103.5 for 288
+too far reward
+reward -116.0 for 289
+too far reward
+reward -101.5 for 290
+too far reward
+reward -98 for 291
+too far reward
+reward -108.5 for 292
+too far reward
+reward -112.0 for 293
+too far reward
+reward -120.0 for 294
+too far reward
+reward -120.0 for 295
+too far reward
+reward -114.0 for 296
+too far reward
+reward -110.5 for 297
+too far reward
+reward -118.0 for 298
+too far reward
+
+  3%|▋                      | 314/10000 [00:42<16:37,  9.71it/s]
+too far reward
+reward -136.5 for 300
+too far reward
+reward -99.5 for 301
+too far reward
+reward -102.0 for 302
+too far reward
+reward -122.0 for 303
+too far reward
+reward -131.5 for 304
+too far reward
+reward -110.5 for 305
+too far reward
+reward -113.0 for 306
+too far reward
+reward -110.5 for 307
+too far reward
+reward -99 for 308
+too far reward
+reward -131.0 for 309
+too far reward
+reward -102.5 for 310
+too far reward
+reward -110.5 for 311
+too far reward
+reward -125.5 for 312
+too far reward
+reward -99 for 313
+too far reward
+
+  3%|▋                      | 325/10000 [00:43<33:18,  4.84it/s]
+too far reward
+reward -114.5 for 315
+too far reward
+reward -104.0 for 316
+too far reward
+reward -135.5 for 317
+too far reward
+reward -100.5 for 318
+too far reward
+reward -104.5 for 319
+too far reward
+reward -103.0 for 320
+too far reward
+reward -113.0 for 321
+too far reward
+reward -118.0 for 322
+too far reward
+reward -108.0 for 323
+too far reward
+reward -132.5 for 324
+too far reward
+
+  3%|▊                      | 343/10000 [00:46<15:54, 10.12it/s]
+too far reward
+reward -118.0 for 326
+too far reward
+reward -102.0 for 327
+too far reward
+reward -120.5 for 328
+too far reward
+reward -105.5 for 329
+too far reward
+reward -118.0 for 330
+too far reward
+reward -99 for 331
+too far reward
+reward -113.5 for 332
+too far reward
+reward -110.0 for 333
+too far reward
+reward -112.5 for 334
+too far reward
+reward -103.5 for 335
+too far reward
+reward -104.5 for 336
+too far reward
+reward -99.0 for 337
+too far reward
+reward -105.0 for 338
+too far reward
+reward -111.0 for 339
+too far reward
+reward -99.5 for 340
+too far reward
+reward -99.0 for 341
+too far reward
+reward -98 for 342
+too far reward
+reward -102.5 for 343
+too far reward
+
+  4%|▊                      | 364/10000 [00:48<20:55,  7.67it/s]
+too far reward
+reward -121.0 for 345
+too far reward
+reward -101.5 for 346
+too far reward
+reward -98 for 347
+too far reward
+reward -103.5 for 348
+too far reward
+reward -99 for 349
+too far reward
+reward -98.5 for 350
+too far reward
+reward -99.0 for 351
+too far reward
+reward -103.0 for 352
+too far reward
+reward -100.5 for 353
+too far reward
+reward -105.0 for 354
+too far reward
+reward -106.0 for 355
+too far reward
+reward -99.5 for 356
+too far reward
+reward -106.5 for 357
+too far reward
+reward -98.0 for 358
+too far reward
+reward -100.0 for 359
+too far reward
+reward -108.5 for 360
+too far reward
+reward -98.5 for 361
+too far reward
+reward -98.0 for 362
+too far reward
+reward -101.5 for 363
+too far reward
+reward -114.0 for 364
+too far reward
+
+  4%|▊                      | 375/10000 [00:49<30:23,  5.28it/s]
+too far reward
+reward -126.0 for 366
+too far reward
+reward -109.5 for 367
+too far reward
+reward -100.5 for 368
+too far reward
+reward -107.0 for 369
+too far reward
+reward -117.5 for 370
+too far reward
+reward -107.0 for 371
+too far reward
+reward -105.0 for 372
+too far reward
+reward -106.0 for 373
+too far reward
+reward -97.5 for 374
+too far reward
+
+  4%|▉                      | 389/10000 [00:52<19:46,  8.10it/s]
+too far reward
+reward -103.0 for 376
+too far reward
+reward -98.0 for 377
+too far reward
+reward -99.5 for 378
+too far reward
+reward -111.0 for 379
+too far reward
+reward -135.0 for 380
+too far reward
+reward -132.0 for 381
+too far reward
+reward -99 for 382
+too far reward
+reward -115.0 for 383
+too far reward
+reward -98 for 384
+too far reward
+reward -99.5 for 385
+too far reward
+reward -99.5 for 386
+too far reward
+reward -103.5 for 387
+too far reward
+reward -104.5 for 388
+too far reward
+
+  4%|▉                      | 403/10000 [00:54<24:20,  6.57it/s]
+too far reward
+reward -99.5 for 390
+too far reward
+reward -119.0 for 391
+too far reward
+reward -95.0 for 392
+too far reward
+reward -100.5 for 393
+too far reward
+reward -114.0 for 394
+too far reward
+reward -101.0 for 395
+too far reward
+reward -110.0 for 396
+too far reward
+reward -101.5 for 397
+too far reward
+reward -98 for 398
+too far reward
+reward -102.5 for 399
+too far reward
+reward -109.0 for 400
+too far reward
+reward -107.5 for 401
+too far reward
+reward -104.5 for 402
+too far reward
+
+  4%|▉                      | 419/10000 [00:56<18:00,  8.86it/s]
+too far reward
+reward -98.5 for 404
+too far reward
+reward -121.0 for 405
+too far reward
+reward -107.0 for 406
+too far reward
+reward -103.5 for 407
+too far reward
+reward -103.0 for 408
+too far reward
+reward -112.0 for 409
+too far reward
+reward -98 for 410
+too far reward
+reward -101.0 for 411
+too far reward
+reward -107.5 for 412
+too far reward
+reward -111.0 for 413
+too far reward
+reward -110.0 for 414
+too far reward
+reward -126.5 for 415
+too far reward
+reward -104.5 for 416
+too far reward
+reward -97 for 417
+too far reward
+reward -98 for 418
+too far reward
+
+  4%|█                      | 441/10000 [00:58<10:34, 15.08it/s]
+too far reward
+reward -100.0 for 420
+too far reward
+reward -108.5 for 421
+too far reward
+reward -115.5 for 422
+too far reward
+reward -131.5 for 423
+too far reward
+reward -122.0 for 424
+too far reward
+reward -115.5 for 425
+too far reward
+reward -119.5 for 426
+too far reward
+reward -108.0 for 427
+too far reward
+reward -101.0 for 428
+too far reward
+reward -99.0 for 429
+too far reward
+reward -99.5 for 430
+too far reward
+reward -98 for 431
+too far reward
+reward -98 for 432
+too far reward
+reward -98 for 433
+too far reward
+reward -99 for 434
+too far reward
+reward -102.0 for 435
+too far reward
+reward -102.0 for 436
+too far reward
+reward -100.0 for 437
+too far reward
+reward -101.5 for 438
+too far reward
+reward -104.5 for 439
+too far reward
+reward -97 for 440
+too far reward
+reward -98 for 441
+too far reward
+
+  5%|█                      | 456/10000 [00:59<19:39,  8.09it/s]
+too far reward
+reward -99.5 for 443
+too far reward
+reward -100.5 for 444
+too far reward
+reward -98 for 445
+too far reward
+reward -117.0 for 446
+too far reward
+reward -98 for 447
+too far reward
+reward -98 for 448
+too far reward
+reward -102.5 for 449
+too far reward
+reward -138.0 for 450
+too far reward
+reward -103.5 for 451
+too far reward
+reward -115.0 for 452
+too far reward
+reward -122.0 for 453
+too far reward
+reward -125.5 for 454
+too far reward
+reward -124.5 for 455
+too far reward
+reward -113.5 for 456
+too far reward
+reward -100.0 for 457
+too far reward
+reward -98.0 for 458
+too far reward
+
+  5%|█                      | 486/10000 [01:02<10:48, 14.68it/s]
+too far reward
+reward -104.5 for 460
+too far reward
+reward -104.0 for 461
+too far reward
+reward -107.5 for 462
+too far reward
+reward -98.5 for 463
+too far reward
+reward -99.0 for 464
+too far reward
+reward -101.0 for 465
+too far reward
+reward -115.5 for 466
+too far reward
+reward -102.5 for 467
+too far reward
+reward -106.0 for 468
+too far reward
+reward -113.0 for 469
+too far reward
+reward -110.5 for 470
+too far reward
+reward -104.0 for 471
+too far reward
+reward -99.5 for 472
+too far reward
+reward -98.5 for 473
+too far reward
+reward -98 for 474
+too far reward
+reward -98.5 for 475
+too far reward
+reward -101.0 for 476
+too far reward
+reward -108.0 for 477
+too far reward
+reward -100.0 for 478
+too far reward
+reward -108.5 for 479
+too far reward
+reward -98.5 for 480
+too far reward
+reward -108.5 for 481
+too far reward
+reward -98.5 for 482
+too far reward
+reward -110.5 for 483
+too far reward
+reward -100.5 for 484
+too far reward
+reward -102.0 for 485
+too far reward
+
+  5%|█▏                     | 510/10000 [01:04<11:24, 13.87it/s]
+too far reward
+reward -128.0 for 487
+too far reward
+reward -122.0 for 488
+too far reward
+reward -104.5 for 489
+too far reward
+reward -110.0 for 490
+too far reward
+reward -105.0 for 491
+too far reward
+reward -104.5 for 492
+too far reward
+reward -103.0 for 493
+too far reward
+reward -106.5 for 494
+too far reward
+reward -111.0 for 495
+too far reward
+reward -103.0 for 496
+too far reward
+reward -98.5 for 497
+too far reward
+reward -102.0 for 498
+too far reward
+reward -99 for 499
+too far reward
+reward -98 for 500
+too far reward
+reward -99.0 for 501
+too far reward
+reward -99 for 502
+too far reward
+reward -98 for 503
+too far reward
+reward -99 for 504
+too far reward
+reward -98 for 505
+too far reward
+reward -105.5 for 506
+too far reward
+reward -101.0 for 507
+too far reward
+reward -101.0 for 508
+too far reward
+reward -98.5 for 509
+too far reward
+
+  5%|█▎                     | 548/10000 [01:06<08:16, 19.02it/s]
+too far reward
+reward -98 for 511
+too far reward
+reward -97 for 512
+too far reward
+reward -99.5 for 513
+too far reward
+reward -98 for 514
+too far reward
+reward -99.0 for 515
+too far reward
+reward -98 for 516
+too far reward
+reward -98 for 517
+too far reward
+reward -102.5 for 518
+too far reward
+reward -100.5 for 519
+too far reward
+reward -98 for 520
+too far reward
+reward -98 for 521
+too far reward
+reward -98 for 522
+too far reward
+reward -98 for 523
+too far reward
+reward -98 for 524
+too far reward
+reward -98 for 525
+too far reward
+reward -98 for 526
+too far reward
+reward -98 for 527
+too far reward
+reward -98 for 528
+too far reward
+reward -98 for 529
+too far reward
+reward -98 for 530
+too far reward
+reward -98 for 531
+too far reward
+reward -98 for 532
+too far reward
+reward -98 for 533
+too far reward
+reward -98 for 534
+too far reward
+reward -98 for 535
+too far reward
+reward -98 for 536
+too far reward
+reward -98 for 537
+too far reward
+reward -98 for 538
+too far reward
+reward -98 for 539
+too far reward
+reward -98 for 540
+too far reward
+reward -98 for 541
+too far reward
+reward -98 for 542
+too far reward
+reward -99 for 543
+too far reward
+reward -98.5 for 544
+too far reward
+reward -98 for 545
+too far reward
+reward -97 for 546
+too far reward
+reward -101.0 for 547
+too far reward
+reward -96 for 548
+too far reward
+
+  6%|█▎                     | 564/10000 [01:07<16:21,  9.61it/s]
+too far reward
+reward -97 for 550
+too far reward
+reward -104.5 for 551
+too far reward
+reward -103.5 for 552
+too far reward
+reward -105.0 for 553
+too far reward
+reward -100.0 for 554
+too far reward
+reward -101.5 for 555
+too far reward
+reward -101.0 for 556
+too far reward
+reward -102.5 for 557
+too far reward
+reward -101.5 for 558
+too far reward
+reward -103.5 for 559
+too far reward
+reward -110.0 for 560
+too far reward
+reward -107.5 for 561
+too far reward
+reward -103.0 for 562
+too far reward
+reward -120.0 for 563
+too far reward
+reward -141.5 for 564
+too far reward
+
+  6%|█▎                     | 582/10000 [01:10<22:44,  6.90it/s]
+too far reward
+reward -407.0 for 566
+too far reward
+reward -98 for 567
+too far reward
+reward -98 for 568
+too far reward
+reward -98 for 569
+too far reward
+reward -98 for 570
+too far reward
+reward -97 for 571
+too far reward
+reward -99.5 for 572
+too far reward
+reward -98 for 573
+too far reward
+reward -103.5 for 574
+too far reward
+reward -98 for 575
+too far reward
+reward -101.0 for 576
+too far reward
+reward -393.0 for 577
+too far reward
+reward -100.0 for 578
+too far reward
+reward -169.5 for 579
+too far reward
+reward -100.0 for 580
+too far reward
+reward -112.0 for 581
+too far reward
+
+  6%|█▍                     | 616/10000 [01:12<08:40, 18.03it/s]
+too far reward
+reward -98.5 for 583
+too far reward
+reward -115.0 for 584
+too far reward
+reward -111.5 for 585
+too far reward
+reward -105.5 for 586
+too far reward
+reward -98 for 587
+too far reward
+reward -99 for 588
+too far reward
+reward -101.5 for 589
+too far reward
+reward -98 for 590
+too far reward
+reward -98 for 591
+too far reward
+reward -98 for 592
+too far reward
+reward -99.0 for 593
+too far reward
+reward -99 for 594
+too far reward
+reward -100.5 for 595
+too far reward
+reward -99.5 for 596
+too far reward
+reward -98 for 597
+too far reward
+reward -99 for 598
+too far reward
+reward -97 for 599
+too far reward
+reward -98 for 600
+too far reward
+reward -98 for 601
+too far reward
+reward -99 for 602
+too far reward
+reward -98 for 603
+too far reward
+reward -99 for 604
+too far reward
+reward -110.5 for 605
+too far reward
+reward -98 for 606
+too far reward
+reward -103.0 for 607
+too far reward
+reward -98 for 608
+too far reward
+reward -104.5 for 609
+too far reward
+reward -99 for 610
+too far reward
+reward -98 for 611
+too far reward
+reward -99 for 612
+too far reward
+reward -99.5 for 613
+too far reward
+reward -99.5 for 614
+too far reward
+reward -98 for 615
+too far reward
+reward -98 for 616
+too far reward
+
+  7%|█▍                     | 652/10000 [01:14<08:56, 17.44it/s]
+too far reward
+reward -99.0 for 618
+too far reward
+reward -100.0 for 619
+too far reward
+reward -100.5 for 620
+too far reward
+reward -104.0 for 621
+too far reward
+reward -98 for 622
+too far reward
+reward -109.0 for 623
+too far reward
+reward -100.0 for 624
+too far reward
+reward -98 for 625
+too far reward
+reward -100.0 for 626
+too far reward
+reward -99 for 627
+too far reward
+reward -98 for 628
+too far reward
+reward -104.0 for 629
+too far reward
+reward -99.5 for 630
+too far reward
+reward -101.0 for 631
+too far reward
+reward -106.5 for 632
+too far reward
+reward -102.5 for 633
+too far reward
+reward -104.0 for 634
+too far reward
+reward -105.5 for 635
+too far reward
+reward -104.5 for 636
+too far reward
+reward -102.5 for 637
+too far reward
+reward -101.0 for 638
+too far reward
+reward -98 for 639
+too far reward
+reward -98 for 640
+too far reward
+reward -98 for 641
+too far reward
+reward -99.5 for 642
+too far reward
+reward -100.0 for 643
+too far reward
+reward -100.0 for 644
+too far reward
+reward -100.0 for 645
+too far reward
+reward -104.0 for 646
+too far reward
+reward -103.0 for 647
+too far reward
+reward -99.5 for 648
+too far reward
+reward -101.5 for 649
+too far reward
+reward -111.5 for 650
+too far reward
+reward -106.5 for 651
+too far reward
+reward -102.0 for 652
+too far reward
+
+  7%|█▌                     | 686/10000 [01:16<08:37, 18.01it/s]
+too far reward
+reward -100.0 for 654
+too far reward
+reward -102.5 for 655
+too far reward
+reward -109.5 for 656
+too far reward
+reward -102.5 for 657
+too far reward
+reward -99.0 for 658
+too far reward
+reward -106.5 for 659
+too far reward
+reward -99 for 660
+too far reward
+reward -98.5 for 661
+too far reward
+reward -105.5 for 662
+too far reward
+reward -98 for 663
+too far reward
+reward -98 for 664
+too far reward
+reward -100.0 for 665
+too far reward
+reward -101.5 for 666
+too far reward
+reward -100.5 for 667
+too far reward
+reward -101.5 for 668
+too far reward
+reward -108.5 for 669
+too far reward
+reward -102.0 for 670
+too far reward
+reward -100.5 for 671
+too far reward
+reward -104.0 for 672
+too far reward
+reward -106.5 for 673
+too far reward
+reward -99.5 for 674
+too far reward
+reward -101.5 for 675
+too far reward
+reward -98 for 676
+too far reward
+reward -104.0 for 677
+too far reward
+reward -98.5 for 678
+too far reward
+reward -98 for 679
+too far reward
+reward -98 for 680
+too far reward
+reward -99.5 for 681
+too far reward
+reward -98 for 682
+too far reward
+reward -99 for 683
+too far reward
+reward -99.0 for 684
+too far reward
+reward -103.0 for 685
+too far reward
+reward -107.0 for 686
+too far reward
+
+  7%|█▋                     | 714/10000 [01:18<13:04, 11.83it/s]
+too far reward
+reward -100.5 for 688
+too far reward
+reward -101.0 for 689
+too far reward
+reward -98.5 for 690
+too far reward
+reward -99 for 691
+too far reward
+reward -106.0 for 692
+too far reward
+reward -98 for 693
+too far reward
+reward -103.5 for 694
+too far reward
+reward -98 for 695
+too far reward
+reward -105.5 for 696
+too far reward
+reward -105.5 for 697
+too far reward
+reward -102.5 for 698
+too far reward
+reward -103.5 for 699
+too far reward
+reward -99.0 for 700
+too far reward
+reward -102.5 for 701
+too far reward
+reward -104.0 for 702
+too far reward
+reward -107.0 for 703
+too far reward
+reward -102.0 for 704
+too far reward
+reward -102.5 for 705
+too far reward
+reward -102.5 for 706
+too far reward
+reward -98.5 for 707
+too far reward
+reward -100.5 for 708
+too far reward
+reward -110.5 for 709
+too far reward
+reward -105.0 for 710
+too far reward
+reward -106.0 for 711
+too far reward
+reward -104.5 for 712
+too far reward
+reward -100.0 for 713
+too far reward
+
+  7%|█▋                     | 743/10000 [01:20<10:00, 15.42it/s]
+too far reward
+reward -106.0 for 715
+too far reward
+reward -97 for 716
+too far reward
+reward -100.0 for 717
+too far reward
+reward -112.5 for 718
+too far reward
+reward -105.5 for 719
+too far reward
+reward -120.0 for 720
+too far reward
+reward -101.5 for 721
+too far reward
+reward -106.0 for 722
+too far reward
+reward -100.0 for 723
+too far reward
+reward -104.5 for 724
+too far reward
+reward -113.5 for 725
+too far reward
+reward -108.0 for 726
+too far reward
+reward -106.5 for 727
+too far reward
+reward -98 for 728
+too far reward
+reward -98 for 729
+too far reward
+reward -98.5 for 730
+too far reward
+reward -98 for 731
+too far reward
+reward -98 for 732
+too far reward
+reward -98 for 733
+too far reward
+reward -100.5 for 734
+too far reward
+reward -99.5 for 735
+too far reward
+reward -104.0 for 736
+too far reward
+reward -107.5 for 737
+too far reward
+reward -102.0 for 738
+too far reward
+reward -111.5 for 739
+too far reward
+reward -112.5 for 740
+too far reward
+reward -99 for 741
+too far reward
+reward -112.0 for 742
+too far reward
+
+  8%|█▊                     | 772/10000 [01:22<09:08, 16.83it/s]
+too far reward
+reward -106.0 for 744
+too far reward
+reward -115.0 for 745
+too far reward
+reward -104.5 for 746
+too far reward
+reward -105.0 for 747
+too far reward
+reward -109.5 for 748
+too far reward
+reward -109.5 for 749
+too far reward
+reward -103.5 for 750
+too far reward
+reward -105.5 for 751
+too far reward
+reward -102.5 for 752
+too far reward
+reward -106.0 for 753
+too far reward
+reward -99.5 for 754
+too far reward
+reward -104.0 for 755
+too far reward
+reward -100.0 for 756
+too far reward
+reward -111.0 for 757
+too far reward
+reward -104.5 for 758
+too far reward
+reward -99 for 759
+too far reward
+reward -98 for 760
+too far reward
+reward -98 for 761
+too far reward
+reward -98 for 762
+too far reward
+reward -98 for 763
+too far reward
+reward -99 for 764
+too far reward
+reward -99 for 765
+too far reward
+reward -106.0 for 766
+too far reward
+reward -101.0 for 767
+too far reward
+reward -106.5 for 768
+too far reward
+reward -98.5 for 769
+too far reward
+reward -98.5 for 770
+too far reward
+reward -101.0 for 771
+too far reward
+reward -100.5 for 772
+too far reward
+
+  8%|█▊                     | 788/10000 [01:23<15:49,  9.70it/s]
+too far reward
+reward -98.5 for 774
+too far reward
+reward -105.5 for 775
+too far reward
+reward -98.5 for 776
+too far reward
+reward -106.0 for 777
+too far reward
+reward -108.5 for 778
+too far reward
+reward -106.0 for 779
+too far reward
+reward -101.0 for 780
+too far reward
+reward -113.0 for 781
+too far reward
+reward -112.5 for 782
+too far reward
+reward -106.5 for 783
+too far reward
+reward -101.5 for 784
+too far reward
+reward -98 for 785
+too far reward
+reward -101.0 for 786
+too far reward
+reward -98 for 787
+too far reward
+reward -100.5 for 788
+too far reward
+reward -111.0 for 789
+too far reward
+reward -103.0 for 790
+too far reward
+reward -113.0 for 791
+too far reward
+reward -101.5 for 792
+too far reward
+
+  8%|█▊                     | 810/10000 [01:25<12:14, 12.50it/s]
+too far reward
+reward -99.5 for 794
+too far reward
+reward -104.0 for 795
+too far reward
+reward -103.5 for 796
+too far reward
+reward -111.0 for 797
+too far reward
+reward -103.0 for 798
+too far reward
+reward -112.0 for 799
+too far reward
+reward -99.0 for 800
+too far reward
+reward -101.0 for 801
+too far reward
+reward -110.0 for 802
+too far reward
+reward -103.5 for 803
+too far reward
+reward -107.5 for 804
+too far reward
+reward -106.0 for 805
+too far reward
+reward -100.0 for 806
+too far reward
+reward -100.0 for 807
+too far reward
+reward -103.0 for 808
+too far reward
+reward -99.5 for 809
+too far reward
+reward -97.5 for 810
+too far reward
+
+  8%|█▉                     | 838/10000 [01:27<10:19, 14.80it/s]
+too far reward
+reward -102.5 for 812
+too far reward
+reward -108.5 for 813
+too far reward
+reward -107.0 for 814
+too far reward
+reward -99.5 for 815
+too far reward
+reward -98 for 816
+too far reward
+reward -98.5 for 817
+too far reward
+reward -111.0 for 818
+too far reward
+reward -102.0 for 819
+too far reward
+reward -100.5 for 820
+too far reward
+reward -112.0 for 821
+too far reward
+reward -109.0 for 822
+too far reward
+reward -109.0 for 823
+too far reward
+reward -102.5 for 824
+too far reward
+reward -104.0 for 825
+too far reward
+reward -106.5 for 826
+too far reward
+reward -99.5 for 827
+too far reward
+reward -102.5 for 828
+too far reward
+reward -100.5 for 829
+too far reward
+reward -109.0 for 830
+too far reward
+reward -107.0 for 831
+too far reward
+reward -101.5 for 832
+too far reward
+reward -98.0 for 833
+too far reward
+reward -99.0 for 834
+too far reward
+reward -101.5 for 835
+too far reward
+reward -108.0 for 836
+too far reward
+reward -102.5 for 837
+too far reward
+reward -98 for 838
+too far reward
+
+  9%|█▉                     | 868/10000 [01:29<10:18, 14.77it/s]
+too far reward
+reward -98.5 for 840
+too far reward
+reward -98 for 841
+too far reward
+reward -112.0 for 842
+too far reward
+reward -98 for 843
+too far reward
+reward -98 for 844
+too far reward
+reward -99 for 845
+too far reward
+reward -98 for 846
+too far reward
+reward -99 for 847
+too far reward
+reward -99.5 for 848
+too far reward
+reward -99.5 for 849
+too far reward
+reward -99.5 for 850
+too far reward
+reward -99.0 for 851
+too far reward
+reward -100.0 for 852
+too far reward
+reward -111.5 for 853
+too far reward
+reward -114.5 for 854
+too far reward
+reward -101.5 for 855
+too far reward
+reward -99.5 for 856
+too far reward
+reward -99.5 for 857
+too far reward
+reward -107.5 for 858
+too far reward
+reward -99.5 for 859
+too far reward
+reward -103.0 for 860
+too far reward
+reward -107.0 for 861
+too far reward
+reward -99 for 862
+too far reward
+reward -100.5 for 863
+too far reward
+reward -98.5 for 864
+too far reward
+reward -98 for 865
+too far reward
+reward -100.5 for 866
+too far reward
+reward -100.5 for 867
+too far reward
+reward -103.5 for 868
+too far reward
+
+  9%|██                     | 892/10000 [01:32<12:41, 11.97it/s]
+too far reward
+reward -103.5 for 870
+too far reward
+reward -102.5 for 871
+too far reward
+reward -103.5 for 872
+too far reward
+reward -103.5 for 873
+too far reward
+reward -108.5 for 874
+too far reward
+reward -105.0 for 875
+too far reward
+reward -99.5 for 876
+too far reward
+reward -112.5 for 877
+too far reward
+reward -100.0 for 878
+too far reward
+reward -108.5 for 879
+too far reward
+reward -114.5 for 880
+too far reward
+reward -103.5 for 881
+too far reward
+reward -113.5 for 882
+too far reward
+reward -101.0 for 883
+too far reward
+reward -108.5 for 884
+too far reward
+reward -102.5 for 885
+too far reward
+reward -100.0 for 886
+too far reward
+reward -102.0 for 887
+too far reward
+reward -100.5 for 888
+too far reward
+reward -100.0 for 889
+too far reward
+reward -107.0 for 890
+too far reward
+reward -102.5 for 891
+too far reward
+
+  9%|██                     | 914/10000 [01:34<14:02, 10.78it/s]
+too far reward
+reward -102.0 for 893
+too far reward
+reward -100.5 for 894
+too far reward
+reward -105.5 for 895
+too far reward
+reward -109.5 for 896
+too far reward
+reward -107.0 for 897
+too far reward
+reward -115.0 for 898
+too far reward
+reward -109.5 for 899
+too far reward
+reward -102.5 for 900
+too far reward
+reward -100.0 for 901
+too far reward
+reward -107.5 for 902
+too far reward
+reward -110.0 for 903
+too far reward
+reward -103.5 for 904
+too far reward
+reward -101.0 for 905
+too far reward
+reward -101.5 for 906
+too far reward
+reward -109.5 for 907
+too far reward
+reward -103.5 for 908
+too far reward
+reward -102.5 for 909
+too far reward
+reward -102.5 for 910
+too far reward
+reward -107.0 for 911
+too far reward
+reward -104.5 for 912
+too far reward
+reward -104.5 for 913
+too far reward
+
+  9%|██▏                    | 942/10000 [01:36<10:12, 14.80it/s]
+too far reward
+reward -110.0 for 915
+too far reward
+reward -103.5 for 916
+too far reward
+reward -106.5 for 917
+too far reward
+reward -98 for 918
+too far reward
+reward -107.5 for 919
+too far reward
+reward -104.5 for 920
+too far reward
+reward -99.5 for 921
+too far reward
+reward -114.0 for 922
+too far reward
+reward -111.5 for 923
+too far reward
+reward -99 for 924
+too far reward
+reward -100.5 for 925
+too far reward
+reward -103.5 for 926
+too far reward
+reward -104.5 for 927
+too far reward
+reward -97.5 for 928
+too far reward
+reward -99.0 for 929
+too far reward
+reward -99.5 for 930
+too far reward
+reward -105.5 for 931
+too far reward
+reward -106.0 for 932
+too far reward
+reward -99.0 for 933
+too far reward
+reward -102.5 for 934
+too far reward
+reward -99.0 for 935
+too far reward
+reward -101.0 for 936
+too far reward
+reward -100.0 for 937
+too far reward
+reward -112.0 for 938
+too far reward
+reward -102.0 for 939
+too far reward
+reward -97 for 940
+too far reward
+reward -99.5 for 941
+too far reward
+
+ 10%|██▏                    | 960/10000 [01:38<15:32,  9.69it/s]
+too far reward
+reward -104.5 for 943
+too far reward
+reward -112.5 for 944
+too far reward
+reward -117.5 for 945
+too far reward
+reward -102.0 for 946
+too far reward
+reward -105.0 for 947
+too far reward
+reward -116.0 for 948
+too far reward
+reward -107.5 for 949
+too far reward
+reward -107.0 for 950
+too far reward
+reward -114.5 for 951
+too far reward
+reward -111.0 for 952
+too far reward
+reward -107.5 for 953
+too far reward
+reward -105.0 for 954
+too far reward
+reward -101.0 for 955
+too far reward
+reward -108.5 for 956
+too far reward
+reward -111.5 for 957
+too far reward
+reward -101.5 for 958
+too far reward
+reward -101.0 for 959
+too far reward
+
+ 10%|██▏                    | 974/10000 [01:40<23:40,  6.36it/s]
+too far reward
+reward -112.5 for 961
+too far reward
+reward -119.0 for 962
+too far reward
+reward -106.5 for 963
+too far reward
+reward -112.5 for 964
+too far reward
+reward -115.0 for 965
+too far reward
+reward -102.0 for 966
+too far reward
+reward -103.5 for 967
+too far reward
+reward -109.5 for 968
+too far reward
+reward -112.5 for 969
+too far reward
+reward -108.5 for 970
+too far reward
+reward -104.5 for 971
+too far reward
+reward -105.5 for 972
+too far reward
+reward -108.5 for 973
+too far reward
+
+ 10%|██▎                    | 988/10000 [01:42<16:29,  9.11it/s]
+too far reward
+reward -98.5 for 975
+too far reward
+reward -98.5 for 976
+too far reward
+reward -109.5 for 977
+too far reward
+reward -132.5 for 978
+too far reward
+reward -108.0 for 979
+too far reward
+reward -124.5 for 980
+too far reward
+reward -116.5 for 981
+too far reward
+reward -145.0 for 982
+too far reward
+reward -104.5 for 983
+too far reward
+reward -109.0 for 984
+too far reward
+reward -109.5 for 985
+too far reward
+reward -107.5 for 986
+too far reward
+reward -101.0 for 987
+too far reward
+ 10%|██▏                   | 1003/10000 [01:43<15:32,  9.65it/s]
+Traceback (most recent call last):
+  File "Complete.py", line 353, in <module>
+    run_experiment(current_env , current_agent , environment_parameters , agent_parameters , experiment_parameters)
+  File "Complete.py", line 273, in run_experiment
+    rl_glue.rl_episode(experiment_parameters["timeout"])
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 190, in rl_episode
+    rl_step_result = self.rl_step()
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 140, in rl_step
+    self.last_action = self.agent.agent_step(reward, last_state)
+  File "Complete.py", line 231, in agent_step
+    optimize_network(experiences , self.discount , self.optimizer , self.network , current_q , self.tau)
+  File "Complete.py", line 179, in optimize_network
+    weights = optimizer.update_weights(network.get_weights() , td_update)
+  File "Complete.py", line 110, in update_weights
+    self.m[i][param] = self.beta_m * self.m[i][param] + (1 - self.beta_m) * td_errors_times_gradients[i][param]
+KeyboardInterrupt
+too far reward
+reward -106.0 for 989
+too far reward
+reward -110.5 for 990
+too far reward
+reward -107.5 for 991
+too far reward
+reward -104.0 for 992
+too far reward
+reward -106.0 for 993
+too far reward
+reward -108.5 for 994
+too far reward
+reward -99.0 for 995
+too far reward
+reward -109.5 for 996
+too far reward
+reward -102.5 for 997
+too far reward
+reward -109.0 for 998
+too far reward
+reward -112.5 for 999
+too far reward
+reward -118.0 for 1000
+too far reward
+reward -111.5 for 1001
+too far reward
+reward -99.0 for 1002
+too far reward
+reward -100.5 for 1003

@@ -1,0 +1,230 @@
+
+No input weights, start from scratch
+  0%|                          | 1/1000 [00:01<24:57,  1.50s/it]
+crashed reward
+crashed terminal
+reward -100 for 1
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+
+  0%|                        | 2/1000 [00:20<3:18:51, 11.96s/it]
+crashed reward
+crashed terminal
+
+  0%|                        | 3/1000 [00:22<2:02:07,  7.35s/it]
+crashed reward
+crashed terminal
+
+  0%|                        | 4/1000 [00:24<1:23:09,  5.01s/it]
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+
+  0%|                        | 5/1000 [00:33<1:48:31,  6.54s/it]
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+too far reward
+
+  1%|▏                       | 6/1000 [00:40<1:51:13,  6.71s/it]
+crashed reward
+crashed terminal
+
+  1%|▏                       | 7/1000 [00:51<2:16:28,  8.25s/it]
+crashed reward
+crashed terminal
+
+  1%|▏                       | 8/1000 [01:00<2:18:35,  8.38s/it]
+crashed reward
+crashed terminal
+
+  1%|▏                       | 9/1000 [01:16<2:58:51, 10.83s/it]
+crashed reward
+crashed terminal
+
+  1%|▏                      | 10/1000 [01:23<2:18:09,  8.37s/it]
+Traceback (most recent call last):
+  File "Complete.py", line 353, in <module>
+    run_experiment(current_env , current_agent , environment_parameters , agent_parameters , experiment_parameters)
+  File "Complete.py", line 273, in run_experiment
+    rl_glue.rl_episode(experiment_parameters["timeout"])
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 190, in rl_episode
+    rl_step_result = self.rl_step()
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 130, in rl_step
+    (reward, last_state, term) = self.environment.env_step(self.last_action)
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/Simulator.py", line 266, in env_step
+    self.visual_update()
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/Simulator.py", line 444, in visual_update
+    label(f"Altitude: {round(np.linalg.norm(satellite_1.position - earth.position) - self.earth_radius, 2)}" , (self.width - 300, 100) , screen )
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/Extra.py", line 8, in label
+    label = font.render(text, True, (255, 255, 255))
+KeyboardInterrupt

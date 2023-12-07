@@ -1,0 +1,37 @@
+{
+    "os": "macOS-12.5.1-arm64-arm-64bit",
+    "python": "3.8.18",
+    "heartbeatAt": "2023-12-06T22:02:08.955592",
+    "startedAt": "2023-12-06T22:02:08.250575",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "Complete.py",
+    "codePathLocal": "Complete.py",
+    "codePath": "sim/Complete.py",
+    "git": {
+        "remote": "https://github.com/pnikitits/SatelliteTransfer.git",
+        "commit": "fe44eadf47be68f42776ab963d3b6e4d69d58ace"
+    },
+    "email": "hugoderohanwillner@gmail.com",
+    "root": "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1",
+    "host": "Hugos-MBP.numericable.fr",
+    "username": "hugoderohanwillner",
+    "executable": "/Users/hugoderohanwillner/anaconda3/envs/Lab_Project/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "/": {
+            "total": 228.27386474609375,
+            "used": 165.6220359802246
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 8.0
+    }
+}

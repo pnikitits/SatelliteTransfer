@@ -1,0 +1,26 @@
+No input weights, start from scratch
+crashed reward
+crashed terminal
+reward -100 for 1
+  0%|                          | 1/1000 [00:01<24:33,  1.47s/it]
+crashed reward
+crashed terminal
+
+  0%|                        | 3/1000 [00:45<4:13:46, 15.27s/it]
+Traceback (most recent call last):
+  File "Complete.py", line 353, in <module>
+    run_experiment(current_env , current_agent , environment_parameters , agent_parameters , experiment_parameters)
+  File "Complete.py", line 273, in run_experiment
+    rl_glue.rl_episode(experiment_parameters["timeout"])
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 190, in rl_episode
+    rl_step_result = self.rl_step()
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 130, in rl_step
+    (reward, last_state, term) = self.environment.env_step(self.last_action)
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/Simulator.py", line 266, in env_step
+    self.visual_update()
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/Simulator.py", line 406, in visual_update
+    bg = pygame.image.load("img2.jpg")
+KeyboardInterrupt
+crashed reward
+crashed terminal
+reward -100 for 3

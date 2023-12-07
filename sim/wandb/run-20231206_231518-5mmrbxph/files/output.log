@@ -1,0 +1,215 @@
+
+  1%|▏                         | 8/1000 [00:01<02:40,  6.19it/s]
+No input weights, start from scratch
+crashed reward
+crashed terminal
+reward -100 for 1
+crashed reward
+crashed terminal
+reward -100.0 for 2
+crashed reward
+crashed terminal
+reward -152.0 for 3
+crashed reward
+crashed terminal
+reward -124.0 for 4
+crashed reward
+crashed terminal
+reward -77.0 for 5
+crashed reward
+crashed terminal
+reward -84.5 for 6
+crashed reward
+crashed terminal
+reward -102.5 for 7
+crashed reward
+crashed terminal
+
+  2%|▍                        | 16/1000 [00:03<03:58,  4.13it/s]
+crashed reward
+crashed terminal
+reward -155.5 for 9
+crashed reward
+crashed terminal
+reward -105.5 for 10
+crashed reward
+crashed terminal
+reward -85.5 for 11
+crashed reward
+crashed terminal
+reward -135.0 for 12
+crashed reward
+crashed terminal
+reward -116.5 for 13
+crashed reward
+crashed terminal
+reward -116.5 for 14
+too far reward
+reward -41.0 for 15
+crashed reward
+crashed terminal
+reward -114.0 for 16
+crashed reward
+crashed terminal
+
+  3%|▋                        | 26/1000 [00:05<03:21,  4.83it/s]
+crashed reward
+crashed terminal
+reward -114.0 for 18
+crashed reward
+crashed terminal
+reward -106.0 for 19
+crashed reward
+crashed terminal
+reward -100 for 20
+crashed reward
+crashed terminal
+reward -101.5 for 21
+too far reward
+reward -40.0 for 22
+crashed reward
+crashed terminal
+reward -104.5 for 23
+too far reward
+reward -22.0 for 24
+crashed reward
+crashed terminal
+reward -105.5 for 25
+crashed reward
+crashed terminal
+reward -150.0 for 26
+crashed reward
+crashed terminal
+reward -165.5 for 27
+crashed reward
+crashed terminal
+reward -153.5 for 28
+crashed reward
+crashed terminal
+reward -179.0 for 29
+crashed reward
+crashed terminal
+reward -180.5 for 30
+crashed reward
+crashed terminal
+
+  3%|▊                        | 31/1000 [00:07<07:06,  2.27it/s]
+crashed reward
+crashed terminal
+reward -144.5 for 32
+crashed reward
+crashed terminal
+reward -161.5 for 33
+crashed reward
+crashed terminal
+reward -175.5 for 34
+too far reward
+
+  4%|▉                        | 35/1000 [00:09<08:22,  1.92it/s]
+crashed reward
+crashed terminal
+reward -143.5 for 36
+crashed reward
+crashed terminal
+reward -115.0 for 37
+too far reward
+reward -55.0 for 38
+crashed reward
+crashed terminal
+reward -123.0 for 39
+too far reward
+
+
+  5%|█▏                       | 47/1000 [00:13<05:42,  2.78it/s]
+too far reward
+reward -76.5 for 41
+crashed reward
+crashed terminal
+reward -150.0 for 42
+crashed reward
+crashed terminal
+reward -122.5 for 43
+crashed reward
+crashed terminal
+reward -121.5 for 44
+crashed reward
+crashed terminal
+reward -117.0 for 45
+crashed reward
+crashed terminal
+reward -148.0 for 46
+too far reward
+
+  5%|█▎                       | 54/1000 [00:15<05:33,  2.84it/s]
+crashed reward
+crashed terminal
+reward -117.5 for 48
+crashed reward
+crashed terminal
+reward -122.5 for 49
+crashed reward
+crashed terminal
+reward -110.5 for 50
+crashed reward
+crashed terminal
+reward -139.0 for 51
+crashed reward
+crashed terminal
+reward -116.5 for 52
+too far reward
+reward -31.0 for 53
+crashed reward
+crashed terminal
+
+  6%|█▍                       | 59/1000 [00:17<06:09,  2.55it/s]
+crashed reward
+crashed terminal
+reward -113.0 for 55
+crashed reward
+crashed terminal
+reward -115.5 for 56
+crashed reward
+crashed terminal
+reward -84.0 for 57
+too far reward
+reward -90.0 for 58
+crashed reward
+crashed terminal
+
+  6%|█▌                       | 64/1000 [00:19<07:08,  2.18it/s]
+crashed reward
+crashed terminal
+reward -113.0 for 60
+crashed reward
+crashed terminal
+reward -123.5 for 61
+crashed reward
+crashed terminal
+reward -100.5 for 62
+crashed reward
+crashed terminal
+reward -248.5 for 63
+crashed reward
+crashed terminal
+  7%|█▋                       | 67/1000 [00:21<04:55,  3.16it/s]
+Traceback (most recent call last):
+  File "Complete.py", line 353, in <module>
+    run_experiment(current_env , current_agent , environment_parameters , agent_parameters , experiment_parameters)
+  File "Complete.py", line 273, in run_experiment
+    rl_glue.rl_episode(experiment_parameters["timeout"])
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 190, in rl_episode
+    rl_step_result = self.rl_step()
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 130, in rl_step
+    (reward, last_state, term) = self.environment.env_step(self.last_action)
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/Simulator.py", line 272, in env_step
+    reward = self.calculate_reward(action)
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/Simulator.py", line 169, in calculate_reward
+    alt_diff = abs(sat_1_alt - sat_2_alt)
+KeyboardInterrupt
+crashed reward
+crashed terminal
+reward -115.5 for 65
+reward -32.5 for 66
+crashed reward
+crashed terminal
+reward -121.0 for 67

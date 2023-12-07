@@ -10,7 +10,7 @@ from tqdm import tqdm
 import os
 import shutil
 from plot_script import plot_result
-
+import wandb
 import pickle
 
 
@@ -280,8 +280,12 @@ def run_experiment(environment , agent , environment_parameters , agent_paramete
             # if ep_count%1000 == 0:
             #     rl_glue.environment.plot_alts(ep_count)
 
-            if episode_reward > 100000:
-                rl_glue.environment.plot_alts(ep_count)
+            # wand logging
+            wandb.log({
+                "reward": episode_reward,
+                "min_dist": min_dist_reached,
+                "episode": episode
+            })
             
             agnet_sum_reward[run - 1 , episode - 1] = episode_reward
 
@@ -320,13 +324,13 @@ if __name__ == "__main__":
     
 
     experiment_parameters = {"num_runs":1,
-                             "num_episodes":4000,
-                             "timeout":800}
+                             "num_episodes":10000,
+                             "timeout":20000}
     environment_parameters = {}
     current_env = SatelliteEnvironment
     agent_parameters = {"network_config":{"state_dim":2,
                                           "num_hidden_units":256,
-                                          "num_actions":2,
+                                          "num_actions":6,
                                           "weights_file":weight_file},
                         "optimizer_config":{"step_size":1e-3,
                                             "beta_m":0.9,
@@ -336,9 +340,14 @@ if __name__ == "__main__":
                         "minibatch_size":8,
                         "num_replay_updates_per_step":4,
                         "gamma":0.99,
-                        "tau":0.01}
+                        "tau":0.001}
     
-    
+    # wandb setup
+    wandb.login()
+    wandb.init(
+        project="satelliteRL",
+        config = agent_parameters
+    )
 
     current_agent = Agent
     run_experiment(current_env , current_agent , environment_parameters , agent_parameters , experiment_parameters)

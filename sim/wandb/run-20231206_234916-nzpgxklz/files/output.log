@@ -1,0 +1,4207 @@
+No input weights, start from scratch
+crashed reward
+crashed terminal
+reward -100 for 1
+crashed reward
+crashed terminal
+reward -99.0 for 2
+reward -21.0 for 3
+crashed reward
+crashed terminal
+reward -81.0 for 4
+  0%|                       | 4/10000 [00:01<1:06:20,  2.51it/s]
+too far reward
+reward -140.5 for 5
+crashed reward
+crashed terminal
+reward -103.5 for 6
+too far reward
+reward -82.0 for 7
+too far reward
+reward -140.0 for 8
+crashed reward
+crashed terminal
+reward -82.5 for 9
+crashed reward
+crashed terminal
+reward -88.0 for 10
+crashed reward
+crashed terminal
+reward -104.0 for 11
+too far reward
+
+  0%|                        | 12/10000 [00:03<45:36,  3.65it/s]
+crashed reward
+crashed terminal
+reward -74.5 for 13
+too far reward
+reward -121.0 for 14
+too far reward
+reward -280.5 for 15
+crashed reward
+crashed terminal
+reward -123.0 for 16
+crashed reward
+crashed terminal
+
+  0%|                      | 17/10000 [00:05<1:01:15,  2.72it/s]
+crashed reward
+crashed terminal
+reward -115.5 for 18
+crashed reward
+crashed terminal
+reward -122.5 for 19
+crashed reward
+crashed terminal
+reward -103.5 for 20
+crashed reward
+crashed terminal
+reward -130.0 for 21
+crashed reward
+crashed terminal
+reward -134.0 for 22
+crashed reward
+crashed terminal
+reward -108.0 for 23
+crashed reward
+crashed terminal
+reward -128.0 for 24
+crashed reward
+crashed terminal
+reward -115.0 for 25
+crashed reward
+crashed terminal
+reward -109.0 for 26
+crashed reward
+crashed terminal
+
+
+  0%|                        | 32/10000 [00:09<47:24,  3.50it/s]
+crashed reward
+crashed terminal
+reward -136.5 for 28
+too far reward
+reward -100.5 for 29
+crashed reward
+crashed terminal
+reward -124.0 for 30
+too far reward
+reward -126.5 for 31
+crashed reward
+crashed terminal
+
+  0%|                        | 38/10000 [00:11<48:22,  3.43it/s]
+too far reward
+reward -137.5 for 33
+crashed reward
+crashed terminal
+reward -116.0 for 34
+crashed reward
+crashed terminal
+reward -138.0 for 35
+crashed reward
+crashed terminal
+reward -104.0 for 36
+crashed reward
+crashed terminal
+reward -113.0 for 37
+crashed reward
+crashed terminal
+
+  0%|                      | 43/10000 [00:13<1:04:27,  2.57it/s]
+too far reward
+reward -125.0 for 39
+crashed reward
+crashed terminal
+reward -183.0 for 40
+crashed reward
+crashed terminal
+reward -118.5 for 41
+crashed reward
+crashed terminal
+reward -168.0 for 42
+crashed reward
+crashed terminal
+
+  0%|                      | 47/10000 [00:15<1:09:57,  2.37it/s]
+crashed reward
+crashed terminal
+reward -134.0 for 44
+reward -62.5 for 45
+crashed reward
+crashed terminal
+reward -113.5 for 46
+crashed reward
+crashed terminal
+
+  1%|▏                       | 54/10000 [00:17<46:59,  3.53it/s]
+crashed reward
+crashed terminal
+reward -166.0 for 48
+crashed reward
+crashed terminal
+reward -129.5 for 49
+crashed reward
+crashed terminal
+reward -114.5 for 50
+crashed reward
+crashed terminal
+reward -124.0 for 51
+crashed reward
+crashed terminal
+reward -105.0 for 52
+crashed reward
+crashed terminal
+reward -108.0 for 53
+too far reward
+
+  1%|▏                       | 60/10000 [00:19<54:45,  3.03it/s]
+crashed reward
+crashed terminal
+reward -137.0 for 55
+crashed reward
+crashed terminal
+reward -113.0 for 56
+crashed reward
+crashed terminal
+reward -120.0 for 57
+crashed reward
+crashed terminal
+reward -95.0 for 58
+crashed reward
+crashed terminal
+reward -82.0 for 59
+crashed reward
+crashed terminal
+
+  1%|▏                     | 64/10000 [00:21<1:01:39,  2.69it/s]
+reward -46.5 for 61
+crashed reward
+crashed terminal
+reward -121.5 for 62
+crashed reward
+crashed terminal
+reward -140.0 for 63
+crashed reward
+crashed terminal
+
+  1%|▏                       | 69/10000 [00:23<55:18,  2.99it/s]
+crashed reward
+crashed terminal
+reward -169.5 for 65
+crashed reward
+crashed terminal
+reward -105.5 for 66
+too far reward
+reward -125.0 for 67
+too far reward
+reward -98.0 for 68
+crashed reward
+crashed terminal
+
+  1%|▏                       | 75/10000 [00:25<51:28,  3.21it/s]
+too far reward
+reward -118.5 for 70
+crashed reward
+crashed terminal
+reward -114.0 for 71
+too far reward
+reward -128.5 for 72
+crashed reward
+crashed terminal
+reward -117.0 for 73
+too far reward
+reward -104.5 for 74
+crashed reward
+crashed terminal
+
+  1%|▏                       | 81/10000 [00:27<52:21,  3.16it/s]
+crashed reward
+crashed terminal
+reward -76.5 for 76
+crashed reward
+crashed terminal
+reward -111.0 for 77
+crashed reward
+crashed terminal
+reward -105.5 for 78
+crashed reward
+crashed terminal
+reward -101.5 for 79
+crashed reward
+crashed terminal
+reward -150.0 for 80
+crashed reward
+crashed terminal
+
+  1%|▏                       | 87/10000 [00:29<42:48,  3.86it/s]
+crashed reward
+crashed terminal
+reward -112.5 for 82
+too far reward
+reward -111.0 for 83
+crashed reward
+crashed terminal
+reward -107.0 for 84
+too far reward
+reward -106.5 for 85
+crashed reward
+crashed terminal
+reward -134.5 for 86
+crashed reward
+crashed terminal
+
+  1%|▏                     | 93/10000 [00:32<1:05:54,  2.51it/s]
+crashed reward
+crashed terminal
+reward -146.0 for 88
+crashed reward
+crashed terminal
+reward -94 for 89
+crashed reward
+crashed terminal
+reward -103.0 for 90
+too far reward
+reward -139.5 for 91
+crashed reward
+crashed terminal
+reward -114.5 for 92
+crashed reward
+crashed terminal
+
+  1%|▏                       | 99/10000 [00:33<54:35,  3.02it/s]
+crashed reward
+crashed terminal
+reward -125.0 for 94
+crashed reward
+crashed terminal
+reward -92.5 for 95
+crashed reward
+crashed terminal
+reward -106.0 for 96
+crashed reward
+crashed terminal
+reward -102.0 for 97
+crashed reward
+crashed terminal
+reward -127.5 for 98
+crashed reward
+crashed terminal
+
+  1%|▏                      | 106/10000 [00:36<56:20,  2.93it/s]
+crashed reward
+crashed terminal
+reward -127.0 for 100
+crashed reward
+crashed terminal
+reward -117.0 for 101
+crashed reward
+crashed terminal
+reward -143.0 for 102
+crashed reward
+crashed terminal
+reward -118.5 for 103
+crashed reward
+crashed terminal
+reward -88.5 for 104
+crashed reward
+crashed terminal
+reward -177.0 for 105
+crashed reward
+crashed terminal
+
+  1%|▎                      | 113/10000 [00:38<41:10,  4.00it/s]
+crashed reward
+crashed terminal
+reward -100.0 for 107
+crashed reward
+crashed terminal
+reward -100.0 for 108
+crashed reward
+crashed terminal
+reward -98.5 for 109
+crashed reward
+crashed terminal
+reward -133.0 for 110
+crashed reward
+crashed terminal
+reward -104.5 for 111
+crashed reward
+crashed terminal
+reward -93.0 for 112
+crashed reward
+crashed terminal
+reward -104.0 for 113
+crashed reward
+crashed terminal
+reward -121.0 for 114
+crashed reward
+crashed terminal
+reward -90 for 115
+crashed reward
+crashed terminal
+reward -100 for 116
+crashed reward
+crashed terminal
+reward -114.5 for 117
+crashed reward
+crashed terminal
+reward -112.5 for 118
+crashed reward
+crashed terminal
+
+  1%|▎                      | 119/10000 [00:40<47:08,  3.49it/s]
+crashed reward
+crashed terminal
+reward -115.5 for 120
+crashed reward
+crashed terminal
+reward -124.5 for 121
+crashed reward
+crashed terminal
+reward -141.5 for 122
+too far reward
+reward -146.0 for 123
+crashed reward
+crashed terminal
+
+  1%|▎                    | 124/10000 [00:42<1:07:32,  2.44it/s]
+crashed reward
+crashed terminal
+reward -149.5 for 125
+crashed reward
+crashed terminal
+reward -112.0 for 126
+crashed reward
+crashed terminal
+reward -106.5 for 127
+crashed reward
+crashed terminal
+reward -106.0 for 128
+crashed reward
+crashed terminal
+reward -115.5 for 129
+crashed reward
+crashed terminal
+
+  1%|▎                      | 130/10000 [00:44<55:29,  2.96it/s]
+crashed reward
+crashed terminal
+reward -124.5 for 131
+crashed reward
+crashed terminal
+reward -145.0 for 132
+crashed reward
+crashed terminal
+reward -110.5 for 133
+crashed reward
+crashed terminal
+
+  1%|▎                    | 134/10000 [00:45<1:03:51,  2.57it/s]
+crashed reward
+crashed terminal
+reward -115.0 for 135
+crashed reward
+crashed terminal
+reward -86.5 for 136
+crashed reward
+crashed terminal
+reward -143.5 for 137
+crashed reward
+crashed terminal
+
+  1%|▎                    | 138/10000 [00:48<1:33:04,  1.77it/s]
+crashed reward
+crashed terminal
+reward -112.0 for 139
+crashed reward
+crashed terminal
+reward -170.5 for 140
+crashed reward
+crashed terminal
+reward -105.5 for 141
+crashed reward
+crashed terminal
+reward -116.5 for 142
+crashed reward
+crashed terminal
+
+  1%|▎                    | 143/10000 [00:50<1:00:48,  2.70it/s]
+crashed reward
+crashed terminal
+reward -126.5 for 144
+crashed reward
+crashed terminal
+reward -111.5 for 145
+too far reward
+reward -140.0 for 146
+crashed reward
+crashed terminal
+
+
+  2%|▎                    | 150/10000 [00:53<1:40:35,  1.63it/s]
+crashed reward
+crashed terminal
+reward -91.0 for 148
+crashed reward
+crashed terminal
+reward -120.0 for 149
+too far reward
+
+  2%|▎                    | 155/10000 [00:56<1:25:49,  1.91it/s]
+crashed reward
+crashed terminal
+reward -201.0 for 151
+too far reward
+reward -142.5 for 152
+crashed reward
+crashed terminal
+reward -130.5 for 153
+crashed reward
+crashed terminal
+reward -96.0 for 154
+crashed reward
+crashed terminal
+
+  2%|▎                    | 159/10000 [00:58<1:08:21,  2.40it/s]
+too far reward
+reward -172.0 for 156
+crashed reward
+crashed terminal
+reward -95.5 for 157
+crashed reward
+crashed terminal
+reward -105.5 for 158
+too far reward
+reward -112.0 for 159
+crashed reward
+crashed terminal
+reward -130.5 for 160
+crashed reward
+crashed terminal
+reward -109.5 for 161
+crashed reward
+crashed terminal
+reward -79.5 for 162
+crashed reward
+crashed terminal
+reward -118.5 for 163
+crashed reward
+crashed terminal
+reward -104.5 for 164
+crashed reward
+crashed terminal
+reward -119.5 for 165
+crashed reward
+crashed terminal
+reward -118.0 for 166
+crashed reward
+crashed terminal
+
+  2%|▍                      | 167/10000 [01:00<43:22,  3.78it/s]
+crashed reward
+crashed terminal
+reward -121.0 for 168
+crashed reward
+crashed terminal
+reward -105.5 for 169
+crashed reward
+crashed terminal
+reward -153.5 for 170
+crashed reward
+crashed terminal
+reward -119.5 for 171
+crashed reward
+crashed terminal
+reward -130.0 for 172
+crashed reward
+crashed terminal
+
+  2%|▍                      | 173/10000 [01:02<56:36,  2.89it/s]
+crashed reward
+crashed terminal
+reward -79.0 for 174
+crashed reward
+crashed terminal
+reward -123.5 for 175
+too far reward
+reward -156.0 for 176
+crashed reward
+crashed terminal
+reward -160.5 for 177
+crashed reward
+crashed terminal
+reward -103.0 for 178
+crashed reward
+crashed terminal
+
+  2%|▍                      | 179/10000 [01:04<52:26,  3.12it/s]
+crashed reward
+crashed terminal
+reward -109.5 for 180
+too far reward
+reward -164.0 for 181
+crashed reward
+crashed terminal
+
+  2%|▍                    | 182/10000 [01:05<1:10:22,  2.33it/s]
+crashed reward
+crashed terminal
+reward -144.5 for 183
+crashed reward
+crashed terminal
+reward -117.5 for 184
+crashed reward
+crashed terminal
+reward -93.5 for 185
+crashed reward
+crashed terminal
+reward -188.5 for 186
+too far reward
+
+
+  2%|▍                      | 193/10000 [01:09<45:09,  3.62it/s]
+crashed reward
+crashed terminal
+reward -107.0 for 188
+crashed reward
+crashed terminal
+reward -71.5 for 189
+crashed reward
+crashed terminal
+reward -100.5 for 190
+crashed reward
+crashed terminal
+reward -102.0 for 191
+crashed reward
+crashed terminal
+reward -130.5 for 192
+crashed reward
+crashed terminal
+
+  2%|▍                    | 196/10000 [01:12<1:39:22,  1.64it/s]
+reward -92.5 for 194
+too far reward
+reward -134.5 for 195
+
+  2%|▍                    | 200/10000 [01:14<1:25:45,  1.90it/s]
+crashed reward
+crashed terminal
+reward -123.0 for 197
+crashed reward
+crashed terminal
+reward -156.0 for 198
+crashed reward
+crashed terminal
+reward -94.0 for 199
+crashed reward
+crashed terminal
+
+  2%|▍                      | 205/10000 [01:15<46:09,  3.54it/s]
+too far reward
+reward -125.5 for 201
+crashed reward
+crashed terminal
+reward -122.5 for 202
+crashed reward
+crashed terminal
+reward -122.5 for 203
+crashed reward
+crashed terminal
+reward -97.5 for 204
+crashed reward
+crashed terminal
+
+  2%|▍                      | 211/10000 [01:17<52:35,  3.10it/s]
+reward -33.0 for 206
+crashed reward
+crashed terminal
+reward -106.0 for 207
+crashed reward
+crashed terminal
+reward -97.5 for 208
+crashed reward
+crashed terminal
+reward -115.0 for 209
+crashed reward
+crashed terminal
+reward -115.0 for 210
+crashed reward
+crashed terminal
+
+  2%|▍                    | 217/10000 [01:19<1:15:44,  2.15it/s]
+too far reward
+reward -98.0 for 212
+crashed reward
+crashed terminal
+reward -105.0 for 213
+crashed reward
+crashed terminal
+reward -105.5 for 214
+crashed reward
+crashed terminal
+reward -112.0 for 215
+crashed reward
+crashed terminal
+reward -93.5 for 216
+too far reward
+
+  2%|▌                      | 224/10000 [01:21<43:20,  3.76it/s]
+crashed reward
+crashed terminal
+reward -119.5 for 218
+crashed reward
+crashed terminal
+reward -116.0 for 219
+crashed reward
+crashed terminal
+reward -104.0 for 220
+crashed reward
+crashed terminal
+reward -157.0 for 221
+crashed reward
+crashed terminal
+reward -109.5 for 222
+crashed reward
+crashed terminal
+reward -110.5 for 223
+crashed reward
+crashed terminal
+
+  2%|▍                    | 229/10000 [01:23<1:08:10,  2.39it/s]
+crashed reward
+crashed terminal
+reward -113.0 for 225
+crashed reward
+crashed terminal
+reward -96.5 for 226
+crashed reward
+crashed terminal
+reward -117.5 for 227
+crashed reward
+crashed terminal
+reward -110.5 for 228
+crashed reward
+crashed terminal
+
+  2%|▍                    | 235/10000 [01:26<1:07:21,  2.42it/s]
+crashed reward
+crashed terminal
+reward -149.0 for 230
+crashed reward
+crashed terminal
+reward -96.5 for 231
+crashed reward
+crashed terminal
+reward -113.5 for 232
+crashed reward
+crashed terminal
+reward -114.5 for 233
+crashed reward
+crashed terminal
+reward -148.0 for 234
+too far reward
+
+  2%|▌                      | 240/10000 [01:27<52:00,  3.13it/s]
+crashed reward
+crashed terminal
+reward -120.5 for 236
+crashed reward
+crashed terminal
+reward -144.5 for 237
+crashed reward
+crashed terminal
+reward -123.5 for 238
+crashed reward
+crashed terminal
+reward -112.5 for 239
+crashed reward
+crashed terminal
+
+  2%|▌                    | 244/10000 [01:29<1:03:04,  2.58it/s]
+crashed reward
+crashed terminal
+reward -128.5 for 241
+crashed reward
+crashed terminal
+reward -108.0 for 242
+crashed reward
+crashed terminal
+reward -116.5 for 243
+crashed reward
+crashed terminal
+
+  2%|▌                    | 248/10000 [01:31<1:37:00,  1.68it/s]
+too far reward
+reward -141.5 for 245
+too far reward
+reward -140.0 for 246
+crashed reward
+crashed terminal
+reward -124.0 for 247
+
+  3%|▌                    | 254/10000 [01:34<1:02:23,  2.60it/s]
+crashed reward
+crashed terminal
+reward -120.0 for 249
+crashed reward
+crashed terminal
+reward -124.5 for 250
+crashed reward
+crashed terminal
+reward -112.5 for 251
+crashed reward
+crashed terminal
+reward -113.0 for 252
+reward 6.5 for 253
+crashed reward
+crashed terminal
+
+  3%|▌                    | 257/10000 [01:36<1:38:08,  1.65it/s]
+reward -110.0 for 255
+crashed reward
+crashed terminal
+reward -104.0 for 256
+
+  3%|▌                    | 259/10000 [01:37<1:36:40,  1.68it/s]
+reward -73.5 for 258
+crashed reward
+crashed terminal
+
+  3%|▌                    | 263/10000 [01:40<1:37:11,  1.67it/s]
+too far reward
+reward -149.0 for 260
+too far reward
+reward -181.0 for 261
+crashed reward
+crashed terminal
+reward -108.5 for 262
+too far reward
+
+  3%|▌                      | 269/10000 [01:42<56:19,  2.88it/s]
+crashed reward
+crashed terminal
+reward -124.5 for 264
+too far reward
+reward -164.0 for 265
+crashed reward
+crashed terminal
+reward -108.5 for 266
+crashed reward
+crashed terminal
+reward -88.0 for 267
+too far reward
+reward -110.0 for 268
+too far reward
+
+  3%|▋                      | 274/10000 [01:43<52:09,  3.11it/s]
+crashed reward
+crashed terminal
+reward -135.5 for 270
+crashed reward
+crashed terminal
+reward -115.5 for 271
+crashed reward
+crashed terminal
+reward -103.0 for 272
+crashed reward
+crashed terminal
+reward -131.0 for 273
+too far reward
+
+  3%|▌                    | 280/10000 [01:46<1:12:22,  2.24it/s]
+too far reward
+reward -165.5 for 275
+crashed reward
+crashed terminal
+reward -134.5 for 276
+crashed reward
+crashed terminal
+reward -98.5 for 277
+crashed reward
+crashed terminal
+reward -87.0 for 278
+too far reward
+reward -106.0 for 279
+crashed reward
+crashed terminal
+
+  3%|▋                      | 286/10000 [01:48<57:43,  2.80it/s]
+crashed reward
+crashed terminal
+reward -116.0 for 281
+crashed reward
+crashed terminal
+reward -108.0 for 282
+too far reward
+reward -94.0 for 283
+crashed reward
+crashed terminal
+reward -104.5 for 284
+crashed reward
+crashed terminal
+reward -131.5 for 285
+crashed reward
+crashed terminal
+reward -110.5 for 286
+crashed reward
+crashed terminal
+reward -106.5 for 287
+too far reward
+reward -99.5 for 288
+crashed reward
+crashed terminal
+reward -160.5 for 289
+crashed reward
+crashed terminal
+reward -135.0 for 290
+too far reward
+reward -103.0 for 291
+too far reward
+
+  3%|▌                    | 292/10000 [01:50<1:03:34,  2.54it/s]
+crashed reward
+crashed terminal
+reward -78.5 for 293
+crashed reward
+crashed terminal
+reward -111.5 for 294
+crashed reward
+crashed terminal
+reward -112.5 for 295
+too far reward
+reward -158.0 for 296
+crashed reward
+crashed terminal
+
+  3%|▌                    | 297/10000 [01:52<1:06:41,  2.42it/s]
+crashed reward
+crashed terminal
+reward -100 for 298
+too far reward
+reward -138.5 for 299
+crashed reward
+crashed terminal
+reward -103.0 for 300
+crashed reward
+crashed terminal
+reward -112.5 for 301
+crashed reward
+crashed terminal
+reward -112.0 for 302
+crashed reward
+crashed terminal
+reward -98.5 for 303
+too far reward
+
+  3%|▋                      | 304/10000 [01:54<49:57,  3.24it/s]
+reward -70.5 for 305
+crashed reward
+crashed terminal
+reward -141.0 for 306
+too far reward
+
+  3%|▋                    | 307/10000 [01:56<1:15:53,  2.13it/s]
+crashed reward
+crashed terminal
+reward -120.0 for 308
+crashed reward
+crashed terminal
+reward -97.5 for 309
+crashed reward
+crashed terminal
+reward -110.5 for 310
+crashed reward
+crashed terminal
+reward -89.5 for 311
+too far reward
+reward -73.0 for 312
+crashed reward
+crashed terminal
+reward -147.5 for 313
+crashed reward
+crashed terminal
+reward -112.5 for 314
+crashed reward
+crashed terminal
+
+  3%|▋                      | 315/10000 [01:58<46:13,  3.49it/s]
+crashed reward
+crashed terminal
+reward -90.5 for 316
+crashed reward
+crashed terminal
+reward -104.0 for 317
+crashed reward
+crashed terminal
+reward -114.0 for 318
+crashed reward
+crashed terminal
+reward -113.0 for 319
+crashed reward
+crashed terminal
+reward -88 for 320
+crashed reward
+crashed terminal
+reward -109.0 for 321
+too far reward
+
+  3%|▋                      | 322/10000 [02:00<45:39,  3.53it/s]
+reward -44.0 for 323
+crashed reward
+crashed terminal
+reward -113.0 for 324
+crashed reward
+crashed terminal
+reward -108.0 for 325
+too far reward
+reward -118.5 for 326
+crashed reward
+crashed terminal
+
+  3%|▋                    | 327/10000 [02:02<1:02:19,  2.59it/s]
+crashed reward
+crashed terminal
+reward -143.0 for 328
+too far reward
+reward -91 for 329
+crashed reward
+crashed terminal
+reward -111.5 for 330
+crashed reward
+crashed terminal
+reward -100 for 331
+crashed reward
+crashed terminal
+reward -105.0 for 332
+crashed reward
+crashed terminal
+
+  3%|▊                      | 333/10000 [02:04<56:23,  2.86it/s]
+crashed reward
+crashed terminal
+reward -100.5 for 334
+crashed reward
+crashed terminal
+reward -119.5 for 335
+crashed reward
+crashed terminal
+reward -104.0 for 336
+too far reward
+reward -109.5 for 337
+crashed reward
+crashed terminal
+reward -106.0 for 338
+too far reward
+reward -105.0 for 339
+crashed reward
+crashed terminal
+
+  3%|▋                    | 340/10000 [02:06<1:01:59,  2.60it/s]
+crashed reward
+crashed terminal
+reward -115.0 for 341
+crashed reward
+crashed terminal
+reward -138.0 for 342
+crashed reward
+crashed terminal
+reward -84.0 for 343
+crashed reward
+crashed terminal
+reward -80.0 for 344
+too far reward
+
+  3%|▋                    | 345/10000 [02:08<1:00:55,  2.64it/s]
+too far reward
+reward -187.5 for 346
+
+  3%|▋                    | 347/10000 [02:09<1:41:04,  1.59it/s]
+reward -38.0 for 348
+crashed reward
+crashed terminal
+reward -94.0 for 349
+reward -39.0 for 350
+too far reward
+reward -95 for 351
+crashed reward
+crashed terminal
+
+
+  4%|▊                    | 358/10000 [02:14<1:10:37,  2.28it/s]
+crashed reward
+crashed terminal
+reward -118.0 for 353
+too far reward
+reward -92.0 for 354
+crashed reward
+crashed terminal
+reward -83.0 for 355
+crashed reward
+crashed terminal
+reward -68.0 for 356
+too far reward
+reward -124.0 for 357
+too far reward
+
+  4%|▊                    | 363/10000 [02:16<1:09:23,  2.31it/s]
+too far reward
+reward -106.5 for 359
+too far reward
+reward -96.0 for 360
+crashed reward
+crashed terminal
+reward -148.5 for 361
+too far reward
+reward -97.5 for 362
+too far reward
+
+  4%|▊                    | 368/10000 [02:18<1:04:02,  2.51it/s]
+crashed reward
+crashed terminal
+reward -49.0 for 364
+crashed reward
+crashed terminal
+reward -112.0 for 365
+crashed reward
+crashed terminal
+reward -108.5 for 366
+crashed reward
+crashed terminal
+reward -100.5 for 367
+too far reward
+
+  4%|▊                      | 375/10000 [02:20<57:07,  2.81it/s]
+crashed reward
+crashed terminal
+reward -91.0 for 369
+crashed reward
+crashed terminal
+reward -134.5 for 370
+too far reward
+reward -106.5 for 371
+crashed reward
+crashed terminal
+reward -108.5 for 372
+crashed reward
+crashed terminal
+reward -104.5 for 373
+crashed reward
+crashed terminal
+reward -103.0 for 374
+too far reward
+
+  4%|▉                      | 381/10000 [02:22<58:00,  2.76it/s]
+crashed reward
+crashed terminal
+reward -108.5 for 376
+crashed reward
+crashed terminal
+reward -114.0 for 377
+crashed reward
+crashed terminal
+reward -103.5 for 378
+crashed reward
+crashed terminal
+reward -54.5 for 379
+crashed reward
+crashed terminal
+reward -93.5 for 380
+crashed reward
+crashed terminal
+reward -132.5 for 381
+crashed reward
+crashed terminal
+reward -110.5 for 382
+too far reward
+reward -125.0 for 383
+crashed reward
+crashed terminal
+reward -106.0 for 384
+crashed reward
+crashed terminal
+reward -121.0 for 385
+crashed reward
+crashed terminal
+reward -99.5 for 386
+too far reward
+reward -123.5 for 387
+crashed reward
+crashed terminal
+
+  4%|▉                      | 388/10000 [02:24<48:16,  3.32it/s]
+too far reward
+reward -100.5 for 389
+reward -17.5 for 390
+too far reward
+
+  4%|▊                    | 391/10000 [02:26<1:28:05,  1.82it/s]
+too far reward
+reward -137.0 for 392
+crashed reward
+crashed terminal
+
+  4%|▊                    | 395/10000 [02:28<1:09:03,  2.32it/s]
+crashed reward
+crashed terminal
+reward -117.0 for 394
+crashed reward
+crashed terminal
+reward -119.5 for 395
+too far reward
+reward -125.5 for 396
+too far reward
+reward -100.5 for 397
+crashed reward
+crashed terminal
+
+  4%|▊                    | 398/10000 [02:29<1:02:00,  2.58it/s]
+crashed reward
+crashed terminal
+reward -152.0 for 399
+crashed reward
+crashed terminal
+reward -97.5 for 400
+too far reward
+reward -143.0 for 401
+too far reward
+reward -120.5 for 402
+too far reward
+reward -110.5 for 403
+crashed reward
+crashed terminal
+
+  4%|▉                      | 404/10000 [02:32<58:02,  2.76it/s]
+crashed reward
+crashed terminal
+reward -100.0 for 405
+crashed reward
+crashed terminal
+reward -109.0 for 406
+reward -35.0 for 407
+crashed reward
+crashed terminal
+reward -106.5 for 408
+crashed reward
+crashed terminal
+
+
+  4%|▊                    | 414/10000 [02:36<1:04:43,  2.47it/s]
+crashed reward
+crashed terminal
+reward -104.5 for 410
+too far reward
+reward -113.0 for 411
+too far reward
+reward -65.5 for 412
+too far reward
+reward -156.0 for 413
+crashed reward
+crashed terminal
+
+  4%|▉                    | 418/10000 [02:38<1:24:32,  1.89it/s]
+crashed reward
+crashed terminal
+reward -130.5 for 415
+crashed reward
+crashed terminal
+reward -105.0 for 416
+crashed reward
+crashed terminal
+reward -112.5 for 417
+
+  4%|▉                      | 424/10000 [02:39<45:38,  3.50it/s]
+crashed reward
+crashed terminal
+reward -112.5 for 419
+crashed reward
+crashed terminal
+reward -45.5 for 420
+crashed reward
+crashed terminal
+reward -92.5 for 421
+too far reward
+reward -131.0 for 422
+crashed reward
+crashed terminal
+reward -102.5 for 423
+crashed reward
+crashed terminal
+
+  4%|▉                      | 431/10000 [02:42<50:08,  3.18it/s]
+too far reward
+reward -138.0 for 425
+too far reward
+reward -105.0 for 426
+too far reward
+reward -184.5 for 427
+crashed reward
+crashed terminal
+reward -117.5 for 428
+crashed reward
+crashed terminal
+reward -103.0 for 429
+too far reward
+reward -77.5 for 430
+too far reward
+
+  4%|█                      | 436/10000 [02:44<53:05,  3.00it/s]
+crashed reward
+crashed terminal
+reward -146.5 for 432
+too far reward
+reward -195.0 for 433
+too far reward
+reward -98.5 for 434
+too far reward
+reward -91.5 for 435
+crashed reward
+crashed terminal
+
+  4%|▉                    | 441/10000 [02:46<1:06:13,  2.41it/s]
+too far reward
+reward -119.0 for 437
+too far reward
+reward -118.0 for 438
+crashed reward
+crashed terminal
+reward -130.5 for 439
+too far reward
+reward -136.5 for 440
+too far reward
+
+  4%|█                      | 446/10000 [02:47<46:22,  3.43it/s]
+crashed reward
+crashed terminal
+reward -109.5 for 442
+too far reward
+reward -106.0 for 443
+crashed reward
+crashed terminal
+reward -105.0 for 444
+crashed reward
+crashed terminal
+reward -128.5 for 445
+crashed reward
+crashed terminal
+
+  5%|█                      | 452/10000 [02:50<52:50,  3.01it/s]
+too far reward
+reward -127.5 for 447
+too far reward
+reward -159.5 for 448
+crashed reward
+crashed terminal
+reward -124.0 for 449
+crashed reward
+crashed terminal
+reward -106.5 for 450
+too far reward
+reward -146.5 for 451
+crashed reward
+crashed terminal
+reward -103.0 for 452
+too far reward
+reward -67.0 for 453
+too far reward
+reward -123.5 for 454
+too far reward
+
+  5%|▉                    | 455/10000 [02:51<1:15:40,  2.10it/s]
+too far reward
+reward -130.5 for 456
+crashed reward
+crashed terminal
+reward -104.5 for 457
+too far reward
+reward -123.5 for 458
+crashed reward
+crashed terminal
+reward -79.0 for 459
+too far reward
+reward -97.0 for 460
+crashed reward
+crashed terminal
+
+  5%|█                      | 461/10000 [02:54<56:17,  2.82it/s]
+too far reward
+reward -119.0 for 462
+crashed reward
+crashed terminal
+reward -114.5 for 463
+crashed reward
+crashed terminal
+reward -111.5 for 464
+crashed reward
+crashed terminal
+reward -110.0 for 465
+crashed reward
+crashed terminal
+
+
+  5%|▉                    | 470/10000 [02:58<1:04:15,  2.47it/s]
+crashed reward
+crashed terminal
+reward -117.5 for 467
+too far reward
+reward -138.0 for 468
+too far reward
+reward -172.0 for 469
+crashed reward
+crashed terminal
+
+  5%|▉                    | 474/10000 [03:00<1:21:44,  1.94it/s]
+crashed reward
+crashed terminal
+reward -92.0 for 471
+too far reward
+reward -99.5 for 472
+too far reward
+reward -111.5 for 473
+crashed reward
+crashed terminal
+
+  5%|█                    | 478/10000 [03:02<1:14:28,  2.13it/s]
+too far reward
+reward -139.0 for 475
+too far reward
+reward -138.5 for 476
+too far reward
+reward -165.0 for 477
+crashed reward
+crashed terminal
+reward -126.0 for 478
+crashed reward
+crashed terminal
+reward -114.5 for 479
+crashed reward
+crashed terminal
+reward -172.5 for 480
+too far reward
+reward -169.5 for 481
+crashed reward
+crashed terminal
+reward -106.0 for 482
+crashed reward
+crashed terminal
+
+  5%|█                      | 483/10000 [03:04<57:40,  2.75it/s]
+crashed reward
+crashed terminal
+reward -120.5 for 484
+too far reward
+reward -171.5 for 485
+too far reward
+
+  5%|█                    | 486/10000 [03:06<1:36:04,  1.65it/s]
+crashed reward
+crashed terminal
+reward -109.5 for 487
+too far reward
+reward -123.5 for 488
+too far reward
+reward -188.0 for 489
+too far reward
+reward -114.0 for 490
+too far reward
+
+  5%|█                    | 491/10000 [03:08<1:09:00,  2.30it/s]
+crashed reward
+crashed terminal
+reward -96.5 for 492
+too far reward
+reward -100.0 for 493
+crashed reward
+crashed terminal
+reward -121.5 for 494
+crashed reward
+crashed terminal
+reward -128.0 for 495
+crashed reward
+crashed terminal
+reward -94.0 for 496
+crashed reward
+crashed terminal
+
+  5%|█▏                     | 497/10000 [03:10<51:43,  3.06it/s]
+too far reward
+reward -97.5 for 498
+too far reward
+reward -101.0 for 499
+too far reward
+
+  5%|█                    | 500/10000 [03:12<1:21:56,  1.93it/s]
+too far reward
+reward -157.5 for 501
+too far reward
+reward -106.5 for 502
+crashed reward
+crashed terminal
+reward -89.5 for 503
+too far reward
+reward -111.5 for 504
+too far reward
+
+  5%|█                    | 505/10000 [03:14<1:14:33,  2.12it/s]
+too far reward
+reward -102.5 for 506
+too far reward
+reward -182.5 for 507
+crashed reward
+crashed terminal
+
+  5%|█                    | 508/10000 [03:16<1:24:37,  1.87it/s]
+crashed reward
+crashed terminal
+reward -106.5 for 509
+crashed reward
+crashed terminal
+reward -119.5 for 510
+too far reward
+reward -105.5 for 511
+crashed reward
+crashed terminal
+reward -105.0 for 512
+crashed reward
+crashed terminal
+
+  5%|█                    | 513/10000 [03:18<1:04:12,  2.46it/s]
+crashed reward
+crashed terminal
+reward -116.0 for 514
+crashed reward
+crashed terminal
+reward -106.5 for 515
+crashed reward
+crashed terminal
+reward -103.0 for 516
+too far reward
+reward -103.0 for 517
+crashed reward
+crashed terminal
+
+  5%|█▏                     | 518/10000 [03:20<58:22,  2.71it/s]
+too far reward
+reward -95.0 for 519
+too far reward
+reward -132.5 for 520
+crashed reward
+crashed terminal
+reward -125.5 for 521
+crashed reward
+crashed terminal
+reward -121.0 for 522
+crashed reward
+crashed terminal
+
+  5%|█                    | 523/10000 [03:22<1:01:19,  2.58it/s]
+crashed reward
+crashed terminal
+reward -106.5 for 524
+crashed reward
+crashed terminal
+reward -106.5 for 525
+crashed reward
+crashed terminal
+reward -92.0 for 526
+crashed reward
+crashed terminal
+reward -105.0 for 527
+crashed reward
+crashed terminal
+
+  5%|█                    | 528/10000 [03:24<1:13:56,  2.13it/s]
+crashed reward
+crashed terminal
+reward -112.0 for 529
+crashed reward
+crashed terminal
+reward -113.5 for 530
+too far reward
+reward -125.5 for 531
+too far reward
+
+  5%|█                    | 532/10000 [03:26<1:21:33,  1.93it/s]
+too far reward
+reward -123.0 for 533
+crashed reward
+crashed terminal
+reward -91.5 for 534
+too far reward
+reward -162.0 for 535
+crashed reward
+crashed terminal
+reward -88.0 for 536
+crashed reward
+crashed terminal
+reward -100.0 for 537
+too far reward
+reward -95.0 for 538
+too far reward
+
+  5%|█▏                     | 539/10000 [03:28<50:13,  3.14it/s]
+too far reward
+reward -156.0 for 540
+crashed reward
+crashed terminal
+reward -104.5 for 541
+crashed reward
+crashed terminal
+reward -123.0 for 542
+crashed reward
+crashed terminal
+reward -97.0 for 543
+crashed reward
+crashed terminal
+
+  5%|█▎                     | 544/10000 [03:30<55:52,  2.82it/s]
+crashed reward
+crashed terminal
+reward -104.5 for 545
+crashed reward
+crashed terminal
+reward -109.0 for 546
+crashed reward
+crashed terminal
+reward -101.5 for 547
+crashed reward
+crashed terminal
+reward -110.5 for 548
+crashed reward
+crashed terminal
+reward -106.0 for 549
+crashed reward
+crashed terminal
+
+  6%|█▎                     | 550/10000 [03:32<38:03,  4.14it/s]
+reward -47.5 for 551
+crashed reward
+crashed terminal
+reward -108.5 for 552
+crashed reward
+crashed terminal
+reward -96.5 for 553
+crashed reward
+crashed terminal
+reward -96.0 for 554
+crashed reward
+crashed terminal
+reward -98.0 for 555
+crashed reward
+crashed terminal
+reward -114.0 for 556
+crashed reward
+crashed terminal
+
+  6%|█▎                     | 557/10000 [03:34<43:25,  3.62it/s]
+crashed reward
+crashed terminal
+reward -94.5 for 558
+crashed reward
+crashed terminal
+reward -111.5 for 559
+crashed reward
+crashed terminal
+reward -113.0 for 560
+crashed reward
+crashed terminal
+reward -113.5 for 561
+too far reward
+reward -107.0 for 562
+crashed reward
+crashed terminal
+
+  6%|█▎                     | 563/10000 [03:36<41:25,  3.80it/s]
+crashed reward
+crashed terminal
+reward -97.5 for 564
+crashed reward
+crashed terminal
+reward -148.5 for 565
+crashed reward
+crashed terminal
+reward -160.0 for 566
+crashed reward
+crashed terminal
+reward -104.0 for 567
+too far reward
+
+  6%|█▏                   | 568/10000 [03:38<1:02:57,  2.50it/s]
+crashed reward
+crashed terminal
+reward -141.5 for 569
+too far reward
+reward -142.5 for 570
+crashed reward
+crashed terminal
+
+  6%|█▏                   | 571/10000 [03:39<1:05:33,  2.40it/s]
+crashed reward
+crashed terminal
+reward -195.5 for 572
+too far reward
+reward -97.5 for 573
+crashed reward
+crashed terminal
+reward -123.0 for 574
+too far reward
+reward -108.5 for 575
+crashed reward
+crashed terminal
+reward -117.5 for 576
+crashed reward
+crashed terminal
+
+  6%|█▎                     | 577/10000 [03:42<50:49,  3.09it/s]
+crashed reward
+crashed terminal
+reward -108.5 for 578
+reward -4.5 for 579
+crashed reward
+crashed terminal
+reward -103.0 for 580
+crashed reward
+crashed terminal
+reward -119.5 for 581
+crashed reward
+crashed terminal
+
+  6%|█▎                     | 582/10000 [03:44<47:25,  3.31it/s]
+crashed reward
+crashed terminal
+reward -109.0 for 583
+crashed reward
+crashed terminal
+reward -73.0 for 584
+crashed reward
+crashed terminal
+reward -94.0 for 585
+crashed reward
+crashed terminal
+reward -143.0 for 586
+crashed reward
+crashed terminal
+reward -136.5 for 587
+crashed reward
+crashed terminal
+reward -106.5 for 588
+crashed reward
+crashed terminal
+
+
+  6%|█▎                     | 592/10000 [03:47<53:53,  2.91it/s]
+too far reward
+reward -154.0 for 590
+crashed reward
+crashed terminal
+reward -115.0 for 591
+crashed reward
+crashed terminal
+
+  6%|█▎                   | 597/10000 [03:50<1:19:53,  1.96it/s]
+too far reward
+reward -144.5 for 593
+crashed reward
+crashed terminal
+reward -111.0 for 594
+crashed reward
+crashed terminal
+reward -114.0 for 595
+reward -62.0 for 596
+crashed reward
+crashed terminal
+reward -115.5 for 597
+crashed reward
+crashed terminal
+reward -124.5 for 598
+reward -70.5 for 599
+crashed reward
+crashed terminal
+reward -112.0 for 600
+crashed reward
+crashed terminal
+
+
+  6%|█▍                     | 607/10000 [03:54<55:41,  2.81it/s]
+crashed reward
+crashed terminal
+reward -101.0 for 602
+crashed reward
+crashed terminal
+reward -110.0 for 603
+too far reward
+reward -144.0 for 604
+crashed reward
+crashed terminal
+reward -113.0 for 605
+crashed reward
+crashed terminal
+reward -93.5 for 606
+too far reward
+
+  6%|█▍                     | 615/10000 [03:56<43:07,  3.63it/s]
+crashed reward
+crashed terminal
+reward -128.0 for 608
+crashed reward
+crashed terminal
+reward -120.0 for 609
+crashed reward
+crashed terminal
+reward -83.5 for 610
+crashed reward
+crashed terminal
+reward -110.0 for 611
+crashed reward
+crashed terminal
+reward -121.5 for 612
+crashed reward
+crashed terminal
+reward -112.5 for 613
+crashed reward
+crashed terminal
+reward -136.5 for 614
+crashed reward
+crashed terminal
+reward -111.5 for 615
+crashed reward
+crashed terminal
+reward -116.5 for 616
+crashed reward
+crashed terminal
+reward -88.0 for 617
+crashed reward
+crashed terminal
+reward -102.5 for 618
+too far reward
+reward -194.0 for 619
+crashed reward
+crashed terminal
+
+  6%|█▎                   | 620/10000 [03:58<1:01:52,  2.53it/s]
+crashed reward
+crashed terminal
+reward -126.5 for 621
+too far reward
+reward -135.0 for 622
+crashed reward
+crashed terminal
+reward -98.0 for 623
+crashed reward
+crashed terminal
+
+  6%|█▎                   | 624/10000 [04:00<1:13:31,  2.13it/s]
+crashed reward
+crashed terminal
+reward -192.5 for 625
+crashed reward
+crashed terminal
+reward -121.0 for 626
+crashed reward
+crashed terminal
+reward -186.0 for 627
+too far reward
+
+  6%|█▎                   | 628/10000 [04:02<1:31:36,  1.71it/s]
+crashed reward
+crashed terminal
+reward -121.0 for 629
+crashed reward
+crashed terminal
+reward -101.5 for 630
+crashed reward
+crashed terminal
+reward -131.5 for 631
+crashed reward
+crashed terminal
+reward -143.0 for 632
+crashed reward
+crashed terminal
+reward -116.0 for 633
+crashed reward
+crashed terminal
+reward -103.5 for 634
+crashed reward
+crashed terminal
+
+
+  6%|█▍                     | 642/10000 [04:06<46:53,  3.33it/s]
+crashed reward
+crashed terminal
+reward -161.5 for 636
+crashed reward
+crashed terminal
+reward -101.5 for 637
+crashed reward
+crashed terminal
+reward -125.5 for 638
+crashed reward
+crashed terminal
+reward -165.5 for 639
+crashed reward
+crashed terminal
+reward -116.0 for 640
+crashed reward
+crashed terminal
+reward -105.5 for 641
+crashed reward
+crashed terminal
+
+  6%|█▎                   | 646/10000 [04:08<1:02:48,  2.48it/s]
+too far reward
+reward -184.0 for 643
+crashed reward
+crashed terminal
+reward -102.5 for 644
+crashed reward
+crashed terminal
+reward -125.5 for 645
+too far reward
+
+  7%|█▍                     | 652/10000 [04:10<59:51,  2.60it/s]
+too far reward
+reward -92.5 for 647
+crashed reward
+crashed terminal
+reward -139.0 for 648
+crashed reward
+crashed terminal
+reward -97.0 for 649
+crashed reward
+crashed terminal
+reward -117.5 for 650
+crashed reward
+crashed terminal
+reward -65.0 for 651
+crashed reward
+crashed terminal
+
+  7%|█▍                   | 656/10000 [04:12<1:13:32,  2.12it/s]
+reward -22.5 for 653
+crashed reward
+crashed terminal
+reward -111.5 for 654
+too far reward
+reward -107.5 for 655
+crashed reward
+crashed terminal
+
+  7%|█▌                     | 660/10000 [04:14<59:16,  2.63it/s]
+crashed reward
+crashed terminal
+reward -150.5 for 657
+crashed reward
+crashed terminal
+reward -86.5 for 658
+crashed reward
+crashed terminal
+reward -79.0 for 659
+crashed reward
+crashed terminal
+
+  7%|█▌                     | 666/10000 [04:16<55:44,  2.79it/s]
+crashed reward
+crashed terminal
+reward -163.0 for 661
+crashed reward
+crashed terminal
+reward -109.5 for 662
+crashed reward
+crashed terminal
+reward -79.5 for 663
+crashed reward
+crashed terminal
+reward -117.5 for 664
+crashed reward
+crashed terminal
+reward -114.0 for 665
+crashed reward
+crashed terminal
+
+  7%|█▌                     | 672/10000 [04:18<44:54,  3.46it/s]
+crashed reward
+crashed terminal
+reward -108.5 for 667
+crashed reward
+crashed terminal
+reward -101.5 for 668
+crashed reward
+crashed terminal
+reward -149.5 for 669
+crashed reward
+crashed terminal
+reward -119.5 for 670
+crashed reward
+crashed terminal
+reward -130.5 for 671
+crashed reward
+crashed terminal
+reward -115.5 for 672
+reward -17.5 for 673
+crashed reward
+crashed terminal
+reward -113.0 for 674
+too far reward
+reward -137.0 for 675
+crashed reward
+crashed terminal
+reward -125.0 for 676
+crashed reward
+crashed terminal
+reward -107.0 for 677
+crashed reward
+crashed terminal
+
+  7%|█▌                     | 678/10000 [04:20<50:08,  3.10it/s]
+crashed reward
+crashed terminal
+reward -96.5 for 679
+crashed reward
+crashed terminal
+reward -128.5 for 680
+crashed reward
+crashed terminal
+reward -89.5 for 681
+crashed reward
+crashed terminal
+reward -113.5 for 682
+crashed reward
+crashed terminal
+
+
+  7%|█▍                   | 687/10000 [04:24<1:07:16,  2.31it/s]
+too far reward
+reward -153.0 for 684
+crashed reward
+crashed terminal
+reward -136.5 for 685
+crashed reward
+crashed terminal
+reward -136.5 for 686
+crashed reward
+crashed terminal
+reward -119.5 for 687
+crashed reward
+crashed terminal
+reward -112.5 for 688
+crashed reward
+crashed terminal
+reward -108.0 for 689
+crashed reward
+crashed terminal
+reward -92.5 for 690
+too far reward
+reward -130.5 for 691
+crashed reward
+crashed terminal
+reward -135.0 for 692
+crashed reward
+crashed terminal
+
+  7%|█▌                     | 693/10000 [04:26<58:09,  2.67it/s]
+crashed reward
+crashed terminal
+reward -98.0 for 694
+too far reward
+reward -126.5 for 695
+crashed reward
+crashed terminal
+
+  7%|█▍                   | 696/10000 [04:28<1:12:48,  2.13it/s]
+crashed reward
+crashed terminal
+reward -118.0 for 697
+crashed reward
+crashed terminal
+reward -106.0 for 698
+crashed reward
+crashed terminal
+reward -106.5 for 699
+too far reward
+reward -127.0 for 700
+too far reward
+reward -162.5 for 701
+crashed reward
+crashed terminal
+
+  7%|█▍                   | 701/10000 [04:30<1:19:58,  1.94it/s]
+too far reward
+reward -147.5 for 703
+crashed reward
+crashed terminal
+reward -121.0 for 704
+too far reward
+reward -106.5 for 705
+crashed reward
+crashed terminal
+reward -159.5 for 706
+too far reward
+
+  7%|█▍                   | 707/10000 [04:32<1:04:24,  2.40it/s]
+crashed reward
+crashed terminal
+reward -99.0 for 708
+too far reward
+reward -120.0 for 709
+crashed reward
+crashed terminal
+reward -184.5 for 710
+too far reward
+
+  7%|█▍                   | 711/10000 [04:34<1:25:59,  1.80it/s]
+too far reward
+reward -134.5 for 712
+crashed reward
+crashed terminal
+reward -102.0 for 713
+too far reward
+reward -122.5 for 714
+too far reward
+reward -103.5 for 715
+crashed reward
+crashed terminal
+
+  7%|█▋                     | 716/10000 [04:36<59:52,  2.58it/s]
+crashed reward
+crashed terminal
+reward -113.5 for 717
+too far reward
+reward -115.0 for 718
+too far reward
+reward -110.0 for 719
+crashed reward
+crashed terminal
+reward -127.5 for 720
+too far reward
+
+  7%|█▋                     | 721/10000 [04:38<58:05,  2.66it/s]
+crashed reward
+crashed terminal
+reward -147.0 for 722
+too far reward
+reward -111.5 for 723
+crashed reward
+crashed terminal
+
+  7%|█▌                   | 724/10000 [04:40<1:22:21,  1.88it/s]
+too far reward
+reward -138.5 for 725
+too far reward
+reward -137.0 for 726
+too far reward
+reward -101.0 for 727
+too far reward
+reward -121.5 for 728
+too far reward
+
+  7%|█▌                   | 729/10000 [04:42<1:04:52,  2.38it/s]
+too far reward
+reward -180.5 for 730
+crashed reward
+crashed terminal
+reward -126.0 for 731
+too far reward
+
+  7%|█▌                   | 732/10000 [04:44<1:09:22,  2.23it/s]
+reward -102.0 for 733
+crashed reward
+crashed terminal
+reward -113.5 for 734
+too far reward
+reward -110.0 for 735
+crashed reward
+crashed terminal
+
+  7%|█▌                   | 736/10000 [04:46<1:31:52,  1.68it/s]
+too far reward
+reward -117.5 for 737
+crashed reward
+crashed terminal
+reward -129.5 for 738
+too far reward
+reward -130.5 for 739
+crashed reward
+crashed terminal
+
+  7%|█▌                   | 740/10000 [04:48<1:19:36,  1.94it/s]
+crashed reward
+crashed terminal
+reward -121.0 for 741
+crashed reward
+crashed terminal
+reward -169.5 for 742
+too far reward
+reward -184.0 for 743
+crashed reward
+crashed terminal
+
+  7%|█▌                   | 744/10000 [04:50<1:26:06,  1.79it/s]
+too far reward
+reward -127.5 for 745
+crashed reward
+crashed terminal
+reward -110.5 for 746
+crashed reward
+crashed terminal
+
+  7%|█▌                   | 749/10000 [04:52<1:05:22,  2.36it/s]
+crashed reward
+crashed terminal
+reward -147.0 for 748
+too far reward
+reward -114.0 for 749
+too far reward
+reward -106.0 for 750
+too far reward
+reward -92.0 for 751
+crashed reward
+crashed terminal
+reward -111.5 for 752
+crashed reward
+crashed terminal
+
+  8%|█▋                     | 753/10000 [04:54<48:03,  3.21it/s]
+crashed reward
+crashed terminal
+reward -122.5 for 754
+crashed reward
+crashed terminal
+reward -112.0 for 755
+too far reward
+reward -116.5 for 756
+too far reward
+reward -95.0 for 757
+too far reward
+reward -89.5 for 758
+too far reward
+
+  8%|█▋                     | 759/10000 [04:56<55:36,  2.77it/s]
+too far reward
+reward -143.0 for 760
+too far reward
+reward -136.5 for 761
+crashed reward
+crashed terminal
+reward -153.5 for 762
+crashed reward
+crashed terminal
+
+  8%|█▌                   | 763/10000 [04:58<1:13:16,  2.10it/s]
+crashed reward
+crashed terminal
+reward -106.5 for 764
+crashed reward
+crashed terminal
+reward -146.5 for 765
+too far reward
+reward -166.0 for 766
+crashed reward
+crashed terminal
+
+  8%|█▌                   | 766/10000 [05:00<1:28:15,  1.74it/s]
+too far reward
+reward -103.0 for 768
+too far reward
+reward -111.5 for 769
+crashed reward
+crashed terminal
+reward -94.5 for 770
+too far reward
+reward -98.5 for 771
+crashed reward
+crashed terminal
+
+  8%|█▌                   | 772/10000 [05:02<1:06:29,  2.31it/s]
+crashed reward
+crashed terminal
+reward -145.5 for 773
+crashed reward
+crashed terminal
+reward -148.5 for 774
+crashed reward
+crashed terminal
+reward -105.0 for 775
+crashed reward
+crashed terminal
+
+  8%|█▋                   | 776/10000 [05:04<1:08:30,  2.24it/s]
+crashed reward
+crashed terminal
+reward -117.5 for 777
+crashed reward
+crashed terminal
+reward -96.5 for 778
+crashed reward
+crashed terminal
+reward -135.0 for 779
+crashed reward
+crashed terminal
+reward -104.0 for 780
+crashed reward
+crashed terminal
+
+  8%|█▋                   | 781/10000 [05:06<1:06:23,  2.31it/s]
+crashed reward
+crashed terminal
+reward -100.5 for 782
+crashed reward
+crashed terminal
+reward -119.0 for 783
+crashed reward
+crashed terminal
+reward -112.5 for 784
+crashed reward
+crashed terminal
+reward -99.0 for 785
+crashed reward
+crashed terminal
+reward -121.5 for 786
+crashed reward
+crashed terminal
+
+  8%|█▊                     | 787/10000 [05:08<54:06,  2.84it/s]
+reward -2.0 for 788
+crashed reward
+crashed terminal
+reward -115.0 for 789
+crashed reward
+crashed terminal
+reward -103.0 for 790
+too far reward
+
+  8%|█▋                   | 791/10000 [05:10<1:05:53,  2.33it/s]
+crashed reward
+crashed terminal
+reward -79.0 for 792
+crashed reward
+crashed terminal
+reward -100.0 for 793
+crashed reward
+crashed terminal
+reward -114.0 for 794
+too far reward
+reward -100.0 for 795
+crashed reward
+crashed terminal
+
+  8%|█▊                     | 796/10000 [05:12<57:19,  2.68it/s]
+too far reward
+reward -99.5 for 797
+crashed reward
+crashed terminal
+reward -109.5 for 798
+crashed reward
+crashed terminal
+reward -106.0 for 799
+crashed reward
+crashed terminal
+
+  8%|█▋                   | 800/10000 [05:14<1:08:15,  2.25it/s]
+crashed reward
+crashed terminal
+reward -106.0 for 801
+too far reward
+reward -154.5 for 802
+crashed reward
+crashed terminal
+reward -108.0 for 803
+crashed reward
+crashed terminal
+reward -112.0 for 804
+crashed reward
+crashed terminal
+
+  8%|█▋                   | 805/10000 [05:16<1:13:02,  2.10it/s]
+too far reward
+reward -113.5 for 806
+reward -41.5 for 807
+crashed reward
+crashed terminal
+reward -119.0 for 808
+crashed reward
+crashed terminal
+
+  8%|█▋                   | 809/10000 [05:18<1:18:03,  1.96it/s]
+crashed reward
+crashed terminal
+reward -103.0 for 810
+reward -65.0 for 811
+crashed reward
+crashed terminal
+
+  8%|█▋                   | 812/10000 [05:20<1:22:44,  1.85it/s]
+crashed reward
+crashed terminal
+reward -101.0 for 813
+crashed reward
+crashed terminal
+reward -141.0 for 814
+crashed reward
+crashed terminal
+reward -125.0 for 815
+too far reward
+reward -85.0 for 816
+crashed reward
+crashed terminal
+
+  8%|█▋                   | 817/10000 [05:22<1:16:39,  2.00it/s]
+crashed reward
+crashed terminal
+reward -121.5 for 818
+crashed reward
+crashed terminal
+reward -126.5 for 819
+too far reward
+reward -104.5 for 820
+too far reward
+reward -96.5 for 821
+crashed reward
+crashed terminal
+
+  8%|█▋                   | 822/10000 [05:24<1:12:42,  2.10it/s]
+crashed reward
+crashed terminal
+reward -120.5 for 823
+crashed reward
+crashed terminal
+reward -81.5 for 824
+crashed reward
+crashed terminal
+reward -70 for 825
+crashed reward
+crashed terminal
+reward -103.5 for 826
+crashed reward
+crashed terminal
+reward -86.5 for 827
+crashed reward
+crashed terminal
+
+  8%|█▋                   | 828/10000 [05:26<1:03:22,  2.41it/s]
+reward 9.0 for 829
+crashed reward
+crashed terminal
+reward -107.0 for 830
+crashed reward
+crashed terminal
+reward -122.5 for 831
+crashed reward
+crashed terminal
+reward -106.0 for 832
+crashed reward
+crashed terminal
+
+  8%|█▉                     | 833/10000 [05:28<52:08,  2.93it/s]
+crashed reward
+crashed terminal
+reward -100.5 for 834
+crashed reward
+crashed terminal
+reward -131.0 for 835
+crashed reward
+crashed terminal
+reward -122.5 for 836
+crashed reward
+crashed terminal
+reward -149.5 for 837
+crashed reward
+crashed terminal
+
+  8%|█▉                     | 838/10000 [05:30<57:37,  2.65it/s]
+crashed reward
+crashed terminal
+reward -86.5 for 839
+too far reward
+reward -104.0 for 840
+crashed reward
+crashed terminal
+reward -102.0 for 841
+crashed reward
+crashed terminal
+reward -122.0 for 842
+crashed reward
+crashed terminal
+
+  8%|█▉                     | 843/10000 [05:32<48:39,  3.14it/s]
+crashed reward
+crashed terminal
+reward -156.0 for 844
+reward -25.5 for 845
+too far reward
+reward -134.0 for 846
+crashed reward
+crashed terminal
+reward -109.5 for 847
+crashed reward
+crashed terminal
+reward -101.0 for 848
+crashed reward
+crashed terminal
+reward -132.0 for 849
+crashed reward
+crashed terminal
+
+  8%|█▉                     | 850/10000 [05:34<38:54,  3.92it/s]
+crashed reward
+crashed terminal
+reward -89.5 for 851
+crashed reward
+crashed terminal
+reward -105.0 for 852
+crashed reward
+crashed terminal
+reward -121.5 for 853
+
+  9%|█▊                   | 854/10000 [05:36<1:08:34,  2.22it/s]
+crashed reward
+crashed terminal
+reward -116.5 for 855
+crashed reward
+crashed terminal
+reward -76 for 856
+crashed reward
+crashed terminal
+reward -123.0 for 857
+crashed reward
+crashed terminal
+reward -100.0 for 858
+crashed reward
+crashed terminal
+reward -126.0 for 859
+crashed reward
+crashed terminal
+reward -97.0 for 860
+crashed reward
+crashed terminal
+reward -105.5 for 861
+crashed reward
+crashed terminal
+
+  9%|█▉                     | 862/10000 [05:38<37:05,  4.11it/s]
+crashed reward
+crashed terminal
+reward -136.0 for 863
+crashed reward
+crashed terminal
+reward -106.5 for 864
+crashed reward
+crashed terminal
+reward -85.5 for 865
+crashed reward
+crashed terminal
+reward -155.0 for 866
+too far reward
+
+
+  9%|██                     | 872/10000 [05:42<48:06,  3.16it/s]
+too far reward
+reward -84.5 for 868
+crashed reward
+crashed terminal
+reward -127.5 for 869
+crashed reward
+crashed terminal
+reward -119.0 for 870
+crashed reward
+crashed terminal
+reward -89.5 for 871
+crashed reward
+crashed terminal
+
+  9%|██                     | 878/10000 [05:44<53:22,  2.85it/s]
+too far reward
+reward -184.5 for 873
+crashed reward
+crashed terminal
+reward -114.0 for 874
+crashed reward
+crashed terminal
+reward -111.0 for 875
+crashed reward
+crashed terminal
+reward -109.0 for 876
+crashed reward
+crashed terminal
+reward -92.5 for 877
+crashed reward
+crashed terminal
+
+  9%|██                     | 884/10000 [05:46<45:38,  3.33it/s]
+crashed reward
+crashed terminal
+reward -108.0 for 879
+crashed reward
+crashed terminal
+reward -136.0 for 880
+crashed reward
+crashed terminal
+reward -128.0 for 881
+crashed reward
+crashed terminal
+reward -153.0 for 882
+crashed reward
+crashed terminal
+reward -93.0 for 883
+crashed reward
+crashed terminal
+reward -75 for 884
+crashed reward
+crashed terminal
+
+  9%|██                     | 891/10000 [05:48<47:52,  3.17it/s]
+crashed reward
+crashed terminal
+reward -92.5 for 886
+crashed reward
+crashed terminal
+reward -134.5 for 887
+crashed reward
+crashed terminal
+reward -117.0 for 888
+crashed reward
+crashed terminal
+reward -93.0 for 889
+crashed reward
+crashed terminal
+reward -100.5 for 890
+crashed reward
+crashed terminal
+
+  9%|██                     | 897/10000 [05:51<55:01,  2.76it/s]
+crashed reward
+crashed terminal
+reward -108.5 for 892
+crashed reward
+crashed terminal
+reward -128.0 for 893
+crashed reward
+crashed terminal
+reward -119.0 for 894
+crashed reward
+crashed terminal
+reward -123.5 for 895
+crashed reward
+crashed terminal
+reward -127.0 for 896
+crashed reward
+crashed terminal
+
+  9%|██                     | 902/10000 [05:52<43:50,  3.46it/s]
+crashed reward
+crashed terminal
+reward -122.5 for 898
+crashed reward
+crashed terminal
+reward -107.5 for 899
+crashed reward
+crashed terminal
+reward -102.5 for 900
+crashed reward
+crashed terminal
+reward -101.0 for 901
+too far reward
+
+  9%|██                     | 909/10000 [05:54<41:59,  3.61it/s]
+crashed reward
+crashed terminal
+reward -72.0 for 903
+crashed reward
+crashed terminal
+reward -149.5 for 904
+crashed reward
+crashed terminal
+reward -100.0 for 905
+crashed reward
+crashed terminal
+reward -156.5 for 906
+crashed reward
+crashed terminal
+reward -112.5 for 907
+crashed reward
+crashed terminal
+reward -122.0 for 908
+crashed reward
+crashed terminal
+
+  9%|██                     | 915/10000 [05:56<43:06,  3.51it/s]
+crashed reward
+crashed terminal
+reward -118.5 for 910
+crashed reward
+crashed terminal
+reward -139.0 for 911
+crashed reward
+crashed terminal
+reward -96.0 for 912
+too far reward
+reward -121.5 for 913
+crashed reward
+crashed terminal
+reward -117.5 for 914
+crashed reward
+crashed terminal
+
+  9%|██                     | 921/10000 [05:58<42:59,  3.52it/s]
+crashed reward
+crashed terminal
+reward -94.5 for 916
+crashed reward
+crashed terminal
+reward -145.5 for 917
+crashed reward
+crashed terminal
+reward -85.5 for 918
+crashed reward
+crashed terminal
+reward -111.5 for 919
+crashed reward
+crashed terminal
+reward -103.0 for 920
+crashed reward
+crashed terminal
+
+  9%|██▏                    | 930/10000 [06:01<29:15,  5.17it/s]
+crashed reward
+crashed terminal
+reward -123.5 for 922
+crashed reward
+crashed terminal
+reward -119.0 for 923
+too far reward
+reward -130.5 for 924
+crashed reward
+crashed terminal
+reward -107.0 for 925
+crashed reward
+crashed terminal
+reward -114.5 for 926
+crashed reward
+crashed terminal
+reward -107.5 for 927
+crashed reward
+crashed terminal
+reward -100.0 for 928
+crashed reward
+crashed terminal
+reward -106.0 for 929
+crashed reward
+crashed terminal
+
+  9%|██▏                    | 935/10000 [06:03<57:54,  2.61it/s]
+crashed reward
+crashed terminal
+reward -121.0 for 931
+too far reward
+reward -125.5 for 932
+crashed reward
+crashed terminal
+reward -107.0 for 933
+too far reward
+reward -119.5 for 934
+crashed reward
+crashed terminal
+
+  9%|██▏                    | 941/10000 [06:05<52:07,  2.90it/s]
+crashed reward
+crashed terminal
+reward -88.0 for 936
+crashed reward
+crashed terminal
+reward -75.5 for 937
+crashed reward
+crashed terminal
+reward -113.0 for 938
+crashed reward
+crashed terminal
+reward -124.5 for 939
+crashed reward
+crashed terminal
+reward -102.0 for 940
+crashed reward
+crashed terminal
+
+  9%|██▏                    | 948/10000 [06:07<44:42,  3.37it/s]
+crashed reward
+crashed terminal
+reward -120.0 for 942
+crashed reward
+crashed terminal
+reward -108.5 for 943
+crashed reward
+crashed terminal
+reward -104.0 for 944
+crashed reward
+crashed terminal
+reward -106.5 for 945
+crashed reward
+crashed terminal
+reward -103.5 for 946
+crashed reward
+crashed terminal
+reward -131.5 for 947
+crashed reward
+crashed terminal
+
+ 10%|██▏                    | 954/10000 [06:08<52:22,  2.88it/s]
+crashed reward
+crashed terminal
+reward -111.0 for 949
+crashed reward
+crashed terminal
+reward -118.0 for 950
+crashed reward
+crashed terminal
+reward -121.0 for 951
+crashed reward
+crashed terminal
+reward -103.0 for 952
+crashed reward
+crashed terminal
+
+ 10%|██▏                    | 959/10000 [06:10<51:31,  2.92it/s]
+crashed reward
+crashed terminal
+reward -85.0 for 954
+crashed reward
+crashed terminal
+reward -116.5 for 955
+crashed reward
+crashed terminal
+reward -107.5 for 956
+crashed reward
+crashed terminal
+reward -123.5 for 957
+too far reward
+reward -133.5 for 958
+crashed reward
+crashed terminal
+
+ 10%|██▏                    | 966/10000 [06:12<52:00,  2.90it/s]
+crashed reward
+crashed terminal
+reward -99.0 for 960
+crashed reward
+crashed terminal
+reward -119.0 for 961
+crashed reward
+crashed terminal
+reward -91.0 for 962
+crashed reward
+crashed terminal
+reward -77.5 for 963
+crashed reward
+crashed terminal
+reward -91.5 for 964
+too far reward
+reward -103.5 for 965
+crashed reward
+crashed terminal
+
+ 10%|██                   | 970/10000 [06:14<1:14:38,  2.02it/s]
+crashed reward
+crashed terminal
+reward -108.5 for 967
+crashed reward
+crashed terminal
+reward -109.0 for 968
+crashed reward
+crashed terminal
+reward -208.0 for 969
+crashed reward
+crashed terminal
+
+ 10%|██▏                    | 977/10000 [06:16<44:27,  3.38it/s]
+crashed reward
+crashed terminal
+reward -110.0 for 971
+crashed reward
+crashed terminal
+reward -121.0 for 972
+too far reward
+reward -141.0 for 973
+crashed reward
+crashed terminal
+reward -105.0 for 974
+crashed reward
+crashed terminal
+reward -124.0 for 975
+crashed reward
+crashed terminal
+reward -118.5 for 976
+crashed reward
+crashed terminal
+
+ 10%|██▎                    | 983/10000 [06:18<45:44,  3.28it/s]
+crashed reward
+crashed terminal
+reward -98.5 for 978
+crashed reward
+crashed terminal
+reward -144.0 for 979
+crashed reward
+crashed terminal
+reward -112.0 for 980
+too far reward
+reward -115.0 for 981
+crashed reward
+crashed terminal
+reward -95.5 for 982
+crashed reward
+crashed terminal
+
+ 10%|██▎                    | 990/10000 [06:20<43:52,  3.42it/s]
+crashed reward
+crashed terminal
+reward -120.0 for 984
+crashed reward
+crashed terminal
+reward -131.0 for 985
+crashed reward
+crashed terminal
+reward -62.0 for 986
+crashed reward
+crashed terminal
+reward -104.5 for 987
+crashed reward
+crashed terminal
+reward -85.0 for 988
+crashed reward
+crashed terminal
+reward -101.0 for 989
+crashed reward
+crashed terminal
+
+ 10%|██▎                    | 995/10000 [06:22<52:39,  2.85it/s]
+reward -35.0 for 991
+crashed reward
+crashed terminal
+reward -130.0 for 992
+crashed reward
+crashed terminal
+reward -113.0 for 993
+crashed reward
+crashed terminal
+reward -65.5 for 994
+crashed reward
+crashed terminal
+
+ 10%|██▏                   | 1001/10000 [06:24<49:56,  3.00it/s]
+crashed reward
+crashed terminal
+reward -126.5 for 996
+crashed reward
+crashed terminal
+reward -90.5 for 997
+too far reward
+reward -105.5 for 998
+crashed reward
+crashed terminal
+reward -115.0 for 999
+crashed reward
+crashed terminal
+reward -85 for 1000
+too far reward
+
+ 10%|██▏                   | 1009/10000 [06:26<34:44,  4.31it/s]
+crashed reward
+crashed terminal
+reward -106.0 for 1002
+too far reward
+reward -168.0 for 1003
+crashed reward
+crashed terminal
+reward -92.5 for 1004
+crashed reward
+crashed terminal
+reward -91.0 for 1005
+crashed reward
+crashed terminal
+reward -117.5 for 1006
+crashed reward
+crashed terminal
+reward -143.5 for 1007
+crashed reward
+crashed terminal
+reward -102.5 for 1008
+crashed reward
+crashed terminal
+
+ 10%|██▏                   | 1013/10000 [06:28<56:11,  2.67it/s]
+too far reward
+reward -99.5 for 1010
+crashed reward
+crashed terminal
+reward -148.5 for 1011
+too far reward
+reward -140.5 for 1012
+crashed reward
+crashed terminal
+
+ 10%|██                  | 1017/10000 [06:30<1:03:02,  2.37it/s]
+reward -29.5 for 1014
+crashed reward
+crashed terminal
+reward -140.5 for 1015
+crashed reward
+crashed terminal
+reward -113.5 for 1016
+crashed reward
+crashed terminal
+
+ 10%|██▎                   | 1026/10000 [06:32<32:18,  4.63it/s]
+crashed reward
+crashed terminal
+reward -125.5 for 1018
+crashed reward
+crashed terminal
+reward -113.0 for 1019
+crashed reward
+crashed terminal
+reward -119.0 for 1020
+crashed reward
+crashed terminal
+reward -95.0 for 1021
+crashed reward
+crashed terminal
+reward -117.0 for 1022
+crashed reward
+crashed terminal
+reward -103.5 for 1023
+crashed reward
+crashed terminal
+reward -127.5 for 1024
+crashed reward
+crashed terminal
+reward -113.5 for 1025
+crashed reward
+crashed terminal
+
+ 10%|██▎                   | 1030/10000 [06:34<43:03,  3.47it/s]
+too far reward
+reward -199.0 for 1027
+crashed reward
+crashed terminal
+reward -116.0 for 1028
+crashed reward
+crashed terminal
+reward -120.0 for 1029
+crashed reward
+crashed terminal
+
+ 10%|██                  | 1034/10000 [06:36<1:13:07,  2.04it/s]
+too far reward
+reward -153.0 for 1031
+crashed reward
+crashed terminal
+reward -112.5 for 1032
+reward -81.0 for 1033
+crashed reward
+crashed terminal
+
+ 10%|██                  | 1038/10000 [06:38<1:11:14,  2.10it/s]
+crashed reward
+crashed terminal
+reward -136.0 for 1035
+reward -33.5 for 1036
+crashed reward
+crashed terminal
+reward -87.5 for 1037
+crashed reward
+crashed terminal
+
+ 10%|██                  | 1043/10000 [06:40<1:06:34,  2.24it/s]
+crashed reward
+crashed terminal
+reward -90.5 for 1039
+crashed reward
+crashed terminal
+reward -100.5 for 1040
+crashed reward
+crashed terminal
+reward -108.5 for 1041
+reward -82.5 for 1042
+crashed reward
+crashed terminal
+
+ 11%|██▎                   | 1051/10000 [06:42<32:04,  4.65it/s]
+crashed reward
+crashed terminal
+reward -131.0 for 1044
+crashed reward
+crashed terminal
+reward -115.5 for 1045
+crashed reward
+crashed terminal
+reward -109.0 for 1046
+crashed reward
+crashed terminal
+reward -111.5 for 1047
+crashed reward
+crashed terminal
+reward -90.5 for 1048
+crashed reward
+crashed terminal
+reward -71.5 for 1049
+too far reward
+reward -104.5 for 1050
+crashed reward
+crashed terminal
+
+ 11%|██▎                   | 1057/10000 [06:44<55:28,  2.69it/s]
+crashed reward
+crashed terminal
+reward -182.5 for 1052
+crashed reward
+crashed terminal
+reward -120.5 for 1053
+crashed reward
+crashed terminal
+reward -113.0 for 1054
+crashed reward
+crashed terminal
+reward -93.0 for 1055
+crashed reward
+crashed terminal
+reward -103.5 for 1056
+too far reward
+
+ 11%|██▎                   | 1067/10000 [06:46<29:46,  5.00it/s]
+crashed reward
+crashed terminal
+reward -122.0 for 1058
+crashed reward
+crashed terminal
+reward -104.5 for 1059
+crashed reward
+crashed terminal
+reward -119.0 for 1060
+crashed reward
+crashed terminal
+reward -122.0 for 1061
+crashed reward
+crashed terminal
+reward -115.0 for 1062
+crashed reward
+crashed terminal
+reward -100 for 1063
+crashed reward
+crashed terminal
+reward -124.5 for 1064
+crashed reward
+crashed terminal
+reward -112.0 for 1065
+crashed reward
+crashed terminal
+reward -109.5 for 1066
+crashed reward
+crashed terminal
+
+ 11%|██▏                 | 1072/10000 [06:49<1:00:31,  2.46it/s]
+crashed reward
+crashed terminal
+reward -77.0 for 1068
+crashed reward
+crashed terminal
+reward -106.0 for 1069
+crashed reward
+crashed terminal
+reward -102.5 for 1070
+reward -18.0 for 1071
+crashed reward
+crashed terminal
+
+ 11%|██▎                   | 1078/10000 [06:51<45:58,  3.23it/s]
+crashed reward
+crashed terminal
+reward -96.0 for 1073
+too far reward
+reward -90.0 for 1074
+crashed reward
+crashed terminal
+reward -113.0 for 1075
+crashed reward
+crashed terminal
+reward -125.0 for 1076
+crashed reward
+crashed terminal
+reward -113.0 for 1077
+crashed reward
+crashed terminal
+reward -124.0 for 1078
+crashed reward
+crashed terminal
+reward -116.5 for 1079
+crashed reward
+crashed terminal
+reward -133.0 for 1080
+crashed reward
+crashed terminal
+reward -131.0 for 1081
+crashed reward
+crashed terminal
+reward -108.0 for 1082
+crashed reward
+crashed terminal
+
+ 11%|██▍                   | 1083/10000 [06:52<42:28,  3.50it/s]
+crashed reward
+crashed terminal
+reward -147.0 for 1084
+crashed reward
+crashed terminal
+reward -91.5 for 1085
+too far reward
+reward -133.5 for 1086
+too far reward
+reward -171.5 for 1087
+crashed reward
+crashed terminal
+
+ 11%|██▏                 | 1088/10000 [06:55<1:10:12,  2.12it/s]
+crashed reward
+crashed terminal
+reward -95.5 for 1089
+crashed reward
+crashed terminal
+reward -127.5 for 1090
+crashed reward
+crashed terminal
+reward -127.0 for 1091
+crashed reward
+crashed terminal
+
+ 11%|██▏                 | 1092/10000 [06:57<1:11:28,  2.08it/s]
+crashed reward
+crashed terminal
+reward -117.5 for 1093
+crashed reward
+crashed terminal
+reward -121.5 for 1094
+crashed reward
+crashed terminal
+reward -151.0 for 1095
+crashed reward
+crashed terminal
+reward -97.0 for 1096
+crashed reward
+crashed terminal
+reward -120.5 for 1097
+crashed reward
+crashed terminal
+reward -115.5 for 1098
+crashed reward
+crashed terminal
+
+ 11%|██▍                   | 1099/10000 [06:59<43:40,  3.40it/s]
+crashed reward
+crashed terminal
+reward -135.5 for 1100
+crashed reward
+crashed terminal
+reward -109.0 for 1101
+crashed reward
+crashed terminal
+reward -99.5 for 1102
+crashed reward
+crashed terminal
+reward -105.0 for 1103
+crashed reward
+crashed terminal
+reward -97.0 for 1104
+crashed reward
+crashed terminal
+reward -114.5 for 1105
+crashed reward
+crashed terminal
+
+ 11%|██▍                   | 1106/10000 [07:01<51:41,  2.87it/s]
+crashed reward
+crashed terminal
+reward -113.0 for 1107
+crashed reward
+crashed terminal
+reward -109.0 for 1108
+crashed reward
+crashed terminal
+reward -156.5 for 1109
+crashed reward
+crashed terminal
+
+
+ 11%|██▍                   | 1114/10000 [07:04<52:47,  2.81it/s]
+crashed reward
+crashed terminal
+reward -154.5 for 1111
+crashed reward
+crashed terminal
+reward -133.0 for 1112
+crashed reward
+crashed terminal
+reward -126.5 for 1113
+crashed reward
+crashed terminal
+
+ 11%|██▍                   | 1123/10000 [07:06<39:39,  3.73it/s]
+too far reward
+reward -177.5 for 1115
+crashed reward
+crashed terminal
+reward -123.5 for 1116
+crashed reward
+crashed terminal
+reward -113.0 for 1117
+crashed reward
+crashed terminal
+reward -78.5 for 1118
+crashed reward
+crashed terminal
+reward -107.0 for 1119
+crashed reward
+crashed terminal
+reward -113.5 for 1120
+crashed reward
+crashed terminal
+reward -110.0 for 1121
+crashed reward
+crashed terminal
+reward -118.5 for 1122
+crashed reward
+crashed terminal
+
+ 11%|██▍                   | 1129/10000 [07:08<51:08,  2.89it/s]
+crashed reward
+crashed terminal
+reward -143.5 for 1124
+crashed reward
+crashed terminal
+reward -130.0 for 1125
+crashed reward
+crashed terminal
+reward -107.0 for 1126
+crashed reward
+crashed terminal
+reward -114.0 for 1127
+crashed reward
+crashed terminal
+reward -116.0 for 1128
+crashed reward
+crashed terminal
+
+ 11%|██▍                   | 1136/10000 [07:10<41:08,  3.59it/s]
+crashed reward
+crashed terminal
+reward -105.0 for 1130
+crashed reward
+crashed terminal
+reward -127.0 for 1131
+crashed reward
+crashed terminal
+reward -97.0 for 1132
+crashed reward
+crashed terminal
+reward -119.0 for 1133
+crashed reward
+crashed terminal
+reward -119.5 for 1134
+crashed reward
+crashed terminal
+reward -120.0 for 1135
+crashed reward
+crashed terminal
+
+ 11%|██▌                   | 1143/10000 [07:13<42:17,  3.49it/s]
+crashed reward
+crashed terminal
+reward -123.0 for 1137
+crashed reward
+crashed terminal
+reward -118.0 for 1138
+crashed reward
+crashed terminal
+reward -119.0 for 1139
+crashed reward
+crashed terminal
+reward -121.5 for 1140
+crashed reward
+crashed terminal
+reward -109.0 for 1141
+crashed reward
+crashed terminal
+
+ 11%|██▌                   | 1149/10000 [07:14<36:10,  4.08it/s]
+crashed reward
+crashed terminal
+reward -120.0 for 1143
+crashed reward
+crashed terminal
+reward -110.5 for 1144
+crashed reward
+crashed terminal
+reward -140.5 for 1145
+crashed reward
+crashed terminal
+reward -120.0 for 1146
+crashed reward
+crashed terminal
+reward -106.5 for 1147
+crashed reward
+crashed terminal
+reward -100 for 1148
+crashed reward
+crashed terminal
+
+ 12%|██▌                   | 1159/10000 [07:17<31:18,  4.71it/s]
+crashed reward
+crashed terminal
+reward -118.0 for 1150
+crashed reward
+crashed terminal
+reward -117.5 for 1151
+crashed reward
+crashed terminal
+reward -115.0 for 1152
+crashed reward
+crashed terminal
+reward -121.0 for 1153
+crashed reward
+crashed terminal
+reward -109.5 for 1154
+crashed reward
+crashed terminal
+reward -101.0 for 1155
+crashed reward
+crashed terminal
+reward -123.5 for 1156
+crashed reward
+crashed terminal
+reward -110.5 for 1157
+crashed reward
+crashed terminal
+reward -107.0 for 1158
+crashed reward
+crashed terminal
+reward -112.5 for 1159
+crashed reward
+crashed terminal
+reward -125.5 for 1160
+crashed reward
+crashed terminal
+reward -111.5 for 1161
+crashed reward
+crashed terminal
+reward -106.0 for 1162
+crashed reward
+crashed terminal
+reward -122.0 for 1163
+crashed reward
+crashed terminal
+
+ 12%|██▌                   | 1164/10000 [07:19<59:05,  2.49it/s]
+crashed reward
+crashed terminal
+reward -116.5 for 1165
+crashed reward
+crashed terminal
+reward -107.5 for 1166
+crashed reward
+crashed terminal
+reward -115.5 for 1167
+crashed reward
+crashed terminal
+reward -108.0 for 1168
+crashed reward
+crashed terminal
+reward -118.0 for 1169
+crashed reward
+crashed terminal
+reward -105.0 for 1170
+crashed reward
+crashed terminal
+reward -105.0 for 1171
+crashed reward
+crashed terminal
+
+
+ 12%|██▌                   | 1177/10000 [07:22<59:45,  2.46it/s]
+crashed reward
+crashed terminal
+reward -118.0 for 1173
+crashed reward
+crashed terminal
+reward -118.5 for 1174
+crashed reward
+crashed terminal
+reward -133.5 for 1175
+crashed reward
+crashed terminal
+reward -138.0 for 1176
+crashed reward
+crashed terminal
+
+ 12%|██▌                   | 1184/10000 [07:25<46:01,  3.19it/s]
+crashed reward
+crashed terminal
+reward -171.0 for 1178
+crashed reward
+crashed terminal
+reward -126.0 for 1179
+too far reward
+reward -102.5 for 1180
+crashed reward
+crashed terminal
+reward -129.0 for 1181
+crashed reward
+crashed terminal
+reward -122.0 for 1182
+crashed reward
+crashed terminal
+reward -93.0 for 1183
+crashed reward
+crashed terminal
+
+ 12%|██▌                   | 1191/10000 [07:27<41:33,  3.53it/s]
+crashed reward
+crashed terminal
+reward -96.0 for 1185
+crashed reward
+crashed terminal
+reward -99.0 for 1186
+crashed reward
+crashed terminal
+reward -112.0 for 1187
+crashed reward
+crashed terminal
+reward -112.0 for 1188
+too far reward
+reward -123.5 for 1189
+crashed reward
+crashed terminal
+
+ 12%|██▍                 | 1194/10000 [07:29<1:09:48,  2.10it/s]
+crashed reward
+crashed terminal
+reward -114.5 for 1191
+too far reward
+reward -205.0 for 1192
+crashed reward
+crashed terminal
+reward -93.0 for 1193
+crashed reward
+crashed terminal
+
+ 12%|██▋                   | 1200/10000 [07:31<42:26,  3.46it/s]
+reward -52.0 for 1195
+crashed reward
+crashed terminal
+reward -121.0 for 1196
+crashed reward
+crashed terminal
+reward -90.5 for 1197
+crashed reward
+crashed terminal
+reward -102.5 for 1198
+crashed reward
+crashed terminal
+reward -106.0 for 1199
+crashed reward
+crashed terminal
+reward -109.5 for 1200
+crashed reward
+crashed terminal
+reward -112.5 for 1201
+crashed reward
+crashed terminal
+reward -126.5 for 1202
+too far reward
+reward -120.0 for 1203
+crashed reward
+crashed terminal
+reward -106.0 for 1204
+crashed reward
+crashed terminal
+reward -105.0 for 1205
+crashed reward
+crashed terminal
+reward -104.0 for 1206
+crashed reward
+crashed terminal
+
+
+ 12%|██▍                 | 1211/10000 [07:34<1:06:38,  2.20it/s]
+too far reward
+reward -125.0 for 1208
+crashed reward
+crashed terminal
+reward -131.0 for 1209
+crashed reward
+crashed terminal
+reward -127.5 for 1210
+too far reward
+
+ 12%|██▋                   | 1217/10000 [07:37<47:31,  3.08it/s]
+too far reward
+reward -183.5 for 1212
+crashed reward
+crashed terminal
+reward -108.5 for 1213
+crashed reward
+crashed terminal
+reward -77.5 for 1214
+crashed reward
+crashed terminal
+reward -110.0 for 1215
+crashed reward
+crashed terminal
+reward -120.5 for 1216
+crashed reward
+crashed terminal
+reward -107.5 for 1217
+too far reward
+reward -143.0 for 1218
+crashed reward
+crashed terminal
+reward -107.0 for 1219
+crashed reward
+crashed terminal
+reward -119.5 for 1220
+crashed reward
+crashed terminal
+reward -107.5 for 1221
+crashed reward
+crashed terminal
+reward -132.5 for 1222
+crashed reward
+crashed terminal
+reward -108.0 for 1223
+crashed reward
+crashed terminal
+
+ 12%|██▋                   | 1225/10000 [07:39<36:46,  3.98it/s]
+crashed reward
+crashed terminal
+reward -122.0 for 1225
+crashed reward
+crashed terminal
+reward -118.0 for 1226
+too far reward
+reward -134.0 for 1227
+crashed reward
+crashed terminal
+
+ 12%|██▍                 | 1228/10000 [07:41<1:07:15,  2.17it/s]
+crashed reward
+crashed terminal
+reward -126.5 for 1229
+crashed reward
+crashed terminal
+reward -167.5 for 1230
+too far reward
+reward -105.0 for 1231
+crashed reward
+crashed terminal
+reward -108.5 for 1232
+crashed reward
+crashed terminal
+reward -64.0 for 1233
+crashed reward
+crashed terminal
+
+ 12%|██▋                   | 1233/10000 [07:43<58:24,  2.50it/s]
+crashed reward
+crashed terminal
+reward -86.5 for 1235
+too far reward
+reward -104.0 for 1236
+crashed reward
+crashed terminal
+reward -97.5 for 1237
+crashed reward
+crashed terminal
+reward -108.5 for 1238
+crashed reward
+crashed terminal
+
+
+ 12%|██▋                   | 1247/10000 [07:47<37:00,  3.94it/s]
+crashed reward
+crashed terminal
+reward -91.5 for 1240
+crashed reward
+crashed terminal
+reward -119.5 for 1241
+too far reward
+reward -146.0 for 1242
+crashed reward
+crashed terminal
+reward -76.5 for 1243
+crashed reward
+crashed terminal
+reward -111.0 for 1244
+too far reward
+reward -126.5 for 1245
+crashed reward
+crashed terminal
+reward -136.0 for 1246
+crashed reward
+crashed terminal
+
+ 13%|██▊                   | 1254/10000 [07:49<41:10,  3.54it/s]
+crashed reward
+crashed terminal
+reward -109.5 for 1248
+crashed reward
+crashed terminal
+reward -83.5 for 1249
+crashed reward
+crashed terminal
+reward -133.0 for 1250
+crashed reward
+crashed terminal
+reward -80.0 for 1251
+crashed reward
+crashed terminal
+reward -94.5 for 1252
+crashed reward
+crashed terminal
+reward -116.0 for 1253
+crashed reward
+crashed terminal
+
+ 13%|██▊                   | 1259/10000 [07:50<56:33,  2.58it/s]
+crashed reward
+crashed terminal
+reward -102.5 for 1255
+crashed reward
+crashed terminal
+reward -113.5 for 1256
+crashed reward
+crashed terminal
+reward -125.0 for 1257
+too far reward
+reward -136.0 for 1258
+too far reward
+reward -107.0 for 1259
+reward 34.0 for 1260
+too far reward
+reward -157.5 for 1261
+crashed reward
+crashed terminal
+reward -100 for 1262
+crashed reward
+crashed terminal
+reward -115.5 for 1263
+crashed reward
+crashed terminal
+
+ 13%|██▊                   | 1264/10000 [07:53<53:25,  2.73it/s]
+crashed reward
+crashed terminal
+reward -102.0 for 1265
+crashed reward
+crashed terminal
+reward -102.5 for 1266
+crashed reward
+crashed terminal
+reward -138.5 for 1267
+crashed reward
+crashed terminal
+reward -100.5 for 1268
+crashed reward
+crashed terminal
+reward -180.0 for 1269
+too far reward
+
+ 13%|██▊                   | 1271/10000 [07:55<47:45,  3.05it/s]
+crashed reward
+crashed terminal
+reward -128.5 for 1271
+crashed reward
+crashed terminal
+reward -94.0 for 1272
+crashed reward
+crashed terminal
+reward -110.5 for 1273
+crashed reward
+crashed terminal
+reward -131.0 for 1274
+crashed reward
+crashed terminal
+reward -127.0 for 1275
+crashed reward
+crashed terminal
+reward -130.0 for 1276
+crashed reward
+crashed terminal
+reward -77.5 for 1277
+crashed reward
+crashed terminal
+
+ 13%|██▊                   | 1278/10000 [07:57<42:21,  3.43it/s]
+crashed reward
+crashed terminal
+reward -107.5 for 1279
+crashed reward
+crashed terminal
+reward -74.0 for 1280
+crashed reward
+crashed terminal
+reward -109.0 for 1281
+reward -49.0 for 1282
+crashed reward
+crashed terminal
+
+
+ 13%|██▊                   | 1292/10000 [08:01<35:03,  4.14it/s]
+too far reward
+reward -119.0 for 1284
+crashed reward
+crashed terminal
+reward -115.0 for 1285
+crashed reward
+crashed terminal
+reward -107.0 for 1286
+crashed reward
+crashed terminal
+reward -107.5 for 1287
+too far reward
+reward -103.0 for 1288
+crashed reward
+crashed terminal
+reward -103.0 for 1289
+crashed reward
+crashed terminal
+reward -148.5 for 1290
+crashed reward
+crashed terminal
+reward -114.0 for 1291
+crashed reward
+crashed terminal
+
+ 13%|██▊                   | 1297/10000 [08:03<45:07,  3.21it/s]
+crashed reward
+crashed terminal
+reward -107.5 for 1293
+crashed reward
+crashed terminal
+reward -110.5 for 1294
+crashed reward
+crashed terminal
+reward -98.0 for 1295
+too far reward
+reward -134.0 for 1296
+crashed reward
+crashed terminal
+
+ 13%|██▌                 | 1304/10000 [08:05<1:00:01,  2.41it/s]
+crashed reward
+crashed terminal
+reward -121.0 for 1298
+crashed reward
+crashed terminal
+reward -94.0 for 1299
+crashed reward
+crashed terminal
+reward -100.0 for 1300
+crashed reward
+crashed terminal
+reward -128.0 for 1301
+crashed reward
+crashed terminal
+reward -109.0 for 1302
+crashed reward
+crashed terminal
+reward -98.0 for 1303
+
+ 13%|██▉                   | 1310/10000 [08:07<52:13,  2.77it/s]
+crashed reward
+crashed terminal
+reward -146.5 for 1305
+crashed reward
+crashed terminal
+reward -100.0 for 1306
+crashed reward
+crashed terminal
+reward -109.5 for 1307
+crashed reward
+crashed terminal
+reward -104.0 for 1308
+too far reward
+reward -114.5 for 1309
+crashed reward
+crashed terminal
+reward -108.0 for 1310
+crashed reward
+crashed terminal
+
+ 13%|██▉                   | 1316/10000 [08:09<45:20,  3.19it/s]
+crashed reward
+crashed terminal
+reward -117.5 for 1312
+reward -76.5 for 1313
+crashed reward
+crashed terminal
+reward -101.0 for 1314
+crashed reward
+crashed terminal
+reward -123.5 for 1315
+crashed reward
+crashed terminal
+
+ 13%|██▋                 | 1321/10000 [08:11<1:00:51,  2.38it/s]
+crashed reward
+crashed terminal
+reward -107.0 for 1317
+crashed reward
+crashed terminal
+reward -107.0 for 1318
+crashed reward
+crashed terminal
+reward -84.5 for 1319
+crashed reward
+crashed terminal
+reward -143.5 for 1320
+crashed reward
+crashed terminal
+
+ 13%|██▉                   | 1328/10000 [08:13<37:56,  3.81it/s]
+crashed reward
+crashed terminal
+reward -136.5 for 1322
+crashed reward
+crashed terminal
+reward -100.5 for 1323
+crashed reward
+crashed terminal
+reward -115.5 for 1324
+too far reward
+reward -101.5 for 1325
+crashed reward
+crashed terminal
+reward -104.5 for 1326
+crashed reward
+crashed terminal
+reward -101.5 for 1327
+crashed reward
+crashed terminal
+
+ 13%|██▉                   | 1336/10000 [08:15<32:34,  4.43it/s]
+reward -31.0 for 1329
+too far reward
+reward -108.5 for 1330
+crashed reward
+crashed terminal
+reward -113.0 for 1331
+crashed reward
+crashed terminal
+reward -101.0 for 1332
+crashed reward
+crashed terminal
+reward -110.0 for 1333
+too far reward
+reward -108.5 for 1334
+crashed reward
+crashed terminal
+reward -105.0 for 1335
+crashed reward
+crashed terminal
+
+ 13%|██▉                   | 1342/10000 [08:17<46:36,  3.10it/s]
+too far reward
+reward -105.0 for 1337
+crashed reward
+crashed terminal
+reward -102.5 for 1338
+crashed reward
+crashed terminal
+reward -108.5 for 1339
+crashed reward
+crashed terminal
+reward -122.0 for 1340
+crashed reward
+crashed terminal
+reward -96.0 for 1341
+too far reward
+
+ 13%|██▉                   | 1346/10000 [08:19<54:00,  2.67it/s]
+too far reward
+reward -110.5 for 1343
+too far reward
+reward -96.0 for 1344
+crashed reward
+crashed terminal
+reward -123.0 for 1345
+too far reward
+
+ 14%|██▉                   | 1353/10000 [08:21<43:13,  3.33it/s]
+too far reward
+reward -126.0 for 1347
+crashed reward
+crashed terminal
+reward -105.0 for 1348
+crashed reward
+crashed terminal
+reward -108.5 for 1349
+crashed reward
+crashed terminal
+reward -115.0 for 1350
+crashed reward
+crashed terminal
+reward -102.0 for 1351
+crashed reward
+crashed terminal
+reward -109.0 for 1352
+too far reward
+reward -130.5 for 1353
+crashed reward
+crashed terminal
+reward -81.0 for 1354
+too far reward
+
+ 14%|██▉                   | 1360/10000 [08:23<48:35,  2.96it/s]
+crashed reward
+crashed terminal
+reward -143.0 for 1356
+crashed reward
+crashed terminal
+reward -103.5 for 1357
+too far reward
+reward -173.0 for 1358
+crashed reward
+crashed terminal
+reward -113.5 for 1359
+crashed reward
+crashed terminal
+reward -156.5 for 1360
+too far reward
+
+ 14%|███                   | 1365/10000 [08:25<53:21,  2.70it/s]
+crashed reward
+crashed terminal
+reward -118.0 for 1362
+crashed reward
+crashed terminal
+reward -90.5 for 1363
+too far reward
+reward -125.0 for 1364
+crashed reward
+crashed terminal
+reward -115.5 for 1365
+crashed reward
+crashed terminal
+reward -109.0 for 1366
+crashed reward
+crashed terminal
+
+ 14%|███                   | 1372/10000 [08:27<41:56,  3.43it/s]
+too far reward
+reward -124.0 for 1368
+crashed reward
+crashed terminal
+reward -90.0 for 1369
+crashed reward
+crashed terminal
+reward -102.5 for 1370
+crashed reward
+crashed terminal
+reward -118.0 for 1371
+crashed reward
+crashed terminal
+
+ 14%|███                   | 1376/10000 [08:28<56:15,  2.55it/s]
+too far reward
+reward -100.5 for 1373
+crashed reward
+crashed terminal
+reward -94 for 1374
+crashed reward
+crashed terminal
+reward -158.0 for 1375
+crashed reward
+crashed terminal
+
+ 14%|███                   | 1385/10000 [08:31<33:18,  4.31it/s]
+too far reward
+reward -113.0 for 1377
+crashed reward
+crashed terminal
+reward -97.5 for 1378
+crashed reward
+crashed terminal
+reward -125.5 for 1379
+crashed reward
+crashed terminal
+reward -101.5 for 1380
+crashed reward
+crashed terminal
+reward -110.5 for 1381
+crashed reward
+crashed terminal
+reward -111.0 for 1382
+crashed reward
+crashed terminal
+reward -102.5 for 1383
+crashed reward
+crashed terminal
+reward -117.5 for 1384
+crashed reward
+crashed terminal
+
+ 14%|███                   | 1390/10000 [08:33<58:43,  2.44it/s]
+crashed reward
+crashed terminal
+reward -96.5 for 1386
+crashed reward
+crashed terminal
+reward -92 for 1387
+too far reward
+reward -125.0 for 1388
+crashed reward
+crashed terminal
+reward -106.0 for 1389
+crashed reward
+crashed terminal
+
+ 14%|███                   | 1396/10000 [08:35<48:07,  2.98it/s]
+too far reward
+reward -114.0 for 1391
+crashed reward
+crashed terminal
+reward -124.0 for 1392
+too far reward
+reward -117.0 for 1393
+crashed reward
+crashed terminal
+reward -104.5 for 1394
+crashed reward
+crashed terminal
+reward -94.5 for 1395
+crashed reward
+crashed terminal
+
+ 14%|███                   | 1401/10000 [08:37<57:56,  2.47it/s]
+crashed reward
+crashed terminal
+reward -98.5 for 1397
+crashed reward
+crashed terminal
+reward -100.0 for 1398
+too far reward
+reward -102.5 for 1399
+crashed reward
+crashed terminal
+reward -105.0 for 1400
+too far reward
+
+ 14%|███                   | 1406/10000 [08:39<57:14,  2.50it/s]
+too far reward
+reward -104.5 for 1402
+crashed reward
+crashed terminal
+reward -135.0 for 1403
+crashed reward
+crashed terminal
+reward -144.0 for 1404
+crashed reward
+crashed terminal
+reward -115.0 for 1405
+crashed reward
+crashed terminal
+
+ 14%|██▊                 | 1410/10000 [08:41<1:11:13,  2.01it/s]
+too far reward
+reward -157.5 for 1407
+crashed reward
+crashed terminal
+reward -127.5 for 1408
+crashed reward
+crashed terminal
+reward -106.5 for 1409
+crashed reward
+crashed terminal
+
+ 14%|██▊                 | 1413/10000 [08:43<1:16:26,  1.87it/s]
+too far reward
+reward -114.0 for 1411
+crashed reward
+crashed terminal
+reward -111.5 for 1412
+crashed reward
+crashed terminal
+
+ 14%|██▊                 | 1417/10000 [08:45<1:18:10,  1.83it/s]
+reward -17.5 for 1414
+crashed reward
+crashed terminal
+reward -119.0 for 1415
+too far reward
+reward -147.0 for 1416
+crashed reward
+crashed terminal
+
+ 14%|██▊                 | 1421/10000 [08:47<1:21:56,  1.74it/s]
+crashed reward
+crashed terminal
+reward -121.0 for 1418
+too far reward
+reward -96.5 for 1419
+crashed reward
+crashed terminal
+reward -118.0 for 1420
+crashed reward
+crashed terminal
+
+ 14%|███▏                  | 1427/10000 [08:49<55:19,  2.58it/s]
+crashed reward
+crashed terminal
+reward -115.0 for 1422
+crashed reward
+crashed terminal
+reward -154.0 for 1423
+crashed reward
+crashed terminal
+reward -126.0 for 1424
+crashed reward
+crashed terminal
+reward -100.5 for 1425
+crashed reward
+crashed terminal
+
+ 14%|███▏                  | 1432/10000 [08:51<54:25,  2.62it/s]
+crashed reward
+crashed terminal
+reward -105.5 for 1427
+crashed reward
+crashed terminal
+reward -127.0 for 1428
+crashed reward
+crashed terminal
+reward -128.5 for 1429
+reward -20.0 for 1430
+crashed reward
+crashed terminal
+ 14%|███▏                  | 1435/10000 [08:53<53:03,  2.69it/s]
+Traceback (most recent call last):
+  File "Complete.py", line 353, in <module>
+    run_experiment(current_env , current_agent , environment_parameters , agent_parameters , experiment_parameters)
+  File "Complete.py", line 273, in run_experiment
+    rl_glue.rl_episode(experiment_parameters["timeout"])
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 190, in rl_episode
+    rl_step_result = self.rl_step()
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 140, in rl_step
+    self.last_action = self.agent.agent_step(reward, last_state)
+  File "Complete.py", line 231, in agent_step
+    optimize_network(experiences , self.discount , self.optimizer , self.network , current_q , self.tau)
+  File "Complete.py", line 171, in optimize_network
+    rewards = np.array(rewards)
+KeyboardInterrupt
+crashed reward
+crashed terminal
+reward -133.5 for 1432
+too far reward
+reward -107.5 for 1433
+crashed reward
+crashed terminal
+reward -110.5 for 1434
+crashed reward
+crashed terminal
+reward -100.5 for 1435

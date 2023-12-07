@@ -19,9 +19,10 @@ class SatelliteEnvironment(BaseEnvironment):
         self.boost_strength = 0.001
 
         self.steps_in_reward = 0
-        self.max_steps_in_reward = 40
+        self.max_steps_in_reward = 200
+        self.success = False
 
-        self.visualise = True
+        self.visualise = False
         self.width , self.height = 1000 , 800
         self.satellite_radius = 7
         self.earth_radius = 100
@@ -50,7 +51,7 @@ class SatelliteEnvironment(BaseEnvironment):
 
         self.current_time_step = 0
 
-        self.sat_1_fuel = 100
+        self.sat_1_fuel = 1000
 
 
         # --- Objects creation --- #
@@ -66,6 +67,7 @@ class SatelliteEnvironment(BaseEnvironment):
                                   position=np.array([self.earth.position[0] + self.orbit_1, self.earth.position[1]]))
         self.satellite_1.set_circular_orbit_velocity(central_obj=self.earth, orbit_radius=self.orbit_1)
         self.satellite_1.position_where_thrust = []
+        self.satellite_1.position_where_thrust2 = []
         
         # Satellite 2
         sat_2_init_pos = np.array(polar_to_cartesian(-60 , self.orbit_2))
@@ -148,15 +150,17 @@ class SatelliteEnvironment(BaseEnvironment):
         # Velocity difference
         goal_t_velocity = np.linalg.norm(self.satellite_2.find_velocity_components(self.earth)[0])
         current_t_velocity = np.linalg.norm(self.satellite_1.find_velocity_components(self.earth)[0])
-        velocity_diff = abs(goal_t_velocity - current_t_velocity)
+        velocity_diff = (goal_t_velocity - current_t_velocity)*100
         #dist = velocity_diff*1000
         
-
+        # print(f"alt_diff: {alt_diff} , velocity_diff: {velocity_diff}")
         return (alt_diff , velocity_diff)
 
 
     
     def calculate_reward(self , action):
+
+        global steps_in_reward
         
         # Calculate metrics needed for reward
         dist = np.linalg.norm(self.satellite_1.position - self.satellite_2.position)
@@ -165,9 +169,29 @@ class SatelliteEnvironment(BaseEnvironment):
         alt_diff = abs(sat_1_alt - sat_2_alt)
 
         reward = 0
-        if alt_diff < 5:
-            reward = 0.1
+        if alt_diff < 8:
+            reward = 1
+            steps_in_reward += 1
+            # print('steps_in_reward' , steps_in_reward)
+        else:
+            steps_in_reward = 0
 
+        # if steps_in_reward > self.max_steps_in_reward/2:
+        #     reward += 1
+        #     print('half reward')
+
+        # if steps_in_reward > self.max_steps_in_reward:
+        #     reward += 1
+        #     print('full reward')
+        #     self.success = True
+
+        if sat_1_alt > 700: # Satellite goes too far
+            reward -= 100
+            print('too far reward')
+        
+        # Using fuel
+        if action == 0:
+            reward -= 0.5
 
         # Crashing on Earth
         if sat_1_alt < 0: 
@@ -186,26 +210,50 @@ class SatelliteEnvironment(BaseEnvironment):
             return True
         elif self.sat_1_fuel <= 0: # Satellite has no more fuel
             return True
-        elif sat_1_alt > 300: # Satellite goes too far
+        elif sat_1_alt > 700: # Satellite goes too far
+            return True
+        elif self.success: # Satellite has reached the goal
             return True
         
         return False 
 
 
     def perform_action(self , a):
-        global action_1_is_on
+        global action_1_is_on, action_2_is_on
 
         # Perform action
-        if a == 0:
+        if a == 1:
             self.sat_1_fuel -= 1
             self.satellite_1.change_tangent_velocity(self.earth , self.boost_strength)
             action_1_is_on = True
-            self.satellite_1.position_where_thrust.append(self.satellite_1.position)
+            self.satellite_1.position_where_thrust.append((self.satellite_1.position,2))
+        elif a == 2:
+            self.sat_1_fuel -= 1
+            self.satellite_1.change_tangent_velocity(self.earth , self.boost_strength*5)
+            self.satellite_1.position_where_thrust.append((self.satellite_1.position,4))
+            action_1_is_on = True
+        elif a == 3:
+            self.sat_1_fuel -= 1
+            self.satellite_1.change_tangent_velocity(self.earth , self.boost_strength*10)
+            self.satellite_1.position_where_thrust.append((self.satellite_1.position,6))
+            action_1_is_on = True       
         elif a == 4:
-            # 4: set velocity to stay in orbit 
-            self.satellite_1.set_circular_orbit_velocity(self.earth , calculate_distance(self.satellite_1.position , self.earth.position))
+            self.sat_1_fuel -= 1
+            self.satellite_1.change_tangent_velocity(self.earth , self.boost_strength*20)
+            self.satellite_1.position_where_thrust.append((self.satellite_1.position,8))
+            action_1_is_on = True       
+        # Reverse
+        elif a == 5:
+            self.sat_1_fuel -= 1
+            self.satellite_1.change_tangent_velocity(self.earth , -self.boost_strength)
+            action_2_is_on = True
+            self.satellite_1.position_where_thrust2.append(self.satellite_1.position)
+        # elif a == 4:
+        #     # 4: set velocity to stay in orbit 
+        #     self.satellite_1.set_circular_orbit_velocity(self.earth , calculate_distance(self.satellite_1.position , self.earth.position))
         else:
             action_1_is_on = False
+            action_2_is_on = False
 
 
     def env_start(self):
@@ -391,8 +439,10 @@ class SatelliteEnvironment(BaseEnvironment):
         line(satellite_1.position , satellite_1.position + normalise_vector(satellite_1.velocity)*60 , screen , white)
         
         # Show boost location
-        for x in self.satellite_1.position_where_thrust:
-            pygame.draw.circle(screen, (255, 0, 0), x, 2)
+        for x, size in self.satellite_1.position_where_thrust:
+            pygame.draw.circle(screen, (255, 0, 0), x, size)
+        for x in self.satellite_1.position_where_thrust2:
+            pygame.draw.circle(screen, (0, 255, 0), x, 2)
 
         # Show boost direction
         if action_1_is_on:

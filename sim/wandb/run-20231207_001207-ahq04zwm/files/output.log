@@ -1,0 +1,17 @@
+
+No input weights, start from scratch
+  0%|                                 | 0/10000 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "Complete.py", line 353, in <module>
+    run_experiment(current_env , current_agent , environment_parameters , agent_parameters , experiment_parameters)
+  File "Complete.py", line 273, in run_experiment
+    rl_glue.rl_episode(experiment_parameters["timeout"])
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 190, in rl_episode
+    rl_step_result = self.rl_step()
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 130, in rl_step
+    (reward, last_state, term) = self.environment.env_step(self.last_action)
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/Simulator.py", line 277, in env_step
+    self.perform_action(action)
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/Simulator.py", line 243, in perform_action
+    self.satellite_1.position_where_thrust.append(self.satellite_1.position,8)
+TypeError: append() takes exactly one argument (2 given)

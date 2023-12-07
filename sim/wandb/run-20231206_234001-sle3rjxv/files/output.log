@@ -1,0 +1,75 @@
+
+No input weights, start from scratch
+  0%|                                 | 0/10000 [00:00<?, ?it/s]
+crashed reward
+crashed terminal
+
+  0%|                       | 1/10000 [00:01<4:19:37,  1.56s/it]
+crashed reward
+crashed terminal
+
+  0%|                       | 2/10000 [00:06<9:19:54,  3.36s/it]
+crashed reward
+crashed terminal
+
+  0%|                      | 3/10000 [00:19<22:08:24,  7.97s/it]
+crashed reward
+crashed terminal
+
+  0%|                      | 4/10000 [00:26<21:21:01,  7.69s/it]
+crashed reward
+crashed terminal
+
+  0%|                      | 5/10000 [00:33<20:00:54,  7.21s/it]
+crashed reward
+crashed terminal
+
+
+  0%|                      | 7/10000 [00:43<16:42:51,  6.02s/it]
+crashed reward
+crashed terminal
+
+  0%|                      | 8/10000 [00:48<15:20:16,  5.53s/it]
+crashed reward
+crashed terminal
+
+  0%|                      | 9/10000 [01:03<23:51:23,  8.60s/it]
+crashed reward
+crashed terminal
+reward -155.5 for 9
+crashed reward
+crashed terminal
+
+  0%|                     | 10/10000 [01:24<33:55:45, 12.23s/it]
+crashed reward
+crashed terminal
+
+  0%|                     | 11/10000 [01:29<27:52:03, 10.04s/it]
+crashed reward
+crashed terminal
+
+  0%|                     | 12/10000 [01:33<23:07:04,  8.33s/it]
+crashed reward
+crashed terminal
+
+  0%|                     | 13/10000 [01:42<23:20:11,  8.41s/it]
+crashed reward
+crashed terminal
+
+  0%|                     | 14/10000 [01:51<22:01:38,  7.94s/it]
+Traceback (most recent call last):
+  File "Complete.py", line 353, in <module>
+    run_experiment(current_env , current_agent , environment_parameters , agent_parameters , experiment_parameters)
+  File "Complete.py", line 273, in run_experiment
+    rl_glue.rl_episode(experiment_parameters["timeout"])
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 190, in rl_episode
+    rl_step_result = self.rl_step()
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 130, in rl_step
+    (reward, last_state, term) = self.environment.env_step(self.last_action)
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/Simulator.py", line 266, in env_step
+    self.visual_update()
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/Simulator.py", line 446, in visual_update
+    label(f"Velocity: {round(np.linalg.norm(satellite_2.velocity), 2)}" , (self.width - 170, 60) , screen)
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/Extra.py", line 8, in label
+    label = font.render(text, True, (255, 255, 255))
+KeyboardInterrupt
