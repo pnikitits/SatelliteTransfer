@@ -18,13 +18,13 @@ class SatelliteEnvironment(BaseEnvironment):
 
         self.time_step = 70
         self.reached_dist = 5
-        self.reach_r_velocity = 5
-        self.boost_strength = 0.01
+        self.reach_r_velocity = 0.1 # 0.0006 !!
+        self.boost_strength = 0.005
 
         self.steps_in_reward = 0
         self.max_steps_in_reward = 40
 
-        self.visualise = True
+        self.visualise = False
         self.width , self.height = 1000 , 800
         self.satellite_radius = 7
         self.earth_radius = 100
@@ -36,17 +36,22 @@ class SatelliteEnvironment(BaseEnvironment):
     def env_init(self , env_info={}):
          
         #self.min_dist_reached = 10000 # Minimum distance reached during an episode (for logging the "loss" instead of the sum of rewards)
-        self.n_time_steps_in_range = 0
+        #self.n_time_steps_in_range = 0
+
+
+        self.MIN_RAD_V_IN_REACH = 1000 # As a loss to plot: the minimum velocity in radial direction IN the reach distance
 
         # New
         self.log_alt_sat_1 = [] # [float]
         self.log_alt_sat_2 = [] # [float]
-        self.log_alt_boost = [] # [float] = alt_sat_1
+        self.log_alt_boost_pos = [] # [float] = alt_sat_1
+        self.log_alt_boost_neg = [] # [float] = alt_sat_1
         self.log_alt_time  = [] # [int]
 
         self.log_traj_sat_1 = [] # [[x,y] , ...]
         self.log_traj_sat_2 = [] # [[x,y] , ...]
-        self.log_traj_boost = [] # [[x,y] , ...]
+        self.log_traj_boost_pos = [] # [[x,y] , ...]
+        self.log_traj_boost_neg = [] # [[x,y] , ...]
 
         self.log_distance = []
 
@@ -110,7 +115,14 @@ class SatelliteEnvironment(BaseEnvironment):
         self.satellite_2.update_pos(dt=self.time_step)
 
         # Define the dist as the Euclidean distance
-        #dist = np.linalg.norm(self.satellite_1.position - self.satellite_2.position)
+        dist = np.linalg.norm(self.satellite_1.position - self.satellite_2.position)
+
+        sat1_r_velocity = abs(self.satellite_1.find_velocity_components(self.earth)[0])
+
+        if dist < self.reached_dist:
+            if sat1_r_velocity < self.MIN_RAD_V_IN_REACH:
+                self.MIN_RAD_V_IN_REACH = sat1_r_velocity
+
 
         # Define the dist as the difference in tangent velocities
         #goal_t_velocity = find_circular_orbit_v(self.earth , self.orbit_2)
@@ -131,6 +143,8 @@ class SatelliteEnvironment(BaseEnvironment):
         #if dist < self.reached_dist:
         #    self.reached_dist = (self.reached_dist + dist)*0.5
         #    print(f"update REACHED_DIST {self.reached_dist} -> {dist}")
+
+        
 
 
 
@@ -157,33 +171,37 @@ class SatelliteEnvironment(BaseEnvironment):
         #current_t_velocity = np.linalg.norm(self.satellite_1.find_velocity_components(self.earth)[1])
         #velocity_diff = abs(goal_t_velocity - current_t_velocity)
         #dist = velocity_diff*1000
-        sat_1_rad_v = self.satellite_1.find_velocity_components(self.earth)[0]
+        sat_1_rad_v = abs(self.satellite_1.find_velocity_components(self.earth)[0])
         
 
-        return (sat_1_alt , dist , sat_1_rad_v , self.n_time_steps_in_range)#min_dist_reached)
+        return (sat_1_alt , dist , sat_1_rad_v)#  , self.n_time_steps_in_range)#min_dist_reached)
 
 
     
     def calculate_reward(self , state , action , next_state):
-        sat_1_alt , dist , sat_1_rad_v , _ = state
-        next_sat_1_alt , next_dist , next_sat_1_rad_v , _ = next_state
+        sat_1_alt , dist , sat_1_rad_v = state
+        next_sat_1_alt , next_dist , next_sat_1_rad_v = next_state
         reward = 0
 
-        print("calc reward" , self.current_time_step)
+        #print("calc reward" , self.current_time_step)
 
         # Fuel use
         if action == 1 or action == 2:
-            reward -= 1
+            if self.sat_1_fuel != 100:
+                reward -= 1
 
         # Reach objective
+        if dist < self.reached_dist:
+            reward += 30
         if dist < self.reached_dist and sat_1_rad_v < self.reach_r_velocity:
             print("reached objective" , ep_count)
-            reward += 100 + self.sat_1_fuel
+            reward += 2000
+        
 
         # Crash
         if sat_1_alt <= 0 or self.sat_1_fuel <= 0:
             print("crash" , ep_count)
-            reward -= 90
+            reward -= 150
 
 
         return reward
@@ -232,9 +250,9 @@ class SatelliteEnvironment(BaseEnvironment):
     
 
     def is_terminal(self , state):
-        sat_1_alt , _ , _ , _ = state
+        sat_1_alt , _ , _ = state
 
-        print("terminal" , self.current_time_step)
+        #print("terminal" , self.current_time_step)
         if sat_1_alt <= 0:
             print("terminal crash" , ep_count)
             return True
@@ -271,7 +289,7 @@ class SatelliteEnvironment(BaseEnvironment):
         # Observe current state
         current_state = self.env_observe_state()
 
-        print("ACTION" , a)
+        #print("ACTION" , a)
 
         # Perform action
         if a == 1:
@@ -351,9 +369,14 @@ class SatelliteEnvironment(BaseEnvironment):
         self.log_alt_sat_1.append(sat_1_alt)
         self.log_alt_sat_2.append(sat_2_alt)
         if action_1_is_on:
-            self.log_alt_boost.append(sat_1_alt)
+            self.log_alt_boost_pos.append(sat_1_alt)
         else:
-            self.log_alt_boost.append(np.nan)
+            self.log_alt_boost_pos.append(np.nan)
+
+        if action_2_is_on:
+            self.log_alt_boost_neg.append(sat_1_alt)
+        else:
+            self.log_alt_boost_neg.append(np.nan)
         self.log_alt_time.append(self.current_time_step)
 
 
@@ -363,9 +386,14 @@ class SatelliteEnvironment(BaseEnvironment):
         self.log_traj_sat_1.append(sat_1_pos)
         self.log_traj_sat_2.append(sat_2_pos)
         if action_1_is_on:
-            self.log_traj_boost.append(sat_1_pos)
+            self.log_traj_boost_pos.append(sat_1_pos)
         else:
-            self.log_traj_boost.append([np.nan , np.nan])
+            self.log_traj_boost_pos.append([np.nan , np.nan])
+
+        if action_2_is_on:
+            self.log_traj_boost_neg.append(sat_1_pos)
+        else:
+            self.log_traj_boost_neg.append([np.nan , np.nan])
 
         # Distance subplot
         self.log_distance.append(np.linalg.norm(self.satellite_1.position - self.satellite_2.position))
@@ -384,7 +412,8 @@ class SatelliteEnvironment(BaseEnvironment):
         plt.subplot(1, 3, 1)
         plt.plot(*zip(*self.log_traj_sat_1) , linestyle='-', color='b' , label='sat_1 (OTV)')
         plt.plot(*zip(*self.log_traj_sat_2) , linestyle='-', color='g' , label='sat_2')
-        plt.plot(*zip(*self.log_traj_boost) , marker='o', color='r' , label='boost')
+        plt.plot(*zip(*self.log_traj_boost_pos) , marker='o', color='g' , label='+ boost')
+        plt.plot(*zip(*self.log_traj_boost_neg) , marker='o', color='r' , label='- boost')
         plt.xlabel('x')
         plt.ylabel('y')
         plt.axis('equal')
@@ -397,10 +426,12 @@ class SatelliteEnvironment(BaseEnvironment):
         x = self.log_alt_time
         y1 = self.log_alt_sat_1
         y2 = self.log_alt_sat_2
-        y3 = self.log_alt_boost
+        y3 = self.log_alt_boost_pos
+        y4 = self.log_alt_boost_neg
         plt.plot(x, y1 , linestyle='-', color='b' , label='sat_1 (OTV)')
         plt.plot(x, y2 , linestyle='-', color='g' , label='sat_2')
-        plt.plot(x, y3, marker='o' , color='r' , label='boost')
+        plt.plot(x, y3, marker='o' , color='g' , label='+ boost')
+        plt.plot(x, y4, marker='o' , color='r' , label='- boost')
         plt.xlabel('Time Step')
         plt.ylabel('Altitude')
         plt.title('Altitude')
@@ -438,7 +469,7 @@ class SatelliteEnvironment(BaseEnvironment):
     def get_min_dist(self):
         #if self.min_dist_reached <= 20:
         #    print("min_dist in ep :" , self.min_dist_reached)
-        return self.n_time_steps_in_range#self.min_dist_reached
+        return self.MIN_RAD_V_IN_REACH#self.min_dist_reached
     
     def pass_count(self , message):
         global ep_count
