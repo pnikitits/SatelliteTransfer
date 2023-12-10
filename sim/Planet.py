@@ -4,7 +4,7 @@ from Extra import *
 
 
 class planet:
-    def __init__(self , mass , name ,
+    def __init__(self , mass , name , radius ,
                  position=np.array([0,0]) , 
                  velocity=np.array([0,0])):
         
@@ -12,6 +12,7 @@ class planet:
         self.position = position
         self.name = name
         self.velocity = velocity
+        self.radius = radius
 
 
     def update_velocity(self, pl_array, dt=1 / 30):
@@ -47,6 +48,60 @@ class planet:
     def update_pos(self , dt=1/30):
         self.position = self.position + self.velocity*dt
 
+
+
+
+
+
+
+
+    """def get_tangent_velocity(self , centre_obj):
+        return self.convert_velocity(centre_obj)[0]
+
+    def get_normal_velocity(self, centre_obj):
+        return self.convert_velocity(centre_obj)[1]
+        
+    
+    def convert_velocity(self , centre_obj):
+        
+        #Convert the object's [vx,vy] to [vt,vn]
+        
+        vx = self.velocity[0]
+        vy = self.velocity[1]
+        mag = np.sqrt(vx**2 + vy**2)
+
+        dx = self.position[0] - centre_obj.position[0]
+        dy = self.position[1] - centre_obj.position[1]
+        theta = np.arctan(dy/dx)
+        phi = np.arctan(vy/vx) - theta
+
+        vt = mag * np.sin(phi)
+        vn = -mag * np.cos(phi)
+
+        return [vt , vn]"""
+
+        
+
+
+
+
+
+
+
+
+    def get_altitude(self, centre_obj):
+        c_to_c_dist = np.linalg.norm(self.position - centre_obj.position)
+        altitude = c_to_c_dist - centre_obj.radius
+        return altitude
+
+
+
+
+    def get_tangent_vec(self , centre_obj):
+        vector_to_earth = centre_obj.position - self.position
+        perpendicular_velocity = np.array([-vector_to_earth[1], vector_to_earth[0]])
+        return normalise_vector(perpendicular_velocity)
+
     #def calculate_distance(self , v1 , v2):
     #    return np.linalg.norm(np.array(v2) - np.array(v1))
     
@@ -57,6 +112,7 @@ class planet:
     #    magnitude = np.linalg.norm(v)
     #    return np.array(v) / magnitude
     
+    """
     def get_angle_in_orbit(self , centre_obj , deg=False):
         angle = np.arctan( (self.position[1] - centre_obj.position[1]) / (self.position[0] - centre_obj.position[0]))
         if deg:
@@ -83,3 +139,4 @@ class planet:
         tangent_velocity = self.velocity - radial_velocity * radial_unit_vector
 
         return radial_velocity, tangent_velocity
+    """
