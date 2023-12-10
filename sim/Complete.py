@@ -282,7 +282,7 @@ def run_experiment(environment , agent , environment_parameters , agent_paramete
 
             print(f"ep: {ep_count} |reward: {episode_reward} | n action: {n_action_done} | boost error: {boost_done[0]}% {boost_done[1]}%")
 
-            #if episode_reward > 200:
+            #if (boost_done[0]+boost_done[1]) < 10:
             #    rl_glue.environment.plot_alts(ep_count)
             
             if min_gg_dist != 100000:
@@ -323,7 +323,7 @@ if __name__ == "__main__":
     
 
     experiment_parameters = {"num_runs":1,
-                             "num_episodes":4000,
+                             "num_episodes":3000,
                              "timeout":2000}
     environment_parameters = {}
     current_env = SatelliteEnvironment
@@ -335,7 +335,7 @@ if __name__ == "__main__":
                                             "beta_m":0.9,
                                             "beta_v":0.999,
                                             "epsilon":1e-8},
-                        "replay_buffer_size":50000,
+                        "replay_buffer_size":500000,
                         "minibatch_size":8,
                         "num_replay_updates_per_step":4,
                         "gamma":0.99,

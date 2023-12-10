@@ -51,6 +51,9 @@ class SatelliteEnvironment(BaseEnvironment):
 
         self.goal_is_done = False
 
+        self.reward_1_left = 35
+        self.reward_2_left = 10
+
         # Loging
         self.log_alt_sat_1 = [] # [float]
         self.log_alt_sat_2 = [] # [float]
@@ -196,7 +199,7 @@ class SatelliteEnvironment(BaseEnvironment):
 
         
         
-        if 70 < next_s1_alt < 130:
+        if 85 < next_s1_alt < 115:
             if action == 1 or action == 2:
                 reward -= 10
         else:
@@ -205,20 +208,23 @@ class SatelliteEnvironment(BaseEnvironment):
                     reward -= 1
 
 
-        #if abs(target_r - next_s1_a) < axis_thr:
-        #    print("-----obj 1")
-        #if abs(target_r - next_s1_b) < axis_thr:
-        #    print("-----obj 2")
+        
         if abs(target_r - next_s1_a) < axis_thr and abs(target_r - next_s1_b) < axis_thr and action == 0 and 135 < next_s1_alt < 145:
-            #print(f"----------obj 3 : a {abs(target_r - next_s1_a)} , b {abs(target_r - next_s1_b)} , alt {next_s1_alt}")
-            reward += 30
-            self.goal_is_done = True
+            print(f"---------obj {self.reward_1_left} : a {abs(target_r - next_s1_a)} , b {abs(target_r - next_s1_b)} , alt {next_s1_alt}")
+            
+            if self.reward_1_left > 0:
+                self.reward_1_left -= 1
+                reward += 200
+            
 
         # Reach objective
         if next_dist < self.reached_dist and abs(target_r - next_s1_a) < axis_thr and abs(target_r - next_s1_b) < axis_thr:
-            print(f"----------------GGs : a {abs(target_r - next_s1_a)} , b {abs(target_r - next_s1_b)} , d {next_dist}")
-            reward += 2000
-            self.goal_is_done = True
+            print(f"----------------GGs {self.reward_2_left} : a {abs(target_r - next_s1_a)} , b {abs(target_r - next_s1_b)} , d {next_dist}")
+            
+            if self.reward_2_left > 0:
+                self.reward_2_left -= 1
+                reward += 2000
+                self.goal_is_done = True
 
         
 
@@ -252,6 +258,9 @@ class SatelliteEnvironment(BaseEnvironment):
             print("terminal far" , ep_count)
             return True
         elif s1_a > 245 or s1_b > 245 or s1_a < 155 or s1_b < 155:
+            print(f"s1_a: {s1_a} | s1_b: {s1_b}")
+            return True
+        elif self.reward_1_left == 0:
             return True
 
         return False
