@@ -151,7 +151,8 @@ class SatelliteEnvironment(BaseEnvironment):
 
 
         s1_alt , _ , s1_a , s1_b = self.env_observe_state()
-        gg_dist = np.sqrt(s1_a**2 + s1_b**2)
+
+        gg_dist = np.sqrt((s1_a-240)**2 + (s1_b-240)**2)
 
         if gg_dist < self.MIN_GG_DIST and 135 < s1_alt < 145:
             self.MIN_GG_DIST = gg_dist

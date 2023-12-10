@@ -280,10 +280,11 @@ def run_experiment(environment , agent , environment_parameters , agent_paramete
             n_action_done = rl_glue.environment.get_action_done()
             print(f"reward: {episode_reward} | n action: {n_action_done}")
 
-            if episode_reward > 200:
+            if ep_count > 8990:
                 rl_glue.environment.plot_alts(ep_count)
             
-            agnet_sum_reward[run - 1 , episode - 1] = min_gg_dist #episode_reward
+            if min_gg_dist != 100000:
+                agnet_sum_reward[run - 1 , episode - 1] = min_gg_dist #episode_reward
 
     save_path = input("Save path name : ")
     save_weights(path= save_path, data=rl_glue.agent.network.weights)
@@ -312,21 +313,21 @@ def load_weights(path):
 
 
 if __name__ == "__main__":
-    #prompt1 = input("Start from scratch ? [y/n] :")
+    prompt1 = input("Start from scratch ? [y/n] :")
 
     weight_file = None
-    #if prompt1 == "n":
-    #    weight_file = input("input file path: ")
+    if prompt1 == "n":
+        weight_file = input("input file path: ")
     
 
     experiment_parameters = {"num_runs":1,
-                             "num_episodes":3000,
+                             "num_episodes":9000,
                              "timeout":2000}
     environment_parameters = {}
     current_env = SatelliteEnvironment
     agent_parameters = {"network_config":{"state_dim":4,
                                           "num_hidden_units":256,
-                                          "num_actions":3,
+                                          "num_actions":2,
                                           "weights_file":weight_file},
                         "optimizer_config":{"step_size":1e-3,
                                             "beta_m":0.9,
