@@ -7,7 +7,7 @@ plt_legend_dict = {"expected_sarsa_agent": "Expected SARSA with neural network",
 path_dict = {"expected_sarsa_agent": "results/",
              "random_agent": "./"}
 
-plt_label_dict = {"expected_sarsa_agent": "Minimum\na,b\ndist\nduring ep"}#"Sum of\nreward\nduring\nepisode"}
+plt_label_dict = {"expected_sarsa_agent": "dv1 + dv2\nerror from\nHohmann"}
 
 def smooth(data, k):
     num_episodes = data.shape[1]

@@ -19,9 +19,10 @@ class SatelliteEnvironment(BaseEnvironment):
         self.time_step = 40
         self.boost_strength = 0.003
 
-        self.reached_dist = 10
-        self.reach_r_velocity = 0.1 # min value observed: 0.0006 !!
-        self.reach_dv_tan = 0.01
+        self.reached_dist = 2.5
+        
+        
+        
 
 
         self.visualise = False
@@ -42,6 +43,9 @@ class SatelliteEnvironment(BaseEnvironment):
         self.MIN_RAD_V_IN_REACH = 1000 # As a loss to plot: the minimum velocity in radial direction IN the reach distance
         self.MIN_TAN_DV = 1000
         self.MIN_GG_DIST = 100000
+
+        self.low_boost_done = 0
+        self.high_boost_done = 0
         
         self.action_done = 0
 
@@ -190,77 +194,7 @@ class SatelliteEnvironment(BaseEnvironment):
         axis_thr = 10
         target_r = 140 + self.earth_radius
 
-        """boost_reward = 0.001
         
-        
-
-        
-        # Low alt
-        if 55 < s1_alt < 65:
-            dist_to_target = target_r - next_s1_a
-
-            if abs(dist_to_target) > axis_thr:
-                # We are not there (should boost)
-
-                # We are too slow:
-                if dist_to_target >= 0:
-                    if action == 1: # +boost
-                        reward += boost_reward
-                    else:
-                        reward -= 0
-
-                # We are too fast:
-                elif dist_to_target < 0:
-                    if action == 2: # -boost
-                        reward -= boost_reward
-                    else:
-                        reward -= 0
-
-                
-            else:
-                # We are there (should wait)
-                
-                if action == 0: # wait
-                    reward += 0
-                else:
-                    reward -= 0
-
-        
-
-        # High alt
-        elif 135 < s1_alt < 140:
-
-            dist_to_target = target_r - next_s1_b
-
-            if abs(dist_to_target) > axis_thr:
-                # We are not there (should boost)
-
-                # We are too slow:
-                if dist_to_target >= 0:
-                    if action == 1: # +boost
-                        reward += boost_reward
-                    else:
-                        reward -= 0
-
-                # We are too fast:
-                elif dist_to_target < 0:
-                    if action == 2: # -boost
-                        reward += boost_reward
-                    else:
-                        reward -= 0
-
-                
-            else:
-                # We are there (should wait)
-                
-                if action == 0: # wait
-                    reward += boost_reward
-                else:
-                    reward -= 0
-
-
-        elif action == 1 or action == 2:
-            reward -= 10"""
         
         if 70 < next_s1_alt < 130:
             if action == 1 or action == 2:
@@ -276,12 +210,13 @@ class SatelliteEnvironment(BaseEnvironment):
         #if abs(target_r - next_s1_b) < axis_thr:
         #    print("-----obj 2")
         if abs(target_r - next_s1_a) < axis_thr and abs(target_r - next_s1_b) < axis_thr and action == 0 and 135 < next_s1_alt < 145:
-            print("----------obj 3")
-            reward += 50
+            #print(f"----------obj 3 : a {abs(target_r - next_s1_a)} , b {abs(target_r - next_s1_b)} , alt {next_s1_alt}")
+            reward += 30
+            self.goal_is_done = True
 
         # Reach objective
         if next_dist < self.reached_dist and abs(target_r - next_s1_a) < axis_thr and abs(target_r - next_s1_b) < axis_thr:
-            print("----------------GGs")
+            print(f"----------------GGs : a {abs(target_r - next_s1_a)} , b {abs(target_r - next_s1_b)} , d {next_dist}")
             reward += 2000
             self.goal_is_done = True
 
@@ -316,7 +251,7 @@ class SatelliteEnvironment(BaseEnvironment):
         elif s1_alt > 160:
             print("terminal far" , ep_count)
             return True
-        elif s1_a > 250 or s1_b > 250 or s1_a < 150 or s1_b < 150:
+        elif s1_a > 245 or s1_b > 245 or s1_a < 155 or s1_b < 155:
             return True
 
         return False
@@ -329,7 +264,7 @@ class SatelliteEnvironment(BaseEnvironment):
         
         # Observe current state
         current_state = self.env_observe_state()
-
+        s1_alt = current_state[0]
         #print("ACTION" , a)
 
         
@@ -343,6 +278,12 @@ class SatelliteEnvironment(BaseEnvironment):
             self.satellite_1.change_tangent_velocity(self.earth , self.boost_strength)
             action_1_is_on = True
             self.satellite_1.position_where_thrust.append(self.satellite_1.position)
+
+            if s1_alt < 90:
+                self.low_boost_done += self.boost_strength
+            elif s1_alt > 110:
+                self.high_boost_done += self.boost_strength
+
         elif a == 2:
             self.fuel -= 1
             self.satellite_1.change_tangent_velocity(self.earth , -self.boost_strength)
@@ -556,6 +497,18 @@ class SatelliteEnvironment(BaseEnvironment):
 
     def get_the_plot(self):
         return self.MIN_GG_DIST
+    
+    def get_the_boost(self):
+        """
+        Find the error compared to Hohmann:
+        """
+        dv1 = 0.023861
+        dv2 = 0.021549
+
+        error_dv1 = int(100 * abs(dv1 - self.low_boost_done) / dv1)
+        error_dv2 = int(100 * abs(dv2 - self.high_boost_done) / dv2)
+        
+        return [error_dv1 , error_dv2]
 
 
 

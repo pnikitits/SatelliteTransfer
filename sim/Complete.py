@@ -278,13 +278,15 @@ def run_experiment(environment , agent , environment_parameters , agent_paramete
             min_dist_reached = rl_glue.environment.get_min_dist()
             min_gg_dist = rl_glue.environment.get_the_plot()
             n_action_done = rl_glue.environment.get_action_done()
-            print(f"reward: {episode_reward} | n action: {n_action_done}")
+            boost_done = rl_glue.environment.get_the_boost()
 
-            if ep_count > 8990:
-                rl_glue.environment.plot_alts(ep_count)
+            print(f"ep: {ep_count} |reward: {episode_reward} | n action: {n_action_done} | boost error: {boost_done[0]}% {boost_done[1]}%")
+
+            #if episode_reward > 200:
+            #    rl_glue.environment.plot_alts(ep_count)
             
             if min_gg_dist != 100000:
-                agnet_sum_reward[run - 1 , episode - 1] = min_gg_dist #episode_reward
+                agnet_sum_reward[run - 1 , episode - 1] = boost_done[0] + boost_done[1]
 
     save_path = input("Save path name : ")
     save_weights(path= save_path, data=rl_glue.agent.network.weights)
@@ -321,7 +323,7 @@ if __name__ == "__main__":
     
 
     experiment_parameters = {"num_runs":1,
-                             "num_episodes":9000,
+                             "num_episodes":4000,
                              "timeout":2000}
     environment_parameters = {}
     current_env = SatelliteEnvironment
