@@ -37,6 +37,7 @@ def plot_result(data_name_array):
         filename = 'sum_reward_{}'.format(data_name).replace('.','')
         sum_reward_data = np.load('{}/{}.npy'.format(path_dict[data_name], filename))
 
+        print(sum_reward_data)
         # smooth data
         smoothed_sum_reward = smooth(data = sum_reward_data, k = 100)
         

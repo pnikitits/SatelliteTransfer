@@ -285,8 +285,8 @@ def run_experiment(environment , agent , environment_parameters , agent_paramete
             #if (boost_done[0]+boost_done[1]) < 10:
             #    rl_glue.environment.plot_alts(ep_count)
             
-            if min_gg_dist != 100000:
-                agnet_sum_reward[run - 1 , episode - 1] = boost_done[0] + boost_done[1]
+            #if min_gg_dist != 100000:
+            agnet_sum_reward[run - 1 , episode - 1] = boost_done[0] + boost_done[1]
 
     save_path = input("Save path name : ")
     save_weights(path= save_path, data=rl_glue.agent.network.weights)
@@ -315,11 +315,11 @@ def load_weights(path):
 
 
 if __name__ == "__main__":
-    prompt1 = input("Start from scratch ? [y/n] :")
+    #prompt1 = input("Start from scratch ? [y/n] :")
 
     weight_file = None
-    if prompt1 == "n":
-        weight_file = input("input file path: ")
+    #if prompt1 == "n":
+    #    weight_file = input("input file path: ")
     
 
     experiment_parameters = {"num_runs":1,
