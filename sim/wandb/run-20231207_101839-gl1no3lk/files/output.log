@@ -1,0 +1,74 @@
+
+No input weights, start from scratch
+  0%|                                 | 0/10000 [00:00<?, ?it/s]
+too far reward
+
+  0%|                       | 1/10000 [00:03<8:31:53,  3.07s/it]
+crashed reward
+crashed terminal
+
+  0%|                      | 2/10000 [00:11<17:15:11,  6.21s/it]
+too far reward
+
+  0%|                      | 3/10000 [00:14<13:36:50,  4.90s/it]
+too far reward
+
+  0%|                      | 4/10000 [00:17<11:28:09,  4.13s/it]
+crashed reward
+crashed terminal
+
+  0%|                      | 5/10000 [00:26<16:15:00,  5.85s/it]
+too far reward
+
+  0%|                      | 6/10000 [00:30<14:22:05,  5.18s/it]
+too far reward
+
+  0%|                      | 7/10000 [00:32<11:21:05,  4.09s/it]
+too far reward
+
+  0%|                       | 8/10000 [00:34<9:21:47,  3.37s/it]
+too far reward
+
+  0%|                      | 10/10000 [00:37<7:02:07,  2.54s/it]
+too far reward
+reward -104.0 for 10
+too far reward
+
+  0%|                      | 11/10000 [00:39<6:20:52,  2.29s/it]
+too far reward
+
+  0%|                      | 12/10000 [00:41<5:49:29,  2.10s/it]
+too far reward
+
+  0%|                      | 13/10000 [00:42<5:22:47,  1.94s/it]
+too far reward
+
+  0%|                      | 14/10000 [00:44<5:08:16,  1.85s/it]
+too far reward
+reward -98 for 15
+too far reward
+
+  0%|                      | 16/10000 [00:47<4:50:40,  1.75s/it]
+too far reward
+
+  0%|                      | 17/10000 [00:49<4:50:26,  1.75s/it]
+too far reward
+
+  0%|                      | 18/10000 [00:51<4:49:23,  1.74s/it]
+too far reward
+
+  0%|                      | 19/10000 [00:54<7:52:53,  2.84s/it]
+Traceback (most recent call last):
+  File "Complete.py", line 353, in <module>
+    run_experiment(current_env , current_agent , environment_parameters , agent_parameters , experiment_parameters)
+  File "Complete.py", line 273, in run_experiment
+    rl_glue.rl_episode(experiment_parameters["timeout"])
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 190, in rl_episode
+    rl_step_result = self.rl_step()
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/rl_glue.py", line 130, in rl_step
+    (reward, last_state, term) = self.environment.env_step(self.last_action)
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/Simulator.py", line 282, in env_step
+    self.visual_update()
+  File "/Users/hugoderohanwillner/Documents/MSc AI/Lab Project/SatelliteTransfer/SatelliteTransfer-1/sim/Simulator.py", line 422, in visual_update
+    bg = pygame.image.load("img2.jpg")
+KeyboardInterrupt

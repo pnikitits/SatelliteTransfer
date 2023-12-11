@@ -22,7 +22,7 @@ class SatelliteEnvironment(BaseEnvironment):
         self.max_steps_in_reward = 200
         self.success = False
 
-        self.visualise = False
+        self.visualise = Trues
         self.width , self.height = 1000 , 800
         self.satellite_radius = 7
         self.earth_radius = 100
