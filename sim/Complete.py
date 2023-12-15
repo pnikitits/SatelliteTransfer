@@ -315,11 +315,11 @@ def load_weights(path):
 
 
 if __name__ == "__main__":
-    #prompt1 = input("Start from scratch ? [y/n] :")
+    prompt1 = input("Start from scratch ? [y/n] :")
 
     weight_file = None
-    #if prompt1 == "n":
-    #    weight_file = input("input file path: ")
+    if prompt1 == "n":
+        weight_file = input("input file path: ")
     
 
     experiment_parameters = {"num_runs":1,
