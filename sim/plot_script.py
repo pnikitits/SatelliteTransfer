@@ -7,7 +7,7 @@ plt_legend_dict = {"expected_sarsa_agent": "Expected SARSA with neural network",
 path_dict = {"expected_sarsa_agent": "results/",
              "random_agent": "./"}
 
-plt_label_dict = {"expected_sarsa_agent": "Minimum\ndistance\nduring ep"}#"Sum of\nreward\nduring\nepisode"}
+plt_label_dict = {"expected_sarsa_agent": "dv1 + dv2\nerror from\nHohmann"}
 
 def smooth(data, k):
     num_episodes = data.shape[1]
@@ -37,6 +37,7 @@ def plot_result(data_name_array):
         filename = 'sum_reward_{}'.format(data_name).replace('.','')
         sum_reward_data = np.load('{}/{}.npy'.format(path_dict[data_name], filename))
 
+        print(sum_reward_data)
         # smooth data
         smoothed_sum_reward = smooth(data = sum_reward_data, k = 100)
         
@@ -50,7 +51,7 @@ def plot_result(data_name_array):
     ax.set_title("Learning Curve", fontsize = 15)
     ax.set_xlabel('Episodes', fontsize = 14)
     ax.set_ylabel(plt_label_dict[data_name_array[0]], rotation=0, labelpad=40, fontsize = 14)
-    ax.set_ylim([-300, 300])
+    #ax.set_ylim([-300, 300])
 
     plt.tight_layout()
     plt.show()     
